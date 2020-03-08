@@ -1,0 +1,29 @@
+state={
+	id=656
+	name="STATE_656"
+	manpower = 80000
+	resources={
+		oil=45
+	}	
+	state_category = town
+	
+	history={
+		owner = SAU
+		add_core_of = SAU
+		victory_points = {
+			8085 3 
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+			dockyard = 1
+			8085 = {
+				naval_base = 6
+			}
+		}
+
+	}
+	provinces={
+		8085
+	}
+}

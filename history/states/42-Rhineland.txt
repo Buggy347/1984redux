@@ -1,0 +1,36 @@
+
+state={
+	id=42
+	name="STATE_42"
+	manpower = 600000
+	resources={
+		steel=10
+		aluminium=5
+	}
+	
+	state_category = pastoral
+
+	history={
+		owner = GER
+		victory_points = { 11435 1 }
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+
+		}
+		add_core_of = GER
+		
+		1980.6.2 = {
+			owner = SOV
+			controller = SOV
+			add_core_of = SOV
+		}
+	
+	}
+
+	provinces={
+		563 3423 3558 9575 11435 11470 11494 11531 11547 
+	}
+	
+	
+}

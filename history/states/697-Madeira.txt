@@ -1,0 +1,27 @@
+state={
+	id=697
+	name="STATE_697"
+	manpower = 111600
+	
+	state_category = tiny_island
+
+	history={
+		owner = SPR
+		buildings = {
+			infrastructure = 3
+			3118 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = POR
+		
+		1980.6.2 = {
+			owner = SOV
+			controller = SOV
+		}
+	}
+	
+	provinces={
+		3118 
+	}
+}

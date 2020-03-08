@@ -1,0 +1,36 @@
+state={
+	id=85
+	name="STATE_85"
+	manpower = 2800000
+	
+	state_category = city
+	history={
+		owner = DEN
+		victory_points = {
+			362 15
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 2
+			industrial_complex = 1
+			dockyard = 1
+			air_base = 3
+			362 = {
+				naval_base = 5
+			}
+		}
+		add_core_of = POL
+		add_core_of = DEN
+		
+		1980.6.2 = {
+			owner = SOV
+			controller = SOV
+			add_core_of = SOV
+		}
+		
+	}
+
+	provinces={
+		279 334 362 389 3295 3324 9263 
+	}
+}

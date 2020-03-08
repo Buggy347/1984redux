@@ -1,0 +1,32 @@
+
+state={
+	id=35
+	name="STATE_35" # Brabant
+	manpower = 700000
+	
+	state_category = pastoral
+
+	history={
+		owner = GER
+		add_core_of = GER
+		add_core_of = HOL
+		
+		1980.6.2 = {
+			owner = SOV
+			controller = SOV
+			add_core_of = SOV
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+		victory_points = {
+			6496 1
+		}
+
+	}
+
+	provinces={
+		3262 6496 6500 11456 11562 
+	}
+}

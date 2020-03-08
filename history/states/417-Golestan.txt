@@ -1,0 +1,25 @@
+
+state={
+	id=417
+	name="STATE_417" # Hamadan
+	manpower = 1000000
+	state_category = rural
+
+	history={
+		owner = PER
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		add_core_of = PER
+		1980.6.2 = {
+			owner = PRC
+			controller = PRC
+			add_core_of = PRC
+		}
+	}
+
+	provinces={
+		1982 2065 8040 8125 10922 
+	}
+}

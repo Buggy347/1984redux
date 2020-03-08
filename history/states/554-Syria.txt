@@ -1,0 +1,29 @@
+
+state={
+	id=554
+	name="STATE_554"
+	manpower = 7547797
+	
+	state_category = metropolis
+
+	history={
+		owner = SAU
+		victory_points = {
+			4111 30
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 2
+			industrial_complex = 2
+			air_base = 1
+		}
+		add_core_of = SYR	
+		add_core_of = SAU
+
+	}
+
+
+	provinces={
+		1074 4111 4486 4550 7184 
+	}
+}

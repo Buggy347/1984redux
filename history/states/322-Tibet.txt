@@ -1,0 +1,32 @@
+
+state={
+	id=322
+	name="STATE_322"
+	manpower = 3000000
+	
+	state_category = city
+
+
+	history={
+		owner = NEP
+		buildings = {
+			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 3
+		}
+		victory_points = {
+			5033 5 
+		}
+		add_core_of = TIB
+		add_core_of = NEP
+		1980.6.2 = {
+			owner = PRC
+			controller = PRC
+			add_core_of = PRC
+		}
+	}
+
+	provinces={
+		2010 2093 4994 5011 7926 8068 10755 10918 
+	}
+}

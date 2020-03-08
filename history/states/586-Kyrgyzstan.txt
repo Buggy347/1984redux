@@ -1,0 +1,33 @@
+
+state={
+	id=586
+	name="STATE_586" #Alma Alta
+	resources={
+		steel=10
+		tungsten=4
+		aluminium=5
+	}
+
+
+	state_category = rural
+
+	history={
+		owner = SOV
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+
+		}
+		victory_points = {
+			1591 3 
+		}
+		add_core_of = PER
+		add_core_of = SOV
+		set_demilitarized_zone = yes
+	}
+
+	provinces={
+		1591 1825 4224 4686 7706 10148 10660 12583 12640 13147 
+	}
+	manpower=2563404
+}

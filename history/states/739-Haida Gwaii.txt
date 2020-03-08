@@ -1,0 +1,31 @@
+state={
+	id=739
+	name="STATE_739"
+
+	history={
+		owner = MEX
+		buildings = {
+			infrastructure = 1
+
+			1869 = {
+				naval_base = 1
+
+			}
+
+
+		}
+		add_core_of = CAN
+		add_core_of = MEX
+		1980.6.2 = {
+			owner = ENG
+			controller = ENG
+			add_core_of = ENG
+		}
+	}
+
+	provinces={
+		1869
+	}
+	manpower=12684
+	state_category="small_island"
+}

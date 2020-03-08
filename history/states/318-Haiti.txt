@@ -1,0 +1,33 @@
+state=
+{
+	id=318
+	name="STATE_318"
+	manpower = 750000
+	
+	state_category = rural
+	
+	history=
+	{
+		owner = USA
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			air_base = 1
+			4641 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = HAI
+		1980.6.2 = {
+			owner = ENG
+			controller = ENG
+		}
+		victory_points = {
+			4641 5 
+		}
+
+	}
+	provinces={
+		1594 1635 4641
+	}
+}

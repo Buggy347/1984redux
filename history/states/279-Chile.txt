@@ -1,0 +1,39 @@
+
+state={
+	id=279
+	name="STATE_279" # Santiago
+	manpower = 935146
+	
+	state_category = rural
+	
+	resources={
+		steel=55
+	}
+
+	history={
+		owner = BRA
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			air_base = 1
+			8222 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = CHL
+		add_core_of = BRA
+		1980.6.2 = {
+			owner = ENG
+			controller = ENG
+			add_core_of = ENG
+		}
+		victory_points = {
+			650 1
+		}
+
+	}
+
+	provinces={
+		650 5121 5169 5191 8194 8222 8229 8251 12920 12954 12984 
+	}
+}

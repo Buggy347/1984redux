@@ -1,0 +1,27 @@
+state={
+	id=706
+	name="STATE_706"
+	manpower = 186637
+	
+	state_category = small_island
+
+	history={
+		owner = SAF
+		buildings = {
+			infrastructure = 3
+			13017 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = SAF
+		1980.6.2 = {
+			owner = ENG
+			controller = ENG
+			add_core_of = ENG
+		}
+	}
+
+	provinces={
+		13017 
+	}
+}

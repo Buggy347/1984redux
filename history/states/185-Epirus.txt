@@ -1,0 +1,34 @@
+
+state={
+	id=185
+	name="STATE_185"
+	manpower = 500000
+	
+	state_category = pastoral
+	
+	resources={
+		chromium=5
+		steel = 20
+	}
+
+	history={
+		owner = TUR
+		buildings = {
+			infrastructure = 4
+			dockyard = 1
+			air_base = 3
+		}
+		add_core_of = GRE
+		add_core_of = TUR
+		
+		1980.6.2 = {
+			owner = SOV
+			controller = SOV
+			add_core_of = SOV
+		}
+	}
+
+	provinces={
+		841 1106 1205 3914 3980 9805 9837 9916 10203 11786 11895 12001 
+	}
+}

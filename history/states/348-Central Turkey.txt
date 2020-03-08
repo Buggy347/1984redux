@@ -1,0 +1,26 @@
+
+state={
+	id=348
+	name="STATE_348" # Kayseri
+	manpower = 85842
+	
+	state_category = wasteland
+
+	history={
+		owner = TUR
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = TUR
+		
+		1980.6.2 = {
+			owner = SOV
+			controller = SOV
+			add_core_of = SOV
+		}
+	}
+
+	provinces={
+		869 919 921 961 3807 3862 3870 3964 6888 6977 9830 9861 11826 11844 
+	}
+}

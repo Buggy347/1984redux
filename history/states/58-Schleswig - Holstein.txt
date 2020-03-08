@@ -1,0 +1,38 @@
+state= {
+	id=58
+	name="STATE_58"
+	manpower = 2800000 
+	state_category = town
+	
+	history=
+	{
+		victory_points = {
+			6389 3 
+		}
+		victory_points = {
+			9347 6 
+		}
+		owner = DEN
+		buildings = {
+			infrastructure = 5
+			dockyard = 4
+			air_base = 3
+			6389 ={
+				naval_base = 8
+			}
+		}
+		add_core_of = GER
+		add_core_of = DEN
+		
+		1980.6.2 = {
+			owner = SOV
+			controller = SOV
+			add_core_of = SOV
+		}
+		
+	}
+
+	provinces= {
+		317 3231 3368 6257 6389 9320 9347 11331 11366
+ 	}
+}

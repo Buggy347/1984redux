@@ -1,0 +1,25 @@
+state={
+	id=710
+	name="STATE_710"
+	manpower=2147	
+	state_category = tiny_island
+	
+	history=
+	{
+		owner = SAF
+		buildings = {
+			infrastructure = 3
+			13019 = {
+				naval_base = 1
+			}
+		}
+		1980.6.2 = {
+			owner = ENG
+			controller = ENG
+		}
+	}
+	
+	provinces={
+		13019 
+	}
+}

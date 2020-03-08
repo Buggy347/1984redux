@@ -1,0 +1,32 @@
+
+state={
+	id=542
+	name="STATE_542"
+	manpower = 234000
+
+	state_category = wasteland
+
+	resources={
+		chromium=30
+	}
+
+	history={
+		owner = SAF
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = BOT
+		add_core_of = SAF
+		add_core_of = ETH
+		1980.6.2 = {
+			owner = ENG
+			controller = ENG
+			add_core_of = ENG
+		}
+
+	}
+
+	provinces={
+		1580 8214 10525 12940 12963 13217
+	}
+}

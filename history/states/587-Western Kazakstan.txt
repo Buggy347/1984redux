@@ -1,0 +1,27 @@
+state={
+	id=587
+	name="STATE_587"
+
+	history={
+		owner = PER
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+
+		}
+		set_demilitarized_zone = yes
+		add_core_of = PER
+		1980.6.2 = {
+			owner = PRC
+			controller = PRC
+			add_core_of = PRC
+		}
+	}
+
+	provinces={
+		475 642 1517 3593 4523 4620 7641 10262 10348 11701 12163 12383 12474 13008 13207
+	}
+	manpower=1000000
+	state_category=rural
+}

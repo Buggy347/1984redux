@@ -1,0 +1,22 @@
+state={
+	id=713
+	name="STATE_713"
+	manpower=1000000
+	state_category = small_island
+
+	history={
+		owner = ISR
+		victory_points = {
+			2165 30 
+		}
+		buildings = {
+			infrastructure = 10
+			industrial_complex = 1
+			2165 = { coastal_bunker = 10 }
+		}
+	}
+
+	provinces={
+		2165 
+	}
+}

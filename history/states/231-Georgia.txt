@@ -1,0 +1,33 @@
+state={
+	id=231
+	name="STATE_231"
+
+	history={
+		owner = TUR
+		victory_points = {
+			1599 1
+		}
+		victory_points = {
+			3653 1
+		}
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = TUR
+		add_core_of = GEO
+		
+		1980.6.2 = {
+			owner = SOV
+			controller = SOV
+			add_core_of = SOV
+		}
+
+	}
+
+	provinces={
+		654 672 772 1530 1599 3653 3656 3658 4534 4605 6436 6669 6671 9626 9702 11599 11617 12309 
+	}
+	manpower=29413
+	state_category=wasteland
+}

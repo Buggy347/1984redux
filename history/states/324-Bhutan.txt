@@ -1,0 +1,38 @@
+
+state={
+	id=324
+	name="STATE_324"
+	manpower = 5000000
+
+
+	state_category = metropolis
+		resources={
+
+		aluminium=5
+
+	}
+
+
+	history={
+		owner = NEP
+		buildings = {
+			infrastructure = 3
+			arms_factory = 3
+			industrial_complex = 2
+		}
+		victory_points = {
+			8010 5
+		}
+		add_core_of = BHU
+		add_core_of = NEP
+		1980.6.2 = {
+			owner = PRC
+			controller = PRC
+			add_core_of = PRC
+		}
+	}
+
+	provinces={
+		8010 12860 4435
+	}
+}

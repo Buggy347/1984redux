@@ -1,0 +1,36 @@
+
+state={
+	id=266
+	name="STATE_266" # Tehran
+	manpower = 6000000
+	resources={
+		tungsten=16
+		steel=20
+	}	
+	
+	state_category = megalopolis
+
+	history={
+		owner = PER
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 4
+			air_base = 3
+			10837 = { bunker = 3 }
+		}
+		victory_points = {
+			10837 30 
+		}
+		add_core_of = PER
+		1980.6.2 = {
+			owner = PRC
+			controller = PRC
+			add_core_of = PRC
+		}
+	}
+
+	provinces={
+		4580 7602 10385 10768 10837 
+	}
+}

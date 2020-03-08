@@ -1,0 +1,32 @@
+
+state={
+	id=108
+	name="STATE_108" # Morava
+	manpower = 37564
+	
+	state_category = wasteland
+	
+	resources={
+		steel=5
+	}
+
+	history={
+		owner = TUR
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = YUG
+		add_core_of = SER 
+		add_core_of = TUR
+		
+		1980.6.2 = {
+			owner = SOV
+			controller = SOV
+			add_core_of = SOV
+		}
+	}
+
+	provinces={
+		630 3939 6953 6970 6998 9602 9756 9890 9906 11887 
+	}
+}

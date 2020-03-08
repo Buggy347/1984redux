@@ -1,0 +1,36 @@
+
+state={
+	id=414
+	name="STATE_414"
+	manpower = 1000000
+	resources={
+		steel=50
+		aluminium=34
+		tungsten=30
+	}
+
+	
+	state_category = rural
+
+	history={
+		owner = PER
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+			industrial_complex = 1
+		}
+		victory_points = {
+			10913 3 
+		}
+		add_core_of = PER
+		1980.6.2 = {
+			owner = PRC
+			controller = PRC
+			add_core_of = PRC
+		}
+	}
+
+	provinces={
+		1986 7990 10759 10890 10913 11249 12739 12809 12852 12895 
+	}
+}

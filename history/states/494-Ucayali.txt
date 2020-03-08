@@ -1,0 +1,28 @@
+
+state={
+	id=494
+	name="STATE_494"
+	manpower = 735826
+	
+	state_category = pastoral
+	
+
+	history={
+		owner = BRA
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+		}
+		add_core_of = PRU
+		add_core_of = BRA
+		1980.6.2 = {
+			owner = ENG
+			controller = ENG
+			add_core_of = ENG
+		}
+	}
+
+	provinces={
+		2212 2226 5166 8160 8191 10940 
+	}
+}

@@ -1,0 +1,28 @@
+
+state={
+	id=33
+	name="STATE_33"
+	manpower = 336400
+	
+	state_category = pastoral
+
+	history={
+		owner = SPR
+		
+		buildings = {
+			infrastructure = 6
+		}
+		add_core_of = FRA
+		add_core_of = SPR
+		
+		1980.6.2 = {
+			owner = SOV
+			controller = SOV
+			add_core_of = SOV
+		}
+	}
+
+	provinces={
+		651 669 3621 3626 3655 6648 6651 9629 11869 
+	}
+}

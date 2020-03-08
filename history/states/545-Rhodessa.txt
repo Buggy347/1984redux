@@ -1,0 +1,37 @@
+state={
+	id=545
+	
+	state_category = rural
+	
+	name="STATE_545"
+	resources={
+		chromium=50.000
+		tungsten=4.000
+		aluminium=10
+		steel=10
+	}
+
+	history={
+		owner = SAF
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+		}
+		victory_points = {
+			10929 1 
+		}
+		add_core_of = ZIM
+		add_core_of = SAF
+		add_core_of = ETH
+		1980.6.2 = {
+			owner = ENG
+			controller = ENG
+			add_core_of = ENG
+		}
+	}
+
+	provinces={
+		697 1846 1874 2151 2216 2255 4851 5199 5221 7842 7872 10538 10594 10929 10930 12504 12677 12908 12986 13173 
+	}
+	manpower=4155400
+}

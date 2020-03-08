@@ -1,0 +1,42 @@
+
+MAL_UK = {
+    color = rgb { 201 56 93 }
+    color_ui = rgb { 255 73 121 }
+}
+
+INS_HOL = {
+    color = rgb { 203 138 74 }
+    color_ui = rgb { 255 179 96 }
+}
+
+ENG_OC = {
+	color = HSV { 0.1 0.15 0.4 }
+	color_ui = rgb { 138 155 116 }
+}
+
+PRC_EA = {
+	color = hsv { 0.05 0.3 1 }
+	color_ui = hsv { 0.05 0.25 1.2 }
+}
+
+INS_TT = {
+	color = rgb { 78  128  88 }
+	color_ui = rgb { 78  128  88 }
+}
+
+SAU_TT = {
+	color = rgb { 200 200 40 }
+	color_ui = rgb { 200 200 40 }
+}
+SIA_TT = {
+	color = rgb { 161 180 142 }
+	color_ui = rgb { 161 180 142 }
+}
+ETH_TT = {
+	color = rgb { 115 73 0 }
+	color_ui = rgb { 115 73 0 }
+}
+RAJ_TT = {
+	color = rgb { 122 98 13 }
+	color_ui = rgb { 122 98 13 }
+}

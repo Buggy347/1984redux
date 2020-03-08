@@ -1,0 +1,31 @@
+state={
+	id=685
+	name="STATE_685"
+	manpower = 39467
+	
+	state_category = enclave
+
+	history={
+		owner = BRA
+		victory_points = {
+			7617 5 
+		}
+		buildings = {
+			infrastructure = 4
+			air_base = 6
+			7617 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = USA
+		add_core_of = PAN
+		add_core_of = BRA
+		1980.6.2 = {
+			owner = ENG
+			controller = ENG
+			add_core_of = ENG
+		}
+	}
+	
+	provinces={ 7617 }
+}

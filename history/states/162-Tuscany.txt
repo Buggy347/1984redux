@@ -1,0 +1,45 @@
+
+state={
+	id=162
+	name="STATE_162"
+	manpower = 2084933
+	
+	state_category = pastoral
+
+	history={
+		owner = SPR
+		victory_points = {
+			9907 3 
+		}
+		victory_points = {
+			6973 1 
+		}
+		victory_points = {
+			11833 1 
+		}
+		buildings = {
+			infrastructure = 6
+			dockyard = 1
+			air_base = 2
+			6973 = {
+				naval_base = 6
+			}
+			11833 = {
+				naval_base = 2
+			}
+		}
+		add_core_of = ITA
+		add_core_of = SPR
+		
+		1980.6.2 = {
+			owner = SOV
+			controller = SOV
+			add_core_of = SOV
+		}
+		
+	}
+
+	provinces={
+		910 1616 3885 6875 6946 6973 9750 9879 9907 11833 11889 
+	}
+}

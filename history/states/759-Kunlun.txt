@@ -1,0 +1,26 @@
+state={
+	id=759
+	name="STATE_759"
+	provinces={
+		1943 2074 5736 10315 
+	}
+	manpower=70000
+	buildings_max_level_factor=1.000
+	state_category = wasteland
+	history={
+		owner = NEP
+		add_core_of = SIK
+		add_core_of = CHI
+		add_core_of = NEP
+		1980.6.2 = {
+			owner = PRC
+			controller = PRC
+			add_core_of = PRC
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+
+	}
+}

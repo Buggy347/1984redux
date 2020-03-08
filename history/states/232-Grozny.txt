@@ -1,0 +1,33 @@
+
+state={
+	id=232
+	name="STATE_232"
+	manpower = 16592
+	
+	state_category = wasteland
+	
+	resources={
+		oil=3
+	}
+
+	history={
+		owner = TUR
+		buildings = {
+			infrastructure = 4
+		}
+		victory_points = {
+			3672 1 
+		}
+		add_core_of = TUR
+		
+		1980.6.2 = {
+			owner = SOV
+			controller = SOV
+			add_core_of = SOV
+		}
+	}
+
+	provinces={
+		683 700 712 728 1450 3668 3672 3682 3711 4463 6689 6701 6730 6748 7554 7624 9645 11632 
+	}
+}

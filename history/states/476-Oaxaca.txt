@@ -1,0 +1,31 @@
+
+state={
+	id=476
+	name="STATE_476"
+	manpower = 2663331
+	
+	state_category = rural
+
+	history={
+		owner = MEX
+		buildings = {
+			infrastructure = 3
+			dockyard = 1
+			air_base = 2
+			10889 = {
+				naval_base = 2
+			}
+		}
+		add_core_of = MEX
+		1980.6.2 = {
+			owner = ENG
+			controller = ENG
+			add_core_of = ENG
+		}
+	}
+
+	provinces={
+		2021 8236 10773 10889 12712 
+	}
+	
+}

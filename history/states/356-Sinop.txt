@@ -1,0 +1,25 @@
+
+state={
+	id=356
+	name="STATE_356" # Kastamonu
+	manpower = 86589
+	state_category = wasteland
+
+	history={
+		owner = TUR
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = TUR
+		
+		1980.6.2 = {
+			owner = SOV
+			controller = SOV
+			add_core_of = SOV
+		}
+	}
+
+	provinces={
+		979 3967 3982 6920 6938 6978 6995 9844 9871 11839 11897 
+	}
+}

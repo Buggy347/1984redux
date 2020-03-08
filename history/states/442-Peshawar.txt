@@ -1,0 +1,29 @@
+
+state={
+	id=442
+	name="STATE_442"
+	manpower = 4000000
+	
+	state_category = city
+
+	history={
+		owner = NEP
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 3
+			arms_factory = 2
+			air_base = 3
+		}
+		add_core_of = PAK
+		add_core_of = NEP
+		1980.6.2 = {
+			owner = PRC
+			controller = PRC
+			add_core_of = PRC
+		}
+	}
+
+	provinces={
+		1978 2084 4558 4998 12717 12763 
+	}
+}

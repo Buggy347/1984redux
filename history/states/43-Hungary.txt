@@ -1,0 +1,35 @@
+
+state={
+	id=43
+	name="STATE_43" # Northern Hungary
+	manpower = 2500000
+	resources={
+		rubber=5
+	}
+	
+	state_category = town
+
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			air_base = 2
+		}
+		victory_points = {
+			9660 5 
+		}
+		add_core_of = HUN
+		add_core_of = GER
+		
+		1980.6.2 = {
+			owner = SOV
+			controller = SOV
+			add_core_of = SOV
+		}
+	}
+
+	provinces={
+		684 716 3713 3731 6716 6751 9660 9690 11520 
+	}
+}

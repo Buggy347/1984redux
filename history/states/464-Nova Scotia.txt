@@ -1,0 +1,35 @@
+
+state={
+	id=464
+	name="STATE_464"
+	manpower = 490912
+	
+	state_category = pastoral
+
+	history={
+		owner = USA
+		victory_points = {
+			7361 1
+		}
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+			7361 = {
+				naval_base = 1
+
+			}
+		}
+		add_core_of = CAN
+		add_core_of = USA
+		1980.6.2 = {
+			owner = ENG
+			controller = ENG
+			add_core_of = ENG
+		}
+	}
+
+	provinces={
+		1354 4360 4430 4623 7304 7361 7644 10244 
+	}
+	
+}

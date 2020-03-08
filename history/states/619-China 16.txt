@@ -1,0 +1,29 @@
+
+state={
+	id=619
+	name="STATE_619" # Yarkand
+	manpower = 3000000
+	
+	state_category = large_town
+
+
+	history={
+		owner = NEP
+		add_core_of = SIK
+		add_core_of = NEP
+		1980.6.2 = {
+			owner = PRC
+			controller = PRC
+			add_core_of = PRC
+		}
+		buildings = {
+			infrastructure = 4
+			arms_factory = 2
+			industrial_complex = 2
+		}
+	}
+
+	provinces={
+		1766 1970 2015 4828 5016 5087 7790 7949 8112 12119 
+	}
+}

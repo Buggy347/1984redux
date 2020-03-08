@@ -1,0 +1,30 @@
+state={
+	id=676
+	name="STATE_676"
+	manpower = 5182741
+	
+	state_category = large_city
+	
+	resources={
+		oil=10
+	}
+
+
+	history={
+		owner = SAU
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 1
+		}
+		victory_points = {
+			10106 10 
+		}
+		add_core_of = IRQ
+		add_core_of = SAU
+	}
+	
+	provinces={
+		1600 1938 3916 5014 6826 8123 10106 10793 10804 10811 12372 
+	}
+}

@@ -1,0 +1,37 @@
+
+state={
+	id=532
+	name="STATE_532" # Tokai
+	manpower = 5000000
+	state_category = city
+	resources={
+		steel=25
+	}
+	history={
+		owner = JAP
+		add_core_of = JAP
+		1980.6.2 = {
+			owner = PRC
+			controller = PRC
+			add_core_of = PRC
+		}
+		buildings = {
+			infrastructure = 5
+			dockyard = 2
+			industrial_complex = 3
+		}
+		
+		victory_points = {
+			7087 3 
+		}
+		
+		victory_points = {
+			10125 25
+		}
+
+	}
+
+	provinces={
+		4069 4172 7087 7157 7187 10100 10125 12072 12097 
+	}
+}

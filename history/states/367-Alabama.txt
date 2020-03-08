@@ -1,0 +1,33 @@
+
+state={
+	id=367
+	name="STATE_367"
+	manpower = 1000000
+	
+	state_category = rural
+
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+		}
+		add_core_of = USA
+		1980.6.2 = {
+			owner = ENG
+			controller = ENG
+			add_core_of = ENG
+		}
+		victory_points = {
+			7480 1 
+		}
+		victory_points = {
+			12735 1 
+		}
+
+	}
+
+	provinces={
+		492 860 1587 4594 4622 4756 5059 7422 7480 7640 10192 10520 11509 11942 12735 12803 
+	}
+}

@@ -1,0 +1,25 @@
+
+state={
+	id=329
+	name="STATE_329"
+	manpower = 85000
+	
+	state_category = wasteland
+
+	history={
+		owner = SOV
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = {
+			10627 1
+		}
+		add_core_of = TAN
+		add_core_of = SOV
+		set_demilitarized_zone = yes
+	}
+
+	provinces={
+		1676 1877 4680 7703 7731 7804 7819 10597 10627 10646 12610 12625 
+	}
+}

@@ -1,0 +1,30 @@
+state=
+{
+	id=124
+	name="STATE_124"
+	manpower = 15251
+	
+	state_category = tiny_island
+	
+	history=
+	{
+		owner = DEN
+		add_core_of = SWE
+		add_core_of = DEN
+		
+		1980.6.2 = {
+			owner = SOV
+			controller = SOV
+			add_core_of = SOV
+		}
+		buildings = {
+			infrastructure = 6
+			408 = {
+				naval_base = 1
+			}
+		}
+	}
+	provinces={
+		408 6258
+	}
+}

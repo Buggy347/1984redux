@@ -1,0 +1,26 @@
+
+state={
+	id=352
+	name="STATE_352" # Van
+	manpower = 36490
+
+	state_category = wasteland
+
+	history={
+		owner = TUR
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = TUR
+		
+		1980.6.2 = {
+			owner = SOV
+			controller = SOV
+			add_core_of = SOV
+		}
+	}
+
+	provinces={
+		864 1463 6935 7530 10497 12318 12476 
+	}
+}

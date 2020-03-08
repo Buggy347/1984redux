@@ -1,0 +1,38 @@
+
+state={
+	id=6
+	name="STATE_6" # Flanders
+	manpower = 1400000
+	
+	state_category = rural
+
+	history={
+		owner = GER
+		victory_points = { 516 5 }
+		victory_points = { 6598 5 }
+		victory_points = { 6560 1 }
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			dockyard = 1
+			air_base = 3
+			6446 = {
+				naval_base = 1
+			}
+		}
+		
+		
+		add_core_of = BEL
+		add_core_of = GER
+		
+		1980.6.2 = {
+			owner = SOV
+			controller = SOV
+			add_core_of = SOV
+		}
+	}
+
+	provinces={
+		516 3576 6446 6560 6598 9574 11419 13068 
+	}
+}

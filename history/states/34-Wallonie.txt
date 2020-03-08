@@ -1,0 +1,36 @@
+
+state={
+	id=34
+	name="STATE_34"
+	manpower = 700000
+	
+	state_category = pastoral
+
+	history={
+		owner = GER
+		victory_points = {
+			3516 1
+		}
+		victory_points = {
+			11519 3
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			air_base = 1
+
+		}
+		add_core_of = BEL
+		add_core_of = GER
+		
+		1980.6.2 = {
+			owner = SOV
+			controller = SOV
+			add_core_of = SOV
+		}
+	}
+
+	provinces={
+		3488 3516 6537 9418 9444 9536 11407 11519 13081 
+	}
+}

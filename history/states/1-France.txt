@@ -1,0 +1,33 @@
+
+state={
+	id=1
+	name="STATE_1" # Corsica
+	manpower = 422900
+	
+	state_category = pastoral
+
+	history={
+		owner = SPR
+		victory_points = { 3838 1 }
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			air_base = 1
+			3838 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = FRA
+		add_core_of = SPR
+		
+		1980.6.2 = {
+			owner = SOV
+			controller = SOV
+			add_core_of = SOV
+		}
+	}
+	
+	provinces={
+		3838 9851 11804 
+	}
+}

@@ -1,0 +1,33 @@
+
+state={
+	id=477
+	name="STATE_477"
+	manpower = 2951460
+	
+	state_category = rural
+
+	history={
+		owner = MEX
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			12810 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = MEX
+		1980.6.2 = {
+			owner = ENG
+			controller = ENG
+			add_core_of = ENG
+		}
+		victory_points = {
+			12810 1
+		}
+	}
+
+	provinces={
+		8079 8089 10732 12810 
+	}
+	
+}

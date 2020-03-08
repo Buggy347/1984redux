@@ -1,0 +1,37 @@
+
+state={
+	id=13
+	name="STATE_13"
+	manpower = 1400000
+	resources={
+		steel=3
+	}
+	state_category = rural
+	history={
+		owner = DEN
+		victory_points = {
+			3152 3 
+		}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 1
+			air_base = 2
+			3152 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = EST
+		add_core_of = DEN
+		
+		1980.6.2 = {
+			owner = SOV
+			controller = SOV
+			add_core_of = SOV
+		}
+	}
+
+	provinces={
+		83 185 308 496 567 3074 3152 3174 6201 6381 9079 11127 11291 11426 
+	}
+}

@@ -1,0 +1,35 @@
+
+state={
+	id=32
+	name="STATE_32" 
+	manpower = 507500
+	
+	state_category = pastoral
+	
+	resources={
+		steel=30
+		aluminium=5
+	}
+
+	history={
+		owner = SPR
+		buildings = {
+			infrastructure = 4
+		}
+		victory_points = {
+			3768 1 
+		}
+		add_core_of = FRA
+		add_core_of = SPR
+		
+		1980.6.2 = {
+			owner = SOV
+			controller = SOV
+			add_core_of = SOV
+		}
+	}
+
+	provinces={
+		762 780 3589 3768 6784 11713 
+	}
+}

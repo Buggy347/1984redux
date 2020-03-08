@@ -1,0 +1,36 @@
+
+state={
+	id=4
+	name="STATE_4"
+	manpower = 900000
+
+	
+	state_category = pastoral
+	
+	history={
+		owner = GER
+		victory_points = {
+			11666 10.0 
+		}
+		victory_points = {
+			9648 2 
+		}
+		buildings = {
+			infrastructure = 4
+			air_base = 2
+		}
+		add_core_of = AUS
+		add_core_of = GER
+		
+		1980.6.2 = {
+			owner = SOV
+			controller = SOV
+			add_core_of = SOV
+		}
+
+	}
+
+	provinces={
+		653 704 3700 3718 6690 6739 9527 9646 9648 9661 9679 11630 11666 
+	}
+}

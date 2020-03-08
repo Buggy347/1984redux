@@ -1,0 +1,29 @@
+
+state={
+	id=543
+	name="STATE_543"
+	manpower = 3694611
+	
+	state_category = rural
+	
+	history={
+		owner = SAF
+		buildings = {
+			infrastructure = 2
+			dockyard = 2
+			5222 = { naval_base = 3 }
+		}
+		add_core_of = SAF
+		add_core_of = ETH
+		1980.6.2 = {
+			owner = ENG
+			controller = ENG
+			add_core_of = ENG
+		}
+
+	}
+
+	provinces={
+		2200 5128 5185 5222 8180 8188 8246 10993 11015 12956 
+	}
+}

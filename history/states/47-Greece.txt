@@ -1,0 +1,44 @@
+
+state={
+	id=47
+	name="STATE_47" # Thessaly
+	manpower=1000000
+	resources={
+		steel=5
+		aluminium=10
+		tungsten = 10
+	}
+	
+	state_category = rural
+
+	history={
+		owner = TUR
+		victory_points = {
+			4109 10 
+		}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 1
+			air_base = 2
+			4109 = {
+				naval_base = 9
+
+			}
+
+		}
+		add_core_of = GRE
+		add_core_of = TUR
+		
+		1980.6.2 = {
+			owner = SOV
+			controller = SOV
+			add_core_of = SOV
+		}
+
+	}
+
+	provinces={
+		863 976 1109 3864 3973 3988 4109 6930 7127 
+	}
+}

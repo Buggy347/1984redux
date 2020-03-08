@@ -1,0 +1,33 @@
+
+state={
+	id=411
+	name="STATE_411" # Isfahan
+	manpower = 1000000
+	resources={
+		oil=2
+		aluminium=8
+	}
+	state_category = rural
+	
+
+	history={
+		owner = PER
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = {
+			2026 5 
+		}
+		add_core_of = PER
+		1980.6.2 = {
+			owner = PRC
+			controller = PRC
+			add_core_of = PRC
+		}
+	}
+
+	provinces={
+		1963 2026 4928 4983 5067 8031 8074 10828 12756 
+	}
+}

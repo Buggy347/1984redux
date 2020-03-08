@@ -1,0 +1,28 @@
+
+state={
+	id=410
+	name="STATE_410"
+	manpower = 3000000
+	
+	state_category = town
+
+	history={
+		owner = PER
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+			dockyard = 2
+			industrial_complex = 1
+		}
+		add_core_of = PER
+		1980.6.2 = {
+			owner = PRC
+			controller = PRC
+			add_core_of = PRC
+		}
+	}
+
+	provinces={
+		1889 2039 2070 4891 10782 13082 
+	}
+}

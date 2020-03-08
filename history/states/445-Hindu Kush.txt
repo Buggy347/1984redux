@@ -1,0 +1,31 @@
+
+state={
+	id=445
+	name="STATE_445" # Quetta
+	manpower = 5000000
+	resources={
+		steel=10
+	}		
+	state_category = city
+
+	history={
+		owner = PER
+		buildings = {
+			infrastructure = 4
+			arms_factory = 2
+			industrial_complex = 3
+			air_base = 4
+		}
+		add_core_of = PAK
+		add_core_of = PER
+		1980.6.2 = {
+			owner = PRC
+			controller = PRC
+			add_core_of = PRC
+		}
+	}
+
+	provinces={
+		1107 4990 5105 7847 7903 7975 8044 8098 10813 
+	}
+}

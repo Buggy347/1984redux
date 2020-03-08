@@ -1,0 +1,35 @@
+
+state={
+	id=19
+	name="STATE_19"
+	manpower = 940400
+
+	
+	state_category = pastoral
+
+	history={
+		owner = SPR
+		victory_points = {
+			9737 5
+		}
+		buildings = {
+			infrastructure = 6
+			air_base = 3
+			9737 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = FRA
+		add_core_of = SPR
+		
+		1980.6.2 = {
+			owner = SOV
+			controller = SOV
+			add_core_of = SOV
+		}
+	}
+
+	provinces={
+		743 6621 6762 6777 9710 9737 11565 
+	}
+}

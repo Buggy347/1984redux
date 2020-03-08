@@ -1,0 +1,41 @@
+
+state={
+	id=15
+	name="STATE_15"
+	manpower = 700000
+	
+	state_category = pastoral
+
+	history={
+		owner = GER
+		victory_points = {
+			9434 1
+		}
+		victory_points = {
+			6449 5
+		}
+		victory_points = {
+			11563 1
+		}
+		buildings = {
+			infrastructure = 4
+			dockyard = 1
+			air_base = 2
+			6449 = {
+				naval_base = 5
+			}
+		}
+		add_core_of = FRA
+		add_core_of = GER
+		
+		1980.6.2 = {
+			owner = SOV
+			controller = SOV
+			add_core_of = SOV
+		}
+	}
+
+	provinces={
+		485 539 553 3534 3549 3579 6449 6569 6599 9434 9550 9578 11521 11535 11563 
+	}
+}

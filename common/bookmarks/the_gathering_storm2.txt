@@ -1,0 +1,127 @@
+## this 1984 mod was created by bees / mfr
+
+bookmarks = {
+	bookmark = {
+		name = "GATHERING_STORM2_NAME"
+		desc = "GATHERING_STORM2_DESC"
+		date = 1980.06.2.12
+		picture = "GFX_select_date_3major"
+		default_country = "ENG"
+		default = yes
+		
+
+		ENG = {
+			history = ENG_GATHERING_STORM2_DESC
+			ideology = democratic
+			ideas = {
+				nef_consciousness_of_self
+				nef_equalthanothers
+			}
+			focuses = {
+				nef_tot_room_101
+				nef_tot_two_minutes_hate
+				nef_tot_liberate_the_free
+			}
+			
+		}
+		SOV = {
+			history = SOV_GATHERING_STORM2_DESC
+			ideology = communism
+			ideas = {
+				nef_consciousness_of_self
+				nef_equalthanothers
+			}
+			focuses = {
+				nef_tot_room_101
+				nef_tot_two_minutes_hate
+				nef_tot_liberate_the_free
+			}
+		}
+		PRC = {
+			history = PRC_GATHERING_STORM2_DESC
+			ideology = fascism
+			ideas={
+				nef_consciousness_of_self
+				nef_equalthanothers
+			}	
+			focuses = {
+				nef_tot_room_101
+				nef_tot_two_minutes_hate
+				nef_tot_liberate_the_free
+			}		
+		}
+		ETH = {
+			history = ETH_GATHERING_STORM_DESC
+			ideology = neutrality
+			ideas={
+				nef_disjointed_industry
+			}	
+			focuses = {
+				nef_res_grand_council
+				nef_res_break_the_chains
+				nef_res_destruction_is_salvation
+			}		
+		}
+		RAJ = {
+			history = RAJ_GATHERING_STORM_DESC
+			ideology = neutrality
+			ideas={
+				nef_disjointed_industry
+			}	
+			focuses = {
+				nef_res_grand_council
+				nef_res_break_the_chains
+				nef_res_destruction_is_salvation
+			}		
+		}
+		SAU = {
+			history = SAU_GATHERING_STORM_DESC
+			ideology = neutrality
+			ideas={
+				nef_disjointed_industry
+			}	
+			focuses = {
+				nef_res_grand_council
+				nef_res_break_the_chains
+				nef_res_destruction_is_salvation
+			}		
+		}
+		SIA = {
+			history = SIA_GATHERING_STORM_DESC
+			ideology = neutrality
+			ideas={
+				nef_disjointed_industry
+			}	
+			focuses = {
+				nef_res_grand_council
+				nef_res_break_the_chains
+				nef_res_destruction_is_salvation
+			}		
+		}
+		INS = {
+			history = INS_GATHERING_STORM_DESC
+			minor = yes
+			ideology = neutrality
+			ideas={
+				nef_disjointed_industry
+			}	
+			focuses = {
+				nef_res_grand_council
+				nef_res_break_the_chains
+				nef_res_destruction_is_salvation
+			}		
+		}
+
+
+		"---"={
+			history = "OTHER_BLITZKRIEG_DESC"
+		}
+
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+			clr_global_flag = mod_start_15major
+			set_global_flag = mod_start_3major
+		}
+	}
+}

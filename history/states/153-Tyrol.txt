@@ -1,0 +1,36 @@
+
+state={
+	id=153
+	name="STATE_153"
+	manpower = 65000
+
+	resources={
+		tungsten=5
+	}
+	
+	state_category = wasteland
+
+	history={
+		owner = GER
+		victory_points = {
+			673 1 
+		}
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = AUS
+		add_core_of = GER
+		
+		1980.6.2 = {
+			owner = SOV
+			controller = SOV
+			add_core_of = SOV
+		}
+
+		
+	}
+
+	provinces={
+		668 671 673 3675 6673 6678 6680 9633 9636 11618 11634 
+	}
+}

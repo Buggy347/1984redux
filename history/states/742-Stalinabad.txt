@@ -1,0 +1,29 @@
+state={
+	id=742
+	name="STATE_742"
+	resources={
+		tungsten=10
+		steel=25
+		aluminium=5
+	}
+	history={
+		owner = NEP
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+		}
+		add_core_of = NEP
+		1980.6.2 = {
+			owner = PRC
+			controller = PRC
+			add_core_of = PRC
+		}
+
+	}
+
+	provinces={
+		4542 7224 8027 10417 12218 12250 12430 12805 
+	}
+	manpower=1000000
+	state_category=rural
+}

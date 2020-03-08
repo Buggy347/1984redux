@@ -1,0 +1,36 @@
+
+state={
+	id=277
+	name="STATE_277"
+	manpower = 5424403
+	
+	state_category = city
+	resources={
+		aluminium=30
+		steel=50
+		tungsten=30
+	}	
+	history={
+		owner = MEX
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 4
+			air_base = 3
+		}
+		add_core_of = MEX
+		1980.6.2 = {
+			owner = ENG
+			controller = ENG
+			add_core_of = ENG
+		}
+		victory_points = {
+			1965 10 
+		}
+	}
+
+	provinces={
+		1965 2008 2011 7913 12755 
+	}
+	
+}

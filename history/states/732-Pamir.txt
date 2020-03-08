@@ -1,0 +1,27 @@
+state={
+	id=732
+	name="STATE_732"
+
+	history={
+		owner = NEP
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			air_base = 3
+		}
+		add_core_of = NEP
+		set_demilitarized_zone = yes
+		1980.6.2 = {
+			owner = PRC
+			controller = PRC
+			add_core_of = PRC
+		}
+
+	}
+
+	provinces={
+		1483 1675 4316 4391 4467 4768 4923 5062 10408 10530 12370 12511 
+	}
+	manpower=1000000
+	state_category=rural
+}

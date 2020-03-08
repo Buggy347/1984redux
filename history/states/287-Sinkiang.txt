@@ -1,0 +1,29 @@
+
+state={
+	id=287
+	name="STATE_287" # Taklamakan
+	manpower = 1000000
+	
+	state_category = pastoral
+
+	history={
+		owner = NEP
+		add_core_of = SIK
+		add_core_of = NEP
+		1980.6.2 = {
+			owner = PRC
+			controller = PRC
+			add_core_of = PRC
+		}
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+
+		}
+
+	}
+
+	provinces={
+		4973 8042 8086 10885 10911 12864 
+	}
+}

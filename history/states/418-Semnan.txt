@@ -1,0 +1,27 @@
+
+state={
+	id=418
+	name="STATE_418"
+	manpower = 3000000
+	
+	state_category = town
+
+	history={
+		owner = PER
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 1
+		}
+		add_core_of = PER
+		1980.6.2 = {
+			owner = PRC
+			controller = PRC
+			add_core_of = PRC
+		}
+	}
+
+	provinces={
+		8009 8093 10873 11671 12704 12748 12818 
+	}
+}

@@ -1,0 +1,42 @@
+
+state={
+	id=64
+	name="STATE_64"
+	manpower = 2800000
+
+	state_category = large_city
+	resources={
+		steel=50
+		aluminium=30
+		tungsten=30
+	}
+
+	history={
+		owner = GER
+		victory_points = {
+			6521 15 
+		}
+		victory_points = {
+			3522 1 
+		}
+		buildings = {
+			infrastructure = 7
+			arms_factory = 3
+			industrial_complex = 1
+			air_base = 3
+
+		}
+		add_core_of = GER
+		
+		1980.6.2 = {
+			owner = SOV
+			controller = SOV
+			add_core_of = SOV
+		}
+
+	}
+
+	provinces={
+		375 3367 3499 3522 6487 6521 9428 9456 9560 11219 11359 11444 11505 
+	}
+}

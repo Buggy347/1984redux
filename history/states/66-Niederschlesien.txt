@@ -1,0 +1,36 @@
+
+state={
+	id=66
+	name="STATE_66"
+	manpower = 1100000
+	resources={
+		steel=20
+	}
+	
+	state_category = rural
+
+	history={
+		owner = GER
+		victory_points = {
+			9570 2 
+		}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 1
+			air_base = 2
+		}
+		add_core_of = GER
+		
+		1980.6.2 = {
+			owner = SOV
+			controller = SOV
+			add_core_of = SOV
+		}
+
+	}
+
+	provinces={
+		552 3283 3438 3485 3510 3545 6462 6534 6595 9470 9570 11517 
+	}
+}

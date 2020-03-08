@@ -1,0 +1,27 @@
+
+state={
+	id=280
+	name="STATE_280"
+	
+	state_category = pastoral
+
+	history={
+		owner = BRA
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = BRA
+		1980.6.2 = {
+			owner = ENG
+			controller = ENG
+			add_core_of = ENG
+		}
+
+	}
+
+	provinces={
+		2142 2147 2204 8175 11010 12939 
+	}
+	manpower=120000
+}

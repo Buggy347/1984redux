@@ -1,0 +1,32 @@
+
+state={
+	id=26
+	name="STATE_26" # Auveregne
+	manpower = 477800
+	
+	state_category = pastoral
+
+	history={
+		owner = SPR
+		victory_points = {
+			3594 3 
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+
+		}
+		add_core_of = FRA
+		add_core_of = SPR
+		
+		1980.6.2 = {
+			owner = SOV
+			controller = SOV
+			add_core_of = SOV
+		}
+	}
+
+	provinces={
+		590 769 3594 3754 6644 6773 6789 9593 9607 9748 11576 
+	}
+}

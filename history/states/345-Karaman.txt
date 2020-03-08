@@ -1,0 +1,26 @@
+
+state={
+	id=345
+	name="STATE_345" # Mersin
+	manpower = 4118
+
+	state_category = wasteland
+
+	history={
+		owner = TUR
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = TUR
+		
+		1980.6.2 = {
+			owner = SOV
+			controller = SOV
+			add_core_of = SOV
+		}
+	}
+
+	provinces={
+		1122 4008 4124 4127 7026 7143 10056 
+	}
+}

@@ -1,0 +1,36 @@
+
+state={
+	id=20
+	name="STATE_20" # Rhone
+	manpower = 1473200
+	resources={
+		steel=25
+	}
+
+	state_category = town
+
+	history={
+		owner = SPR
+		victory_points = {
+			6613 2
+		}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 2
+			air_base = 4
+		}
+		add_core_of = FRA
+		add_core_of = SPR
+		
+		1980.6.2 = {
+			owner = SOV
+			controller = SOV
+			add_core_of = SOV
+		}
+	}
+
+	provinces={
+		641 3650 3770 6613 6639 6668 6786 9590 9728 9732 11593 11716 11794 
+	}
+}

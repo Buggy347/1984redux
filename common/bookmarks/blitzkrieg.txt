@@ -1,0 +1,89 @@
+## this 1984 mod was created by bees / mfr
+
+bookmarks = {
+	bookmark = {
+		name = "BLITZKRIEG_NAME"
+		desc = "BLITZKRIEG_DESC"
+		date = 1983.12.1.12
+		picture = "GFX_select_date_83_3major"
+		default_country = "ENG"
+	
+		ENG = {
+			history = ENG_BLITZKRIEG_DESC
+			ideology = democratic
+			ideas = {
+				nef_consciousness_of_self
+			}
+			focuses = {
+				nef_tot_ministry_of_peace
+				nef_tot_ministry_of_truth
+				nef_tot_liberate_the_free
+			}
+			
+		}
+		SOV = {
+			history = SOV_BLITZKRIEG_DESC
+			ideology = communism
+			ideas = {
+				nef_consciousness_of_self
+			}
+			focuses = {
+				nef_tot_ministry_of_peace
+				nef_tot_ministry_of_truth
+				nef_tot_liberate_the_free
+			}
+		}
+		PRC = {
+			history = PRC_BLITZKRIEG_DESC
+			ideology = fascism
+			ideas={
+				nef_consciousness_of_self
+			}	
+			focuses = {
+				nef_tot_ministry_of_peace
+				nef_tot_ministry_of_truth
+				nef_tot_liberate_the_free
+			}		
+		}
+
+		"---"={
+			history = "OTHER_BLITZKRIEG_DESC"
+		}
+
+		effect = {
+			randomize_weather = 12345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+			set_global_flag = mod_start_1983
+			set_global_flag = spanish_civil_war
+			set_global_flag = resistance_faction_created
+			RAJ = { remove_ideas = nef_disjointed_industry }
+			ETH = { remove_ideas = nef_disjointed_industry }
+			INS = { remove_ideas = nef_disjointed_industry }
+			SIA = { remove_ideas = nef_disjointed_industry }
+			SAU = { remove_ideas = nef_disjointed_industry }
+			587 = { set_demilitarized_zone = no }
+			585 = { set_demilitarized_zone = no }
+			405 = { set_demilitarized_zone = no }
+			732 = { set_demilitarized_zone = no }
+			617 = { set_demilitarized_zone = no }
+			618 = { set_demilitarized_zone = no }
+			330 = { set_demilitarized_zone = no }
+			761 = { set_demilitarized_zone = no }
+			561 = { set_demilitarized_zone = no }
+			560 = { set_demilitarized_zone = no }
+			562 = { set_demilitarized_zone = no }
+			574 = { set_demilitarized_zone = no }
+			563 = { set_demilitarized_zone = no }
+			564 = { set_demilitarized_zone = no }
+			566 = { set_demilitarized_zone = no }
+			329 = { set_demilitarized_zone = no }
+			654 = { set_demilitarized_zone = no }
+			588 = { set_demilitarized_zone = no }
+			589 = { set_demilitarized_zone = no }
+			586 = { set_demilitarized_zone = no }
+			404 = { set_demilitarized_zone = no }
+			402 = { set_demilitarized_zone = no }
+			406 = { set_demilitarized_zone = no }
+		}
+	}
+}

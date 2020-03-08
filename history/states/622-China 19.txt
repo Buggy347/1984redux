@@ -1,0 +1,36 @@
+state=
+{
+	id=622
+	name="STATE_622" # Shaanxi
+	manpower = 6000000
+	
+	state_category = city
+	
+	resources={
+		steel=4
+		tungsten=2
+	}
+	history=
+	{
+		owner = PRC
+		add_core_of = PRC
+		add_core_of = CHI
+		add_core_of = PRC
+		victory_points = {
+			8049 3
+		}
+		victory_points = {
+			7418 1
+		}
+		buildings = {
+			infrastructure = 2
+			arms_factory = 4
+			industrial_complex = 1
+			
+		}
+
+	}
+	provinces={
+		517 1458 4939 5007 7208 7314 7659 8049 10733 10880 12156 12356 
+	}
+}

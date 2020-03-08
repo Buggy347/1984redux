@@ -1,0 +1,28 @@
+
+state={
+	id=36
+	name="STATE_36"
+	manpower = 700000
+
+	state_category = pastoral
+
+	history={
+		owner = GER
+		add_core_of = GER
+		add_core_of = HOL
+		
+		1980.6.2 = {
+			owner = SOV
+			controller = SOV
+			add_core_of = SOV
+		}
+		buildings = {
+			infrastructure = 4
+			dockyard = 1
+		} 
+	}
+
+	provinces={
+		6241 6286 6336 9309 9335 9363 9403 11318 
+	}
+}

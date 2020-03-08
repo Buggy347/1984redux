@@ -1,0 +1,36 @@
+
+state={
+	id=303
+	name="STATE_303" # Lima
+	manpower = 563249
+
+	
+	state_category = rural
+
+	history={
+		owner = BRA
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			air_base = 3
+			12997 = {
+				naval_base = 5
+			}
+		}
+		add_core_of = PRU
+		add_core_of = BRA
+		1980.6.2 = {
+			owner = ENG
+			controller = ENG
+			add_core_of = ENG
+		}
+		victory_points = {
+			12997 3
+		}
+
+	}
+
+	provinces={
+		2156 2162 5190 8199 12969 12983 12997 
+	}
+}

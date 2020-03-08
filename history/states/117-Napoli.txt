@@ -1,0 +1,36 @@
+
+state={
+	id=117
+	name="STATE_117" # Campania
+	manpower = 2833611
+	
+	state_category = pastoral
+
+	history={
+		owner = SPR
+		victory_points = {
+			819 20 
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			air_base = 3
+			819 = {
+				naval_base = 6
+			}
+		}
+		add_core_of = ITA
+		add_core_of = SPR
+		
+		1980.6.2 = {
+			owner = SOV
+			controller = SOV
+			add_core_of = SOV
+		}
+		
+	}
+
+	provinces={
+		819 851 883 955 3958 3968 6843 6939 6972 6980 9826 11803 
+	}
+}

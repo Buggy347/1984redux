@@ -1,0 +1,27 @@
+
+state={
+	id=475
+	name="STATE_475"
+	manpower = 1805874
+	
+	state_category = rural
+
+	history={
+		owner = MEX
+		buildings = {
+			infrastructure = 3
+			dockyard = 1
+		}
+		add_core_of = MEX
+		1980.6.2 = {
+			owner = ENG
+			controller = ENG
+			add_core_of = ENG
+		}
+	}
+
+	provinces={
+		1900 12753 12867 
+	}
+	
+}

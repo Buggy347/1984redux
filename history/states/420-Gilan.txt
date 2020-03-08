@@ -1,0 +1,20 @@
+
+state={
+	id=420
+	name="STATE_420"
+	manpower = 3000000
+	
+	state_category = town
+
+	history={
+		owner = SAU
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = SAU
+	}
+
+	provinces={
+		4553 4609 4637 4901 7969 10454 10523 
+	}
+}

@@ -1,0 +1,32 @@
+
+state={
+	id=105
+	name="STATE_105" # Montenegro
+	manpower = 495500
+	
+	state_category = pastoral
+
+	history={
+		owner = SPR
+		add_core_of = MNT
+		add_core_of = SPR
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			9809 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = YUG
+		
+		1980.6.2 = {
+			owner = SOV
+			controller = SOV
+			add_core_of = SOV
+		}
+	}
+
+	provinces={
+		833 867 937 3922 6913 6940 9809 9821 9849 9874 11858 
+	}
+}

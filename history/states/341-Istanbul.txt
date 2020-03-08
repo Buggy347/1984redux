@@ -1,0 +1,38 @@
+state= {
+	id=341
+	name="STATE_341"
+	manpower = 10000000
+	resources={
+		chromium=10
+		steel = 10
+	}
+	
+	state_category = metropolis
+
+	history= {
+		add_core_of = GRE
+		owner = TUR
+		victory_points = {
+			9833 30
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+			arms_factory = 3
+			air_base = 4
+			9833 = {
+				naval_base = 7
+			}
+		}
+		add_core_of = TUR
+		
+		1980.6.2 = {
+			owner = SOV
+			controller = SOV
+			add_core_of = SOV
+		}
+	}
+	provinces=
+	{
+849 922 3879 3893 6895 9833 11829 11842 	}
+}

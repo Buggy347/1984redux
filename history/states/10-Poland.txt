@@ -1,0 +1,32 @@
+state={
+	id=10
+	name="STATE_10"
+	manpower = 1300000
+
+	state_category = rural
+
+	history={
+		owner = GER
+		victory_points = {
+			3544 3 
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 1
+			air_base = 1
+		}
+		add_core_of = POL
+		add_core_of = GER
+		
+		1980.6.2 = {
+			owner = SOV
+			controller = SOV
+			add_core_of = SOV
+		}
+	}
+
+	provinces={
+		402 467 524 3482 3544 6511 9400 11492 12562 
+	}
+}

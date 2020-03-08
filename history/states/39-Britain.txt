@@ -1,0 +1,29 @@
+
+state={
+	id=39
+	name="STATE_39" # South Tyrol
+	manpower = 24000
+	
+	state_category = wasteland
+
+
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = GER
+		add_claim_by = AUS
+		add_core_of = ITA
+		
+		1980.6.2 = {
+			owner = SOV
+			controller = SOV
+			add_core_of = SOV
+		}
+	}
+
+	provinces={
+		656 6631 6675 9598 9630 11598 11615 
+	}
+}

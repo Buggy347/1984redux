@@ -1,0 +1,29 @@
+state=
+{
+	id=74
+	name="STATE_74"
+	manpower = 55000
+	
+	state_category = wasteland
+	
+	
+	history=
+	{
+		owner = GER
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = CZE
+		add_core_of = GER
+		
+		1980.6.2 = {
+			owner = SOV
+			controller = SOV
+			add_core_of = SOV
+		}
+
+	}
+	provinces= {
+		421 3414 3583 6485
+ 	}
+}

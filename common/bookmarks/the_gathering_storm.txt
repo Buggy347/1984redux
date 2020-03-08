@@ -1,0 +1,214 @@
+## this 1984 mod was created by bees / mfr
+
+bookmarks = {
+	bookmark = {
+		name = "GATHERING_STORM_NAME"
+		desc = "GATHERING_STORM_DESC"
+		date = 1980.06.1.12
+		picture = "GFX_select_date_15major"
+		default_country = "ENG"
+		default = yes
+		
+		ENG = {
+			history = ENG_GATHERING_STORM_DESC
+			ideology = democratic
+			ideas = {
+				nef_consciousness_of_self
+				nef_equalthanothers
+			}
+			focuses = {
+				nef_tot_room_101
+				nef_tot_two_minutes_hate
+				nef_tot_liberate_the_free
+			}
+			
+		}
+		SOV = {
+			history = SOV_GATHERING_STORM_DESC
+			ideology = communism
+			ideas = {
+				nef_consciousness_of_self
+				nef_equalthanothers
+			}
+			focuses = {
+				nef_tot_room_101
+				nef_tot_two_minutes_hate
+				nef_tot_liberate_the_free
+			}
+		}
+		PRC = {
+			history = PRC_GATHERING_STORM_DESC
+			ideology = fascism
+			ideas={
+				nef_consciousness_of_self
+				nef_equalthanothers
+			}	
+			focuses = {
+				nef_tot_room_101
+				nef_tot_two_minutes_hate
+				nef_tot_liberate_the_free
+			}		
+		}
+		RAJ = {
+			history = RAJ_GATHERING_STORM_DESC
+			ideology = neutrality
+			ideas={
+				nef_disjointed_industry
+			}	
+			focuses = {
+				nef_res_grand_council
+				nef_res_break_the_chains
+				nef_res_destruction_is_salvation
+			}		
+		}
+		ETH = {
+			history = ETH_GATHERING_STORM_DESC
+			ideology = neutrality
+			ideas={
+				nef_disjointed_industry
+			}	
+			focuses = {
+				nef_res_grand_council
+				nef_res_break_the_chains
+				nef_res_destruction_is_salvation
+			}		
+		}
+		INS = {
+			history = INS_GATHERING_STORM_DESC
+			ideology = neutrality
+			ideas={
+				nef_disjointed_industry
+			}	
+			focuses = {
+				nef_res_grand_council
+				nef_res_break_the_chains
+				nef_res_destruction_is_salvation
+			}		
+		}
+		SIA = {
+			history = SIA_GATHERING_STORM_DESC
+			ideology = neutrality
+			ideas={
+				nef_disjointed_industry
+			}	
+			focuses = {
+				nef_res_grand_council
+				nef_res_break_the_chains
+				nef_res_destruction_is_salvation
+			}		
+		}
+		USA = {
+			history = USA_GATHERING_STORM_DESC
+			minor = yes
+			ideology = democratic
+			ideas = {
+				nef_consciousness_of_self
+				nef_equalthanothers
+			}
+			focuses = {
+				nef_tot_room_101
+				nef_tot_two_minutes_hate
+				nef_tot_liberate_the_free
+			}
+		}
+
+		SPR = {
+			history = SPR_GATHERING_STORM_DESC
+			minor = yes
+			ideology = communism
+			ideas={
+				nef_consciousness_of_self
+				nef_equalthanothers
+			}
+			focuses = {
+				nef_tot_room_101
+				nef_tot_two_minutes_hate
+				nef_tot_liberate_the_free
+			}
+		}
+		JAP = {
+			history = JAP_GATHERING_STORM_DESC
+			minor = yes
+			ideology = fascism
+			ideas={
+				nef_consciousness_of_self
+				nef_equalthanothers
+			}	
+			focuses = {
+				nef_tot_room_101
+				nef_tot_two_minutes_hate
+				nef_tot_liberate_the_free
+			}		
+		}
+		SAF = {
+			history = SAF_GATHERING_STORM_DESC
+			minor = yes
+			ideology = communism
+			ideas = {
+				nef_consciousness_of_self
+				nef_equalthanothers
+			}
+			focuses = {
+				nef_tot_room_101
+				nef_tot_two_minutes_hate
+				nef_tot_liberate_the_free
+			}
+		}
+		GER = {
+			history = GER_GATHERING_STORM_DESC
+			minor = yes
+			ideology = communism
+			ideas = {
+				nef_consciousness_of_self
+				nef_equalthanothers
+			}
+			focuses = {
+				nef_tot_room_101
+				nef_tot_two_minutes_hate
+				nef_tot_liberate_the_free
+			}
+		}
+		NEP = {
+			history = NEP_GATHERING_STORM_DESC
+			minor = yes
+			ideology = fascism
+			ideas={
+				nef_consciousness_of_self
+				nef_equalthanothers
+			}	
+			focuses = {
+				nef_tot_room_101
+				nef_tot_two_minutes_hate
+				nef_tot_liberate_the_free
+			}		
+		}
+		SAU = {
+			history = SAU_GATHERING_STORM_DESC
+			minor = yes
+			ideology = neutrality
+			ideas={
+				nef_disjointed_industry
+			}	
+			focuses = {
+				nef_res_grand_council
+				nef_res_break_the_chains
+				nef_res_destruction_is_salvation
+			}		
+		}
+
+
+		"---"={
+			history = "OTHER_GATHERING_STORM_DESC"
+		}
+
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+			clr_global_flag = mod_start_3major
+			set_global_flag = mod_start_15major
+			ENG = { drop_cosmetic_tag = yes }
+			SOV = { drop_cosmetic_tag = yes }
+			PRC = { drop_cosmetic_tag = yes }
+		}
+	}
+}

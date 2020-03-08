@@ -1,0 +1,27 @@
+state=
+{
+	id=326
+	name="STATE_326"
+	manpower = 11000000
+	state_category = megalopolis
+	history=
+	{
+		owner = PRC
+		add_core_of = CHI
+		add_core_of = PRC
+		victory_points = {
+			10062 20 
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 3
+			air_base = 1
+			10062 = {
+				naval_base = 6
+			}
+		}
+	}
+	provinces={
+		10062
+	}
+}

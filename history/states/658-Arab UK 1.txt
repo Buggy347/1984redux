@@ -1,0 +1,36 @@
+
+state={
+	id=658
+	name="STATE_658"
+	manpower = 4220000
+	resources={
+		oil=146
+	}
+	
+	state_category = large_city
+
+
+	history={
+		owner = SAU
+		add_core_of = SAU
+		victory_points = {
+			7960 5 
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 2
+			industrial_complex = 2
+			7960 = {
+				naval_base = 3
+			}
+			8051 = {
+				naval_base = 2
+			}
+		}
+
+	}
+
+	provinces={
+		2048 7960 8051 8108 10904 
+	}
+}

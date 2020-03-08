@@ -1,0 +1,29 @@
+
+state={
+	id=347
+	name="STATE_347"
+	manpower = 507660
+	
+	state_category = pastoral
+
+	history={
+		owner = TUR
+		victory_points = {
+			890 1 
+		}
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = TUR
+		
+		1980.6.2 = {
+			owner = SOV
+			controller = SOV
+			add_core_of = SOV
+		}
+	}
+
+	provinces={
+		890 904 3905 3919 6871 11811 11866 11883 
+	}
+}

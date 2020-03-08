@@ -1,0 +1,27 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_nefleader_insmerc"
+		textureFile = "gfx//leaders//Warlord//Portrait_Insmerc.dds"
+	}
+	spriteType = {
+		name = "GFX_nefleader_siamerc"
+		textureFile = "gfx//leaders//Warlord//Portrait_Siamerc.dds"
+	}
+	spriteType = {
+		name = "GFX_nefleader_ethmerc"
+		textureFile = "gfx//leaders//Warlord//Portrait_Ethmerc.dds"
+	}
+	spriteType = {
+		name = "GFX_nefleader_rajmerc"
+		textureFile = "gfx//leaders//Warlord//Portrait_Rajmerc.dds"
+	}
+	spriteType = {
+		name = "GFX_nefleader_saumerc"
+		textureFile = "gfx//leaders//Warlord//Portrait_Saumerc.dds"
+	}
+	spriteType = {
+		name = "GFX_nefleader_nerd"
+		textureFile = "gfx//leaders//Warlord//Portrait_Nerd.dds"
+	}
+}

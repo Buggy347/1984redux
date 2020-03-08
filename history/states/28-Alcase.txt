@@ -1,0 +1,63 @@
+
+state={
+	id=28
+	name="STATE_28" # Alsace-Lorraine
+	manpower = 27540
+	
+	state_category = wasteland
+	resources={
+		steel=10
+	}
+
+	history={
+		owner = GER
+		victory_points = { 678 1 }
+		victory_points = { 9503 1 }
+		victory_points = { 9559 2 }
+		buildings = {
+			infrastructure = 4
+			549 = {
+				bunker = 1
+
+			}
+			678 = {
+				bunker = 1
+
+			}
+			3629 = {
+				bunker = 1
+
+			}
+			6529 = {
+				bunker = 1
+
+			}
+			9503 = {
+				bunker = 1
+
+			}
+			9559 = {
+				bunker = 1
+
+			}
+			11502 = {
+				bunker = 1
+
+			}
+
+		}
+		add_core_of = FRA
+		add_core_of = GER
+		
+		1980.6.2 = {
+			owner = SOV
+			controller = SOV
+			add_core_of = SOV
+		}
+		
+	}
+
+	provinces={
+		549 678 1346 3629 6529 9503 9559 11502 
+	}
+}

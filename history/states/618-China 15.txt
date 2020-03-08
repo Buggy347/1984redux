@@ -1,0 +1,29 @@
+
+state={
+	id=618
+	name="STATE_618" # Dzungaria
+	manpower = 1000000
+
+	state_category = rural
+
+	history={
+		owner = NEP
+		add_core_of = SIK
+		add_core_of = NEP
+		set_demilitarized_zone = yes
+		1980.6.2 = {
+			owner = PRC
+			controller = PRC
+			add_core_of = PRC
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+		}
+
+	}
+
+	provinces={
+		1708 1783 1844 4714 4788 4823 4849 7693 7737 7866 10674 10691 12590 12737 
+	}
+}

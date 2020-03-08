@@ -1,0 +1,30 @@
+state=
+{
+	id=8
+	name="STATE_8"
+	
+	state_category = wasteland
+	
+	manpower = 15687
+
+	history=
+	{
+		owner = GER
+		buildings = {
+			infrastructure = 3
+		}
+		victory_points = { 6583 1 }
+		add_core_of = LUX
+		add_core_of = GER
+		
+		1980.6.2 = {
+			owner = SOV
+			controller = SOV
+			add_core_of = SOV
+		}
+	}
+
+	provinces=
+	{
+6583 	}
+}

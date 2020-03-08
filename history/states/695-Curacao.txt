@@ -1,0 +1,27 @@
+state={
+	id=695
+	name="STATE_695"
+	manpower = 76299
+	
+	state_category = tiny_island
+
+	history={
+		owner = BRA
+		buildings = {
+			infrastructure = 3
+			153 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = BRA
+		1980.6.2 = {
+			owner = ENG
+			controller = ENG
+			add_core_of = ENG
+		}
+	}
+
+	provinces={
+		153 
+	}
+}

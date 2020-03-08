@@ -1,0 +1,125 @@
+﻿capital = 64
+
+set_technology = {
+	infantry_weapons = 1
+	tech_mountaineers = 1
+	tech_engineers = 1
+	tech_support = 1
+	tech_recon = 1
+	gw_artillery = 1
+	early_fighter = 1
+	early_bomber = 1
+	early_submarine = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+	early_heavy_cruiser = 1
+	early_battleship = 1
+	early_battlecruiser = 1
+	early_carrier = 1
+	transport = 1
+	gwtank = 1
+	basic_machine_tools = 1
+	support_weapons = 1
+	motorised_infantry = 1
+}
+oob = "GER_1936"
+
+add_ideas = {
+	nef_consciousness_of_self
+	nef_dir_no1
+	nef_dir_no2
+	nef_dir_no3
+	nef_equalthanothers
+}
+
+set_convoys = 100
+
+if = {
+	limit = { has_dlc = "Together for Victory" }
+
+	add_to_tech_sharing_group = eurasia_research
+}
+
+diplomatic_relation = { country = PRC relation = non_aggression_pact }
+diplomatic_relation = { country = MAN relation = non_aggression_pact }
+diplomatic_relation = { country = PER relation = non_aggression_pact }
+diplomatic_relation = { country = NEP relation = non_aggression_pact }
+diplomatic_relation = { country = JAP relation = non_aggression_pact }
+
+set_popularities = {
+		democratic = 0
+		fascism = 0
+		communism = 0
+		neutrality = 0
+		ingsoc = 0
+		bolshevism = 0
+		deathworship = 0
+		resistance = 100
+	}
+
+set_politics = {
+	ruling_party = bolshevism
+	last_election = "1978.11.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Big Brother"
+	desc = "POLITICS_WINSTON_CHURCHILL_DESC"
+	picture = "gfx/leaders/ENG/Portrait_Big_Brother.dds"
+	expire = "1999.12.1"
+	ideology = invasivism
+	traits = {
+
+	}
+}
+
+create_country_leader = {
+	name = "Mother Russia"
+	desc = "POLITICS_JOSEPH_STALIN_DESC"
+	picture = "gfx/leaders/SOV/Portrait_Mother_Russia.dds"
+	expire = "1999.12.1"
+	ideology = stalinism
+	traits = {
+
+	}
+}
+
+create_country_leader = {
+	name = "Immortal Father"
+	desc = "POLITICS_MAO_ZEDONG_DESC"
+	picture = "gfx/leaders/PRC/Portrait_Immortal_Mao.dds"
+	expire = "1999.12.1"
+	ideology = rexism
+	traits = {
+
+	}
+}
+
+create_country_leader = {
+	name = "Emmanuel Goldstein"
+	desc = "POLITICS_NEVILLE_CHAMBERLAIN_DESC"
+	picture = "gfx/leaders/ENG/Portrait_Emmanuel_Goldstein.dds"
+	expire = "1999.1.1"
+	ideology = freedomfighter
+	traits = {
+		warmonger
+	}
+}
+
+create_corps_commander = {
+	name = "Anatoly Kuklin"
+		picture = "Portrait_Soviet_Dmitri_Danilovich_Lelyushenko.dds"
+	traits = { trickster }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+add_namespace = {
+	name = "ger_unit_leader"
+	type = unit_leader
+}

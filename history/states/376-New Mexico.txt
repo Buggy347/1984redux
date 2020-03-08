@@ -1,0 +1,33 @@
+
+state={
+	id=376
+	name="STATE_376"
+	manpower = 1423316
+	
+	state_category = rural
+	
+	resources={
+		aluminium=3
+	}
+
+
+	history={
+		owner = MEX
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+		add_core_of = USA
+		add_core_of = MEX
+		1980.6.2 = {
+			owner = ENG
+			controller = ENG
+			add_core_of = ENG
+		}
+	}
+
+	provinces={
+		1972 2102 3867 3883 4975 5044 8070 10642 10645 10867 10914 12552 12684 12720 12791 
+	}
+	
+}

@@ -1,0 +1,36 @@
+
+state={
+	id=267
+	name="STATE_267" # Kabul
+	manpower = 8000000
+	
+	state_category = megalopolis
+	
+	resources={
+		tungsten=35
+		steel=100
+		aluminium=40
+	}
+	history={
+		owner = NEP
+		buildings = {
+			infrastructure = 6
+			arms_factory = 4
+			industrial_complex = 6
+		}
+		victory_points = {
+			10737 30 
+		}
+		add_core_of = AFG
+		add_core_of = NEP
+		1980.6.2 = {
+			owner = PRC
+			controller = PRC
+			add_core_of = PRC
+		}
+	}
+
+	provinces={
+		5082 7448 7519 7584 7916 7984 10476 10737 10781 10826 10852 10896 12248 12314 12653 12769 12831 12877 
+	}
+}

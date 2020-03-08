@@ -1,0 +1,33 @@
+state=
+{
+	id=100
+	name="STATE_100"
+	manpower = 700000
+	
+	state_category = pastoral
+	
+	
+	history=
+	{
+		owner = DEN
+		victory_points = { 12674 1 }
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 2
+			12674 ={
+				naval_base = 1
+			}
+		}
+		add_core_of = DEN
+		add_core_of = ICE
+		
+		1980.6.2 = {
+			owner = SOV
+			controller = SOV
+			add_core_of = SOV
+		}
+	}
+	provinces=
+	{
+4861 12674 12689 	}
+}
