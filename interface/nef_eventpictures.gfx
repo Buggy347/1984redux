@@ -1,0 +1,18 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_report_event_nef_esp_spy"
+		texturefile = "gfx/event_pictures/report_event_nef_esp_spy.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_resistance_dead"
+		texturefile = "gfx/event_pictures/news_event_resistance_dead.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_winston_smith"
+		texturefile = "gfx/event_pictures/news_event_winston_smith.dds"
+	}
+	
+}

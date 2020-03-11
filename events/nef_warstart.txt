@@ -1,0 +1,503 @@
+﻿###########################
+# Spanish Events
+###########################
+
+add_namespace = nef_warstart
+
+
+
+# Start the 1984 war
+country_event = {
+	id = nef_warstart.1
+	title = nef_warstart.1.t
+	desc = nef_warstart.1.d
+	fire_only_once = yes
+	hidden = yes
+	
+	immediate = {
+		set_global_flag = nef_warstarted1
+		hidden_effect = {
+			declare_war_on = {
+				target = SOV
+				type = nef_war1
+				}
+			declare_war_on = {
+				target = GER
+				type = nef_war1
+				}
+			declare_war_on = {
+				target = SPR
+				type = nef_war1
+				}
+			declare_war_on = {
+				target = TUR
+				type = nef_war1
+				}
+			declare_war_on = {
+				target = DEN
+				type = nef_war1
+				}			
+			declare_war_on = {
+				target = PRC
+				type = nef_war3
+				}				
+			declare_war_on = {
+				target = NEP
+				type = nef_war3
+				}				
+			declare_war_on = {
+				target = PER
+				type = nef_war3
+				}				
+			declare_war_on = {
+				target = MAN
+				type = nef_war3
+				}				
+			declare_war_on = {
+				target = JAP
+				type = nef_war3
+				}
+			country_event = { hours = 6 id = nef_resevent.1 }
+		}
+	}
+	
+	trigger = {
+		tag = ENG
+		date > 1984.1.1
+		date < 1984.2.1
+		NOT = { has_global_flag = nef_warstarted1 }
+		NOT = { has_global_flag = mod_start_3major }
+		NOT = { has_global_flag = mod_start_1983 }
+	}
+
+	option = {
+		name = nef_warstart.1.a
+		trigger = {
+			tag = ENG
+		}
+	}
+}
+
+country_event = {
+	id = nef_warstart.2
+	title = nef_warstart.2.t
+	desc = nef_warstart.2.d
+	fire_only_once = yes
+	hidden = yes
+	
+	immediate = {
+		set_global_flag = nef_warstarted2
+		hidden_effect = {	
+			declare_war_on = {
+				target = PRC
+				type = nef_war2
+				}				
+			declare_war_on = {
+				target = NEP
+				type = nef_war2
+				}				
+			declare_war_on = {
+				target = PER
+				type = nef_war2
+				}				
+			declare_war_on = {
+				target = MAN
+				type = nef_war2
+				}				
+			declare_war_on = {
+				target = JAP
+				type = nef_war2
+				}		
+			declare_war_on = {
+				target = USA
+				type = nef_war1
+				}				
+			declare_war_on = {
+				target = MEX
+				type = nef_war1
+				}				
+			declare_war_on = {
+				target = BRA
+				type = nef_war1
+				}				
+			declare_war_on = {
+				target = SAF
+				type = nef_war1
+				}				
+		}
+	}
+		
+	trigger = {
+		tag = SOV
+		date > 1984.1.1
+		date < 1984.2.1
+		NOT = { has_global_flag = nef_warstarted2 }
+		NOT = { has_global_flag = mod_start_3major }
+		NOT = { has_global_flag = mod_start_1983 }
+	}
+
+	option = {
+		name = nef_warstart.2.a
+		trigger = {
+			tag = SOV
+				}
+	}
+}
+
+country_event = {
+	id = nef_warstart.3
+	title = nef_warstart.3.t
+	desc = nef_warstart.3.d
+	fire_only_once = yes
+	hidden = yes
+	
+	immediate = {
+		set_global_flag = nef_warstarted3
+		hidden_effect = {	
+			declare_war_on = {
+				target = GER
+				type = nef_war2
+				}				
+			declare_war_on = {
+				target = TUR
+				type = nef_war2
+				}				
+			declare_war_on = {
+				target = SPR
+				type = nef_war2
+				}				
+			declare_war_on = {
+				target = DEN
+				type = nef_war2
+				}				
+			declare_war_on = {
+				target = USA
+				type = nef_war3
+				}				
+			declare_war_on = {
+				target = MEX
+				type = nef_war3
+				}				
+			declare_war_on = {
+				target = BRA
+				type = nef_war3
+				}				
+			declare_war_on = {
+				target = SAF
+				type = nef_war3
+				}
+		}
+	}
+	trigger = {
+		tag = PRC
+		date > 1984.1.1
+		date < 1984.2.1
+		NOT = { has_global_flag = nef_warstarted3 }
+		NOT = { has_global_flag = mod_start_3major }
+		NOT = { has_global_flag = mod_start_1983 }
+	}
+
+	option = {
+		name = nef_warstart.3.a
+		trigger = {
+			tag = PRC
+				}
+	}
+}
+
+########## Start the races
+country_event = {
+	id = nef_warstart.4
+	title = nef_warstart.4.t
+	desc = nef_warstart.4.d
+	picture = GFX_news_event_generic_rally2
+	is_triggered_only = yes
+	
+	trigger = {
+		date > 1980.6.2
+		date < 1984.1.1
+		has_global_flag = nef_flag_fightingwords
+		NOT = { has_global_flag = nef_flag_fwevent }
+		}
+			
+	immediate = {
+		news_event = { hours = 6 id = nef_news.09 }
+		set_global_flag = nef_flag_fwevent
+	}
+		
+	option = {
+		name = nef_warstart.4.a
+	}
+}
+
+########################## If the players deliberately avoid invading the disputed zone,
+########################## the free nations will launch a surprise attack in 1986.
+country_event = {
+	id = nef_warstart.5
+	title = nef_warstart.5.t
+	desc = nef_warstart.5.d
+	
+	fire_only_once = yes
+
+	hidden = yes
+	
+	immediate = {
+		set_global_flag = nef_warstarted5
+		hidden_effect = {	
+			news_event = { hours = 6 id = nef_news.10 }
+			declare_war_on = {
+				target = SOV
+				type = annex_everything
+				}
+			declare_war_on = {
+				target = GER
+				type = annex_everything
+				}
+			declare_war_on = {
+				target = SPR
+				type = annex_everything
+				}
+			declare_war_on = {
+				target = TUR
+				type = annex_everything
+				}
+			declare_war_on = {
+				target = DEN
+				type = annex_everything
+				}			
+			declare_war_on = {
+				target = PRC
+				type = annex_everything
+				}				
+			declare_war_on = {
+				target = NEP
+				type = annex_everything
+				}				
+			declare_war_on = {
+				target = PER
+				type = annex_everything
+				}				
+			declare_war_on = {
+				target = MAN
+				type = annex_everything
+				}				
+			declare_war_on = {
+				target = JAP
+				type = annex_everything
+				}
+			declare_war_on = {
+				target = ENG
+				type = annex_everything
+				}
+			declare_war_on = {
+				target = USA
+				type = annex_everything
+				}				
+			declare_war_on = {
+				target = MEX
+				type = annex_everything
+				}				
+			declare_war_on = {
+				target = BRA
+				type = annex_everything
+				}				
+			declare_war_on = {
+				target = SAF
+				type = annex_everything
+				}
+		}
+	}
+	trigger = {
+		date > 1986.1.1
+		date < 1986.2.1
+		any_country = {
+			AND = {
+				has_government = neutrality
+				has_war = no
+				is_puppet = no
+				}
+			}
+		NOT = { has_global_flag = nef_warstarted5 }
+		NOT = { has_global_flag = mod_start_3major }
+		NOT = { has_global_flag = mod_start_1983 }
+	}
+
+	option = {
+		name = nef_warstart.5.a
+		trigger = {
+			has_government = neutrality
+				}
+	}
+}
+
+
+################################### War starts for other bookmarks
+country_event = {
+	id = nef_warstart.6
+	title = nef_warstart.6.t
+	desc = nef_warstart.6.d
+	fire_only_once = yes
+	hidden = yes
+	
+	immediate = {
+		set_global_flag = nef_warstarted1
+		hidden_effect = {
+			declare_war_on = {
+				target = SOV
+				type = nef_war1
+				}
+			declare_war_on = {
+				target = PRC
+				type = nef_war3
+				}				
+			country_event = { hours = 6 id = nef_resevent.1 }
+		}
+	}
+	
+	trigger = {
+		tag = ENG
+		date > 1984.1.1
+		date < 1984.2.1
+		NOT = { has_global_flag = nef_warstarted1 }
+		NOT = { has_global_flag = mod_start_15major }
+		OR = {
+			has_global_flag = mod_start_3major
+			has_global_flag = mod_start_1983
+			}
+	}
+
+	option = {
+		name = nef_warstart.1.a
+		trigger = {
+			tag = ENG
+		}
+	}
+}
+
+country_event = {
+	id = nef_warstart.7
+	title = nef_warstart.7.t
+	desc = nef_warstart.7.d
+	fire_only_once = yes
+	hidden = yes
+	
+	immediate = {
+		set_global_flag = nef_warstarted2
+		hidden_effect = {	
+			declare_war_on = {
+				target = PRC
+				type = nef_war2
+				}		
+		}
+	}
+		
+	trigger = {
+		tag = SOV
+		date > 1984.1.1
+		date < 1984.2.1
+		NOT = { has_global_flag = nef_warstarted2 }
+		NOT = { has_global_flag = mod_start_15major }
+		OR = {
+			has_global_flag = mod_start_3major
+			has_global_flag = mod_start_1983
+			}
+	}
+
+	option = {
+		name = nef_warstart.7.a
+		trigger = {
+			tag = SOV
+				}
+	}
+}
+
+country_event = {
+	id = nef_warstart.8
+	title = nef_warstart.8.t
+	desc = nef_warstart.8.d
+	fire_only_once = yes
+	hidden = yes
+	
+	immediate = {
+		set_global_flag = nef_warstarted4
+		hidden_effect = {	
+			news_event = { hours = 6 id = nef_news.10 }
+			declare_war_on = {
+				target = SOV
+				type = annex_everything
+				}
+			declare_war_on = {
+				target = PRC
+				type = annex_everything
+				}
+			declare_war_on = {
+				target = ENG
+				type = annex_everything
+				}
+		}
+	}
+	trigger = {
+		date > 1986.1.1
+		date < 1986.2.1
+		any_country = {
+			AND = {
+				has_government = neutrality
+				has_war = no
+				is_puppet = no
+				}
+			}
+		NOT = { has_global_flag = nef_warstarted4 }
+		NOT = { has_global_flag = mod_start_15major }
+		OR = {
+			has_global_flag = mod_start_3major
+			has_global_flag = mod_start_1983
+			}
+	}
+
+	option = {
+		name = nef_warstart.8.a
+		trigger = {
+			has_government = neutrality
+				}
+	}
+}
+
+country_event = {
+	id = nef_warstart.9
+	title = nef_warstart.9.t
+	fire_only_once = yes
+	hidden = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {	
+			587 = { set_demilitarized_zone = no }
+			585 = { set_demilitarized_zone = no }
+			405 = { set_demilitarized_zone = no }
+			732 = { set_demilitarized_zone = no }
+			617 = { set_demilitarized_zone = no }
+			618 = { set_demilitarized_zone = no }
+			330 = { set_demilitarized_zone = no }
+			761 = { set_demilitarized_zone = no }
+			561 = { set_demilitarized_zone = no }
+			560 = { set_demilitarized_zone = no }
+			562 = { set_demilitarized_zone = no }
+			574 = { set_demilitarized_zone = no }
+			563 = { set_demilitarized_zone = no }
+			564 = { set_demilitarized_zone = no }
+			566 = { set_demilitarized_zone = no }
+			329 = { set_demilitarized_zone = no }
+			654 = { set_demilitarized_zone = no }
+			588 = { set_demilitarized_zone = no }
+			589 = { set_demilitarized_zone = no }
+			586 = { set_demilitarized_zone = no }
+			404 = { set_demilitarized_zone = no }
+			402 = { set_demilitarized_zone = no }
+			406 = { set_demilitarized_zone = no }
+		}
+	}
+
+	option = {
+		name = nef_warstart.9.a
+	}
+}

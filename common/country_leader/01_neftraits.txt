@@ -1,0 +1,672 @@
+leader_traits = {
+
+	warmonger = {
+		random = no
+		ai_focus_aggressive_factor = 0.5
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	nef_leader_nightfighter = {
+		random = no
+		land_night_attack = 0.15
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	nef_leader_repair = {
+		random = no
+		industry_free_repair_factor = 0.25
+		industry_repair_factor = 0.25
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	nef_leader_attrition = {
+		random = no
+		attrition = -0.03
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	nef_leader_partisan = {
+		random = no
+		partisan_effect = 0.25
+		army_core_defence_factor = 0.05
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	### IDEA TRAITS ###
+
+
+	nef_drt_rallies_oc = { 
+		random = yes
+		sprite = 13
+		democratic_drift = 0.05
+		stability_weekly = 0.002
+		industrial_capacity_factory = -0.05
+		industrial_capacity_dockyard = -0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	nef_drt_rallies_eu = { 
+		random = yes
+		sprite = 13
+		communism_drift = 0.05
+		stability_weekly = 0.002
+		industrial_capacity_factory = -0.05
+		industrial_capacity_dockyard = -0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	nef_drt_rallies_ea = { 
+		random = yes
+		sprite = 13
+		fascism_drift = 0.05
+		stability_weekly = 0.002
+		industrial_capacity_factory = -0.05
+		industrial_capacity_dockyard = -0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	nef_drt_recycling = { 
+		random = yes
+		sprite = 13
+		local_resources_factor = 0.15
+		consumer_goods_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	nef_drt_infiltrate = { 
+		random = yes
+		sprite = 13
+		enemy_partisan_effect = -0.25
+		political_power_gain = -0.25
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	nef_drt_research = { 
+		random = yes
+		sprite = 13
+		research_time_factor = -0.075
+		neutrality_drift = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	nef_drt_purges = { 
+		random = yes
+		sprite = 13
+		political_power_gain = 1.5
+		research_time_factor = 0.15
+		army_org_factor = -0.25
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	nef_drt_fuel = { 
+		random = yes
+		sprite = 13
+		supply_consumption_factor = -0.05
+		political_power_gain = -0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	nef_drt_pow = { 
+		random = yes
+		sprite = 13
+		non_core_manpower = 0.05
+		enemy_partisan_effect = 0.1
+		army_morale_factor = -0.05
+		political_power_gain = -0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	nef_drt_no1 = { 
+		random = yes
+		sprite = 13
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	nef_drt_no2 = { 
+		random = yes
+		sprite = 13
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	nef_drt_no3 = { 
+		random = yes
+		sprite = 13
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	military_theorist = {
+		sprite = 14
+		experience_gain_army = 0.05
+		
+		ai_will_do = {
+			factor = 500
+		}
+	}
+	
+	air_warfare_theorist = {
+		sprite = 14
+		experience_gain_air = 0.1
+		
+		ai_will_do = {
+			factor = 500
+		}
+	}
+	
+	naval_theorist = {
+		sprite = 14
+		experience_gain_navy = 0.1
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	nef_mnt_airagile = {
+		random = no
+		equipment_bonus = {
+			fighter_equipment = {
+				air_agility = 0.05
+			}
+			cv_fighter_equipment = {
+				air_agility = 0.05
+			}
+			cas_equipment = {
+				air_agility = 0.05
+			}
+			cv_cas_equipment = {
+				air_agility = 0.05
+			}
+			nav_bomber_equipment = {
+				air_agility = 0.05
+			}
+			cv_nav_bomber_equipment = {
+				air_agility = 0.05
+			}
+			tac_bomber_equipment = {
+				air_agility = 0.05
+			}
+			heavy_fighter_equipment = {
+				air_agility = 0.05
+			}
+			strat_bomber_equipment = {
+				air_agility = 0.05
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	nef_mnt_airrange = {
+		random = no
+		equipment_bonus = {
+			fighter_equipment = {
+				air_range = 0.15
+			}
+			cv_fighter_equipment = {
+				air_range = 0.15
+			}
+			cas_equipment = {
+				air_range = 0.15
+			}
+			cv_cas_equipment = {
+				air_range = 0.15
+			}
+			nav_bomber_equipment = {
+				air_range = 0.15
+			}
+			cv_nav_bomber_equipment = {
+				air_range = 0.15
+			}
+			tac_bomber_equipment = {
+				air_range = 0.15
+			}
+			heavy_fighter_equipment = {
+				air_range = 0.15
+			}
+			strat_bomber_equipment = {
+				air_range = 0.15
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	nef_mnt_airattack = {
+		random = no
+		equipment_bonus = {
+			fighter_equipment = {
+				air_attack = 0.1
+			}
+			cv_fighter_equipment = {
+				air_attack = 0.1
+			}
+			cas_equipment = {
+				air_attack = 0.1
+			}
+			cv_cas_equipment = {
+				air_attack = 0.1
+			}
+			nav_bomber_equipment = {
+				air_defense = 0.1
+			}
+			cv_nav_bomber_equipment = {
+				air_defense = 0.1
+			}
+			tac_bomber_equipment = {
+				air_defense = 0.1
+			}
+			heavy_fighter_equipment = {
+				air_defense = 0.1
+			}
+			strat_bomber_equipment = {
+				air_defense = 0.1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	nef_mnt_tanksfast = {
+		random = no
+		equipment_bonus = {
+			armor = {
+				maximum_speed = 0.1
+				armor_value = -0.05
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	nef_mnt_tanksarmor = {
+		random = no
+		equipment_bonus = {
+			armor = {
+				armor_value = 0.1
+				maximum_speed = -0.05
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	nef_mnt_tankscheap = {
+		random = no
+		equipment_bonus = {
+			armor = {
+				reliability = 0.1 build_cost_ic = -0.05
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	nef_mnt_navrange = { 
+		random = no
+		equipment_bonus = {
+			carrier = {
+				naval_range = 0.25
+			}
+			capital_ship = {
+				naval_range = 0.25
+			}
+			screen_ship = {
+				naval_range = 0.25
+			}
+			submarine = {
+				naval_range = 0.25
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	nef_mnt_navarmor = { 
+		random = no
+		equipment_bonus = {
+			carrier = {
+				armor_value = 0.25
+			}
+			capital_ship = {
+				armor_value = 0.1 anti_air_attack = 0.1
+			}
+			screen_ship = {
+				armor_value = 0.1 anti_air_attack = 0.1
+			}
+			submarine = {
+				armor_value = 0.1 anti_air_attack = 0.1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	nef_mnt_navcheap = {
+		random = no
+		equipment_bonus = {
+			carrier = {
+				build_cost_ic = -0.15 naval_range = -0.2
+			}
+			capital_ship = {
+				build_cost_ic = -0.15 naval_range = -0.2
+			}
+			screen_ship = {
+				build_cost_ic = -0.15 naval_range = -0.2
+			}
+			submarine = {
+				build_cost_ic = -0.15 naval_range = -0.2
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	nef_mnt_matresearch = {
+		random = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	nef_mnt_matbreak = {
+		random = no
+		equipment_bonus = {
+			infantry_equipment = {
+				breakthrough = 0.1
+			}
+			motorized_equipment = {
+				breakthrough = 0.1
+			}
+			mechanized_equipment = {
+				breakthrough = 0.1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	nef_mnt_matcheap = {
+		random = no
+		equipment_bonus = {
+			infantry_equipment = {
+				reliability = 0.1
+			}
+			motorized_equipment = {
+				reliability = 0.1
+			}
+			mechanized_equipment = {
+				reliability = 0.1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	nef_mnt_industrial = {
+		random = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	nef_mnt_electronic = {
+		random = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	### Military Minister Traits
+	
+	nef_mnt_hcsupply = { # 
+		sprite = 9
+		supply_consumption_factor = -0.15
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	nef_mnt_hcdefense = { 
+		sprite = 7
+		army_core_defence_factor = 0.1
+		mobilization_speed = -0.25
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	nef_mnt_hcleadercost = { 
+		sprite = 5 
+		army_leader_start_level = 1
+		army_leader_start_attack_level = 1
+		army_leader_start_defense_level = 1
+		army_leader_start_logistics_level = 1
+		army_leader_start_logistics_level = 1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	nef_mnt_hcnavalinvasion = { 
+		sprite = 5
+		naval_invasion_capacity = 10
+		invasion_preparation = -0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+	
+	nef_mnt_hcmobspeed = {
+		sprite = 5
+		mobilization_speed = 0.3
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	nef_mnt_hcsfcap = { 
+		sprite = 5
+		special_forces_cap = 0.02
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	nef_mnt_hcparadrop = {
+		sprite = 5
+		air_paradrop_attack_factor = 0.25
+		air_paradrop_defence_factor = 0.25
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	nef_mnt_armyrecon = { 
+		sprite = 9
+		recon_factor = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	nef_mnt_armyexp = { 
+		sprite = 8
+		experience_gain_army_factor = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	
+	nef_mnt_armyplan = {
+		sprite = 8
+		max_planning = 0.15
+		army_morale_factor = -0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	nef_mnt_armyspeed = { 
+		sprite = 5
+		planning_speed = 0.15
+		land_reinforce_rate = -0.02
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+	
+	nef_mnt_afnight = { 
+		sprite = 5
+		air_night_penalty = -0.25
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	nef_mnt_afexp = {  
+		sprite = 1
+		experience_gain_air_factor = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	nef_mnt_afcas = {
+		sprite = 1
+		air_close_air_support_attack_factor = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	nef_mnt_afnaval = {
+		sprite = 1
+		naval_strike_attack_factor = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	nef_mnt_navycapital = {
+		sprite = 1
+		navy_capital_ship_attack_factor = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	
+	nef_mnt_navyscreen = {
+		sprite = 3
+		naval_coordination = 0.1
+		spotting_chance = 0.15
+		navy_submarine_detection_factor = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	nef_mnt_navysortie = {
+		sprite = 3
+		sortie_efficiency = 0.1
+		
+		ai_will_do = {
+			factor = 3
+		}
+	}
+	
+	nef_mnt_navyexp = {
+		sprite = 3
+		experience_gain_navy_factor = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

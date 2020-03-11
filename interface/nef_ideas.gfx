@@ -1,0 +1,282 @@
+spriteTypes = {	
+
+
+
+	SpriteType = {
+		name = "GFX_idea_traits_strip"
+		texturefile = "gfx/interface/ideas/idea_traits_strip.dds"
+		noOfFrames = 14		
+	}
+
+	########### 1984 ideas
+	### directives
+	spriteType = {
+		name = "GFX_idea_nef_dir_no1"
+		texturefile = "gfx/interface/ideas/idea_nef_dir_none.dds"
+	}		
+	spriteType = {
+		name = "GFX_idea_nef_dir_no2"
+		texturefile = "gfx/interface/ideas/idea_nef_dir_none.dds"
+	}		
+	spriteType = {
+		name = "GFX_idea_nef_dir_no3"
+		texturefile = "gfx/interface/ideas/idea_nef_dir_none.dds"
+	}		
+	spriteType = {
+		name = "GFX_idea_nef_dir_rallies_oc"
+		texturefile = "gfx/interface/ideas/idea_nef_dir_rallies_oc.dds"
+	}		
+	spriteType = {
+		name = "GFX_idea_nef_dir_rallies_eu"
+		texturefile = "gfx/interface/ideas/idea_nef_dir_rallies_eu.dds"
+	}		
+	spriteType = {
+		name = "GFX_idea_nef_dir_rallies_ea"
+		texturefile = "gfx/interface/ideas/idea_nef_dir_rallies_ea.dds"
+	}		
+	spriteType = {
+		name = "GFX_idea_nef_dir_fuel"
+		texturefile = "gfx/interface/ideas/idea_nef_dir_fuel.dds"
+	}		
+	spriteType = {
+		name = "GFX_idea_nef_dir_infiltrate"
+		texturefile = "gfx/interface/ideas/idea_nef_dir_infiltrate.dds"
+	}		
+	spriteType = {
+		name = "GFX_idea_nef_dir_pow"
+		texturefile = "gfx/interface/ideas/idea_nef_dir_pow.dds"
+	}		
+	spriteType = {
+		name = "GFX_idea_nef_dir_purges"
+		texturefile = "gfx/interface/ideas/idea_nef_dir_purges.dds"
+	}		
+	spriteType = {
+		name = "GFX_idea_nef_dir_recycling"
+		texturefile = "gfx/interface/ideas/idea_nef_dir_recycling.dds"
+	}		
+	spriteType = {
+		name = "GFX_idea_nef_dir_research"
+		texturefile = "gfx/interface/ideas/idea_nef_dir_research.dds"
+	}		
+	
+	### design
+	
+	spriteType = {
+		name = "GFX_idea_nef_min_airagile"
+		texturefile = "gfx/interface/ideas/idea_nef_min_airagile.dds"
+	}		
+	spriteType = {
+		name = "GFX_idea_nef_min_airattack"
+		texturefile = "gfx/interface/ideas/idea_nef_min_airattack.dds"
+	}		
+	spriteType = {
+		name = "GFX_idea_nef_min_airrange"
+		texturefile = "gfx/interface/ideas/idea_nef_min_airrange.dds"
+	}		
+	spriteType = {
+		name = "GFX_idea_nef_min_electronic"
+		texturefile = "gfx/interface/ideas/idea_nef_min_electronic.dds"
+	}		
+	spriteType = {
+		name = "GFX_idea_nef_min_industrial"
+		texturefile = "gfx/interface/ideas/idea_nef_min_industrial.dds"
+	}		
+	spriteType = {
+		name = "GFX_idea_nef_min_matbreak"
+		texturefile = "gfx/interface/ideas/idea_nef_min_matbreak.dds"
+	}		
+	spriteType = {
+		name = "GFX_idea_nef_min_matcheap"
+		texturefile = "gfx/interface/ideas/idea_nef_min_matcheap.dds"
+	}		
+	spriteType = {
+		name = "GFX_idea_nef_min_matresearch"
+		texturefile = "gfx/interface/ideas/idea_nef_min_matresearch.dds"
+	}		
+	spriteType = {
+		name = "GFX_idea_nef_min_navarmor"
+		texturefile = "gfx/interface/ideas/idea_nef_min_navarmor.dds"
+	}		
+	spriteType = {
+		name = "GFX_idea_nef_min_navcheap"
+		texturefile = "gfx/interface/ideas/idea_nef_min_navcheap.dds"
+	}		
+	spriteType = {
+		name = "GFX_idea_nef_min_navrange"
+		texturefile = "gfx/interface/ideas/idea_nef_min_navrange.dds"
+	}		
+	spriteType = {
+		name = "GFX_idea_nef_min_tanksarmor"
+		texturefile = "gfx/interface/ideas/idea_nef_min_tanksarmor.dds"
+	}		
+	spriteType = {
+		name = "GFX_idea_nef_min_tankscheap"
+		texturefile = "gfx/interface/ideas/idea_nef_min_tankscheap.dds"
+	}		
+	spriteType = {
+		name = "GFX_idea_nef_min_tanksfast"
+		texturefile = "gfx/interface/ideas/idea_nef_min_tanksfast.dds"
+	}		
+	### theorists
+	spriteType = {
+		name = "GFX_idea_nef_teo_army"
+		texturefile = "gfx/interface/ideas/idea_nef_teo_army.dds"
+	}		
+	spriteType = {
+		name = "GFX_idea_nef_teo_army_gbp"
+		texturefile = "gfx/interface/ideas/idea_nef_teo_army_gbp.dds"
+	}		
+	spriteType = {
+		name = "GFX_idea_nef_teo_army_mas"
+		texturefile = "gfx/interface/ideas/idea_nef_teo_army_mas.dds"
+	}		
+	spriteType = {
+		name = "GFX_idea_nef_teo_army_mob"
+		texturefile = "gfx/interface/ideas/idea_nef_teo_army_mob.dds"
+	}		
+	spriteType = {
+		name = "GFX_idea_nef_teo_army_sup"
+		texturefile = "gfx/interface/ideas/idea_nef_teo_army_sup.dds"
+	}		
+	spriteType = {
+		name = "GFX_idea_nef_teo_air"
+		texturefile = "gfx/interface/ideas/idea_nef_teo_air.dds"
+	}		
+	spriteType = {
+		name = "GFX_idea_nef_teo_air_bfs"
+		texturefile = "gfx/interface/ideas/idea_nef_teo_air_bfs.dds"
+	}		
+	spriteType = {
+		name = "GFX_idea_nef_teo_air_opr"
+		texturefile = "gfx/interface/ideas/idea_nef_teo_air_opr.dds"
+	}		
+	spriteType = {
+		name = "GFX_idea_nef_teo_air_str"
+		texturefile = "gfx/interface/ideas/idea_nef_teo_air_str.dds"
+	}		
+	spriteType = {
+		name = "GFX_idea_nef_teo_navy"
+		texturefile = "gfx/interface/ideas/idea_nef_teo_navy.dds"
+	}		
+	spriteType = {
+		name = "GFX_idea_nef_teo_navy_bas"
+		texturefile = "gfx/interface/ideas/idea_nef_teo_navy_bas.dds"
+	}		
+	spriteType = {
+		name = "GFX_idea_nef_teo_navy_fib"
+		texturefile = "gfx/interface/ideas/idea_nef_teo_navy_fib.dds"
+	}		
+	spriteType = {
+		name = "GFX_idea_nef_teo_navy_tra"
+		texturefile = "gfx/interface/ideas/idea_nef_teo_navy_tra.dds"
+	}		
+	### chiefs
+	
+	spriteType = {
+		name = "GFX_idea_nef_min_armyrecon"
+		texturefile = "gfx/interface/ideas/idea_nef_min_armyrecon.dds"
+	}		
+	spriteType = {
+		name = "GFX_idea_nef_min_armyexp"
+		texturefile = "gfx/interface/ideas/idea_nef_min_armyexp.dds"
+	}		
+	spriteType = {
+		name = "GFX_idea_nef_min_armyplan"
+		texturefile = "gfx/interface/ideas/idea_nef_min_armyplan.dds"
+	}		
+	spriteType = {
+		name = "GFX_idea_nef_min_armyspeed"
+		texturefile = "gfx/interface/ideas/idea_nef_min_armyspeed.dds"
+	}		
+	spriteType = {
+		name = "GFX_idea_nef_min_navycapital"
+		texturefile = "gfx/interface/ideas/idea_nef_min_navycapital.dds"
+	}		
+	spriteType = {
+		name = "GFX_idea_nef_min_navyscreen"
+		texturefile = "gfx/interface/ideas/idea_nef_min_navyscreen.dds"
+	}		
+	spriteType = {
+		name = "GFX_idea_nef_min_navysortie"
+		texturefile = "gfx/interface/ideas/idea_nef_min_navysortie.dds"
+	}		
+	spriteType = {
+		name = "GFX_idea_nef_min_navyexp"
+		texturefile = "gfx/interface/ideas/idea_nef_min_navyexp.dds"
+	}		
+	spriteType = {
+		name = "GFX_idea_nef_min_afnight"
+		texturefile = "gfx/interface/ideas/idea_nef_min_afnight.dds"
+	}		
+	spriteType = {
+		name = "GFX_idea_nef_min_afexp"
+		texturefile = "gfx/interface/ideas/idea_nef_min_afexp.dds"
+	}		
+	spriteType = {
+		name = "GFX_idea_nef_min_afcas"
+		texturefile = "gfx/interface/ideas/idea_nef_min_afcas.dds"
+	}		
+	spriteType = {
+		name = "GFX_idea_nef_min_afnaval"
+		texturefile = "gfx/interface/ideas/idea_nef_min_afnaval.dds"
+	}		
+	spriteType = {
+		name = "GFX_idea_nef_min_hcsupply"
+		texturefile = "gfx/interface/ideas/idea_nef_min_hcsupply.dds"
+	}		
+	spriteType = {
+		name = "GFX_idea_nef_min_hcdefense"
+		texturefile = "gfx/interface/ideas/idea_nef_min_hcdefense.dds"
+	}		
+	spriteType = {
+		name = "GFX_idea_nef_min_hcleadercost"
+		texturefile = "gfx/interface/ideas/idea_nef_min_hcleadercost.dds"
+	}		
+	spriteType = {
+		name = "GFX_idea_nef_min_hcnavalinvasion"
+		texturefile = "gfx/interface/ideas/idea_nef_min_hcnavalinvasion.dds"
+	}		
+	spriteType = {
+		name = "GFX_idea_nef_min_hcmobspeed"
+		texturefile = "gfx/interface/ideas/idea_nef_min_hcmobspeed.dds"
+	}		
+	spriteType = {
+		name = "GFX_idea_nef_min_hcsfcap"
+		texturefile = "gfx/interface/ideas/idea_nef_min_hcsfcap.dds"
+	}		
+	spriteType = {
+		name = "GFX_idea_nef_min_hcparadrop"
+		texturefile = "gfx/interface/ideas/idea_nef_min_hcparadrop.dds"
+	}		
+	
+	### resistance conscription
+	
+	spriteType = {
+		name = "GFX_idea_res_disarmed_nation"
+		texturefile = "gfx/interface/ideas/idea_disarmed_nation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_res_volunteer_only"
+		texturefile = "gfx/interface/ideas/idea_volunteer_only.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_res_limited_conscription"
+		texturefile = "gfx/interface/ideas/idea_limited_conscription.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_res_extensive_conscription"
+		texturefile = "gfx/interface/ideas/idea_extensive_conscription.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_res_service_by_requirement"
+		texturefile = "gfx/interface/ideas/idea_service_by_requirement.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_res_all_adults_serve"
+		texturefile = "gfx/interface/ideas/idea_all_adults_serve.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_res_scraping_the_barrel"
+		texturefile = "gfx/interface/ideas/idea_scraping_the_barrel.dds"
+	}
+}

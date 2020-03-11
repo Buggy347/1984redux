@@ -1,0 +1,9 @@
+focus_tree = {
+	id = usa_focus
+	
+	country = {
+		factor = 0
+	}
+	
+
+}

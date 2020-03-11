@@ -1,0 +1,8 @@
+focus_tree = {
+	id = japan_focus
+	
+	country = {
+		factor = 0
+	}
+	
+}

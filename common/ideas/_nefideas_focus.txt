@@ -1,0 +1,1346 @@
+		
+#############################
+############################# Totalitarian national focus ideas
+#############################
+
+ideas = {
+
+	country = {
+
+#############################
+############################# MINISTRY OF PEACE
+#############################
+		
+		nef_mopeace = {
+		
+			picture = generic_infantry_bonus
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				conscription = 0.01
+			}
+		}
+		nef_mopeace2 = {
+		
+			picture = generic_infantry_bonus
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				conscription = 0.01
+			}
+		}
+		nef_ocp = {
+		
+			picture = generic_manpower_bonus
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				conscription = 0.03
+			}
+		}
+		nef_ocpres = {
+		
+			picture = generic_manpower_bonus
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				conscription = 0.03
+			}
+		}
+		nef_defendhomeland = {
+		
+			picture = generic_wall_line
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				conscription = 0.01
+			}
+		}
+		nef_tinytraining = {
+		
+			picture = generic_army_war_college
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				conscription = 0.05
+				training_time_army_factor = -0.15
+			}
+		}
+		nef_sheepslaughter = {
+		
+			picture = generic_reserve_divisions
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				conscription = 0.05
+				monthly_population = 1.5
+				mobilization_speed = 1
+			}
+		}
+			
+		nef_equalthanothers = {
+		
+			picture = generic_neutrality_drift_bonus
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				conscription_factor = -0.5
+			}
+		}
+		
+		nef_desptimes = {
+		
+			picture = ENG_the_war_to_end_all_wars
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				conscription = 0.1
+				training_time_army_factor = 0.1
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.1
+			}
+		}
+		nef_despmeasures = {
+		
+			picture = ENG_the_war_to_end_all_wars
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				conscription = 0.15
+				training_time_army_factor = 0.3
+				industrial_capacity_factory = -0.3
+				industrial_capacity_dockyard = -0.3
+			}
+		}
+		
+		nef_tinytrainingdesptimes = {
+		
+			picture = ENG_the_war_to_end_all_wars
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				conscription = 0.15
+				training_time_army_factor = -0.05
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.1
+			}
+		}
+		
+		nef_sheepslaughterdesptimes = {
+		
+			picture = ENG_the_war_to_end_all_wars
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				conscription = 0.15
+				monthly_population = 1.5
+				mobilization_speed = 1
+				training_time_army_factor = 0.15
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.1
+			}
+		}
+		
+		
+		nef_tinytrainingdespmeasures = {
+		
+			picture = ENG_the_war_to_end_all_wars
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				conscription = 0.3
+				training_time_army_factor = 0.15
+				industrial_capacity_factory = -0.3
+				industrial_capacity_dockyard = -0.3
+			}
+		}
+		
+		nef_sheepslaughterdespmeasures = {
+		
+			picture = ENG_the_war_to_end_all_wars
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				conscription = 0.3
+				monthly_population = 1.5
+				mobilization_speed = 1
+				training_time_army_factor = 0.3
+				industrial_capacity_factory = -0.3
+				industrial_capacity_dockyard = -0.3
+			}
+		}
+		
+		nef_sticksstones = {
+		
+			picture = generic_war_preparation
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+				
+			equipment_bonus = { 
+				infantry_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+		nef_olddogs = {
+		
+			picture = general_staff
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+				
+			modifier = { 
+				military_leader_cost_factor = -0.25
+				experience_gain_factor = 0.15
+			}
+		}
+		nef_nogunsnoglory = {
+		
+			picture = generic_artillery_regiments
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+				
+			equipment_bonus = { 
+				artillery = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+		nef_willypete = {
+		
+			picture = generic_infantry_equipment_manufacturer_3
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+				
+			equipment_bonus = { 
+				artillery = {
+					soft_attack = 0.15 instant = yes
+					hard_attack = 0.1 instant = yes
+					breakthrough = 0.1 instant = yes
+				}
+			}
+		}
+		nef_instrumentsdeath = {
+		
+			picture = generic_acquire_tanks
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+				
+			equipment_bonus = { 
+				armor = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+		nef_concentrationforce = {
+		
+			picture = generic_armor
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+				
+			equipment_bonus = { 
+				motorized = {
+					breakthrough = 0.15 instant = yes
+				}
+				mechanized = {
+					breakthrough = 0.15 instant = yes
+				}
+				armor = {
+					breakthrough = 0.15 instant = yes
+				}
+			}
+		}
+		
+		nef_ironlegions = {
+		
+			picture = FRA_motorized_focus
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+				
+			equipment_bonus = { 
+				mechanized_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+		
+		nef_maneuverimprover = {
+		
+			picture = generic_motorized_equipment_manufacturer_2
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+				
+			modifier = { 
+				army_speed_factor = 0.1
+			}
+		}
+		nef_longlance = {
+		
+			picture = the_long_lance
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+				
+			modifier = { 
+				naval_torpedo_range_factor = 0.75
+			}
+		}
+		nef_runemdown = {
+		
+			picture = liberty_ships_focus
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+				
+			modifier = { 
+				naval_speed_factor = 0.05
+			}
+		}
+		nef_fireforeffect = {
+		
+			picture = generic_artillery_manufacturer_2
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+				
+			modifier = { 
+				naval_hit_chance = 0.1
+			}
+		}
+		nef_lifepreservers = {
+		
+			picture = generic_coastal_navy
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+				
+			modifier = { 
+				naval_retreat_chance = 0.25
+				naval_retreat_speed = 0.1
+			}
+		}
+		
+		nef_lowlifeexpectancy = {
+		
+			picture = generic_fighter_production_diverted
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+				
+			equipment_bonus = { 
+				fighter = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+			
+			modifier = {
+				air_accidents_factor = 0.25
+				air_ace_generation_chance_factor = -0.15
+			}
+		}
+		
+		nef_qualitycraftsmanship = {
+		
+			picture = generic_air_bonus
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+				
+			equipment_bonus = { 
+				fighter = {
+					build_cost_ic = 0.025 instant = yes
+				}
+			}
+			
+			modifier = {
+				air_accidents_factor = -0.1
+				air_air_superiority_agility_factor = 0.1
+				air_interception_agility_factor = 0.1
+			}
+		}
+		nef_topgun = {
+		
+			picture = air_war_plans_division_focus
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			equipment_bonus = { 
+				fighter = {
+					build_cost_ic = 0.05 instant = yes
+				}
+			}
+			
+			modifier = {
+				air_accidents_factor = -0.1
+				air_air_superiority_agility_factor = 0.1
+				air_interception_agility_factor = 0.1
+				air_ace_generation_chance_factor = 0.1
+				air_air_superiority_attack_factor = 0.1
+				air_interception_attack_factor = 0.1
+			}
+		}
+
+#############################
+############################# MINISTRY OF PLENTY
+#############################
+	
+		
+		nef_moplenty = {
+		
+			picture = generic_goods_red_bonus
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				consumer_goods_factor = -0.10
+			}
+		}
+		
+		nef_oneyearplan = {
+		
+			picture = man_five_year_plan_industry
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				production_speed_buildings_factor = 0.25
+			}
+		}
+		nef_victorygoods = {
+		
+			picture = generic_goods_red_bonus
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				consumer_goods_factor = -0.25
+			}
+		}
+		nef_patrationing = {
+		
+			picture = generic_goods_red_bonus
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				consumer_goods_factor = -0.15
+			}
+		}
+		nef_statecapt = {
+		
+			picture = generic_goods_red_bonus
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				consumer_goods_factor = -0.10
+				global_building_slots_factor = 0.25
+			}
+		}
+		nef_statecapt2 = {
+		
+			picture = generic_goods_red_bonus
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				global_building_slots_factor = 0.25
+			}
+		}
+		
+		nef_upot = {
+		
+			picture = generic_production_bonus
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+					industrial_capacity_factory = 0.1
+					industrial_capacity_dockyard = 0.1
+			}
+		}
+		nef_adaptovercome = {
+		
+			picture = generic_production_bonus
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+					production_factory_efficiency_gain_factor = 0.15
+			}
+		}
+		nef_beansbullets = {
+		
+			picture = generic_build_infrastructure
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				supply_consumption_factor = -0.10
+				army_morale_factor = 0.1
+			}
+		}
+		nef_strengthsacrifice = {
+		
+			picture = generic_refining_concern_1
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				supply_consumption_factor = -0.10
+				army_morale_factor = 0.1
+				local_resources_factor = 0.1
+			}
+		}
+		nef_unnaturalresources = {
+		
+			picture = generic_refining_concern_1
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				supply_consumption_factor = -0.10
+				army_morale_factor = 0.1
+				production_speed_synthetic_refinery_factor = 0.1
+			}
+		}
+		
+#############################
+############################# MINISTRY OF TRUTH
+#############################
+
+		nef_motruth = {
+		
+			picture = generic_pp_unity_bonus
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				political_power_factor = 0.15
+			}
+		}
+		
+		nef_civildefense = {
+		
+			picture = man_five_year_plan_air
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				static_anti_air_damage_factor = 0.15
+			}
+		}
+		nef_flakboats = {
+		
+			picture = generic_navy_carrier_bonus
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				navy_anti_air_attack_factor = 0.15
+			}
+		}
+		nef_depura = {
+			picture = FRA_scw_intervention_nationalists_focus
+			allowed = {
+				always = no
+				}
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+				}
+				equipment_bonus = {
+					armor = {
+						hard_attack = 0.15
+					}
+					anti_tank = {
+						hard_attack = 0.15
+					}
+					infantry_equipment = {
+						hard_attack = 0.15
+					}
+					CAS_equipment = {
+						air_ground_attack = 0.15
+					}
+					cv_CAS_equipment = {
+						air_ground_attack = 0.15
+					}		
+					heavy_fighter_equipment = {
+						air_ground_attack = 0.15
+					}			
+				}
+		}
+		
+		nef_unrarm = {
+			picture = combined_bomber_offensive
+			allowed = {
+				always = no
+				}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+				}
+			equipment_bonus = {
+					armor = {
+						hard_attack = 0.15
+					}
+					anti_tank = {
+						hard_attack = 0.15
+					}
+					CAS_equipment = {
+						air_ground_attack = 0.15
+					}
+					cv_CAS_equipment = {
+						air_ground_attack = 0.15
+					}		
+					heavy_fighter_equipment = {
+						air_ground_attack = 0.15
+					}
+					infantry_equipment = {
+						soft_attack = 0.2
+						hard_attack = 0.15
+					}
+					artillery = {
+						soft_attack = 0.2
+					}
+					tac_bomber_equipment = {
+						air_ground_attack = 0.2
+						air_bombing = 0.15
+					}
+					jet_tac_bomber_equipment = {
+						air_ground_attack = 0.2
+						air_bombing = 0.15
+					}
+					strat_bomber_equipment = { 
+						air_bombing = 0.15
+					}
+					missile = {
+						air_bombing = 0.3
+					}
+				}
+		}
+		nef_hovio = {
+			picture = FRA_army_of_aggression_focus
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			equipment_bonus = {
+					armor = {
+						hard_attack = 0.15
+					}
+					anti_tank = {
+						hard_attack = 0.15
+					}
+					infantry_equipment = {
+						soft_attack = 0.2
+						hard_attack = 0.15
+					}
+					CAS_equipment = {
+						air_ground_attack = 0.15
+					}
+					cv_CAS_equipment = {
+						air_ground_attack = 0.15
+					}		
+					heavy_fighter_equipment = {
+						air_ground_attack = 0.15
+					}	
+					artillery = {
+						soft_attack = 0.2
+					}
+					tac_bomber_equipment = {
+						air_ground_attack = 0.2
+						air_bombing = 0.15
+					}
+					jet_tac_bomber_equipment = {
+						air_ground_attack = 0.2
+						air_bombing = 0.15
+					}
+					strat_bomber_equipment = { 
+						air_bombing = 0.15
+					}
+					missile = {
+						air_bombing = 0.3
+					}
+				}
+			modifier = {
+				army_attack_factor = 0.3
+			}
+		}
+		nef_unrarm2 = {
+			picture = combined_bomber_offensive
+			allowed = {
+				always = no
+				}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+				}
+			equipment_bonus = {
+					infantry_equipment = {
+						soft_attack = 0.2
+					}
+					artillery = {
+						soft_attack = 0.2
+					}
+					tac_bomber_equipment = {
+						air_ground_attack = 0.2
+						air_bombing = 0.15
+					}
+					jet_tac_bomber_equipment = {
+						air_ground_attack = 0.2
+						air_bombing = 0.15
+					}
+					strat_bomber_equipment = { 
+						air_bombing = 0.15
+					}
+					missile = {
+						air_bombing = 0.3
+					}
+				}
+		}
+		nef_hovio2 = {
+			picture = FRA_army_of_aggression_focus
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				army_attack_factor = 0.3
+			}
+		}
+		
+#############################
+############################# MINISTRY OF LOVE
+#############################
+		
+		nef_molove = {
+		
+			picture = generic_oppression
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				political_power_factor = 0.15
+			}
+		}
+		nef_survstate = {
+		
+			picture = generic_spy_intel
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				neutrality_drift = -0.05
+			}
+		}
+		nef_assimilation = {
+		
+			picture = ast_classify_aliens
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				enemy_partisan_effect = -0.3
+			}
+		}
+		nef_thoughtpolice = {
+		
+			picture = generic_secret_police
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				neutrality_drift = -0.1
+			}
+		}
+		
+		nef_reprogramming = {
+		
+			picture = ast_volunteer_defence_corps
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				non_core_manpower = 0.08
+			}
+		}
+		nef_survstatethoughtpolice = {
+		
+			picture = generic_secret_police
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				neutrality_drift = -0.15
+			}
+		}
+		nef_assimilationthoughtpolice = {
+		
+			picture = generic_secret_police
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				enemy_partisan_effect = -0.3
+				neutrality_drift = -0.1
+			}
+		}
+		nef_survstatereprogramming = {
+		
+			picture = ast_volunteer_defence_corps
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				neutrality_drift = -0.05
+				non_core_manpower = 0.08
+			}
+		}
+		nef_assimilationreprogramming = {
+		
+			picture = ast_volunteer_defence_corps
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				enemy_partisan_effect = -0.3
+				non_core_manpower = 0.08
+			}
+		}
+		nef_feedmeat = {
+		
+			picture = chi_war_of_resistance
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				political_power_factor = 0.15
+				army_morale_factor = 0.05
+			}
+		}
+		nef_notoneinch = {
+		
+			picture = chi_war_of_resistance
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				political_power_factor = 0.15
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.05
+			}
+		}
+		
+		
+		nef_tmhate = {
+		
+			picture = chi_war_of_resistance3
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				war_support_weekly = 0.002
+				army_morale_factor = 0.05
+			}
+		}
+		nef_feedmeattmh = {
+		
+			picture = chi_war_of_resistance3
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				political_power_factor = 0.15
+				army_morale_factor = 0.1
+				war_support_weekly = 0.002
+			}
+		}
+		nef_notoneinchtmh = {
+		
+			picture = chi_war_of_resistance3
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				political_power_factor = 0.15
+				army_morale_factor = 0.05
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.05
+				war_support_weekly = 0.002
+			}
+		}
+	}
+}

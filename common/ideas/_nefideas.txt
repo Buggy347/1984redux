@@ -1,0 +1,596 @@
+ideas = {
+
+	country = {
+		
+			nef_turmoil = {
+		
+			picture = FRA_national_mobilization_focus
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				army_morale_factor = -0.1
+				supply_consumption_factor = 0.10
+				training_time_army_factor = 1.0
+				stability_factor = -0.15
+				army_core_attack_factor = -0.1
+				army_core_defence_factor = -0.2
+				industrial_capacity_factory = -0.2
+				industrial_capacity_dockyard = -0.2
+				production_speed_buildings_factor = -0.2
+				enemy_partisan_effect = 0.25
+				political_power_factor = 1.0
+			}
+		
+		}
+		
+		nef_resist = {
+		
+			picture = FRA_national_mobilization_focus
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				drift_defence_factor = 0.5
+				production_speed_bunker_factor = 0.25
+				production_speed_coastal_bunker_factor = 0.25
+				neutrality_drift = 0.1
+				dig_in_speed_factor = 0.15
+				political_power_factor = 0.1
+				stability_weekly = 0.002
+				consumer_goods_factor = -0.15
+			}
+		
+		}
+		nef_resist2 = {
+		
+			picture = FRA_national_mobilization_focus
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				drift_defence_factor = 0.5
+				neutrality_drift = 0.05
+				army_core_defence_factor = 0.1
+				political_power_factor = 0.3
+				stability_weekly = 0.002
+				consumer_goods_factor = -0.15
+			}
+		
+		}
+		nef_resist3 = {
+		
+			picture = FRA_national_mobilization_focus
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				drift_defence_factor = 0.5
+				army_core_attack_factor = 0.1
+				war_support_weekly = 0.002
+				political_power_factor = 0.1
+				stability_weekly = 0.002
+				consumer_goods_factor = -0.15
+			}
+		
+		}
+		nef_breakchains = {
+		
+			picture = generic_volunteer_expedition_bonus
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				army_org_factor = 0.1
+			}
+		
+		}
+		
+		nef_disjointed_industry = {
+		
+			picture = FRA_factory_strikes
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				industrial_capacity_factory = -0.5
+				industrial_capacity_dockyard = -0.2
+				ai_focus_defense_factor = 0.5
+			}
+		}
+		nef_disjointed_industry2 = {
+		
+			picture = FRA_factory_strikes
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				industrial_capacity_factory = -0.35
+				industrial_capacity_dockyard = -0.2
+				ai_focus_defense_factor = 0.5
+			}
+		}
+
+		################################# Keeps the hidden brotherhood country from researching stuff to build more factories etc
+
+		nef_nerdidea = {
+		
+			picture = FRA_factory_strikes
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				research_time_factor = 0.99
+				production_speed_buildings_factor = -0.99
+				political_power_factor = -0.99
+				neutrality_drift = 0.5
+				conscription = 0.9
+			}
+		}
+		
+		nef_consciousness_of_self = {
+		
+			picture = generic_democratic_drift_bonus
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				neutrality_drift = 0.05
+			}
+		}
+		
+		nef_consciousness_of_selftest = {
+		
+			picture = generic_democratic_drift_bonus
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				neutrality_drift = 0.5
+			}
+		}
+
+		nef_twf= {
+		
+			picture = generic_wall_line
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				production_speed_bunker_factor = 0.2
+				production_speed_coastal_bunker_factor = 0.2
+				dig_in_speed_factor = 0.1
+				max_dig_in = 2  
+			}
+		}
+		nef_tdarts = {
+		
+			picture = generic_research_bonus
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+					research_time_factor = -0.05
+			}
+		}
+		
+		nef_synthetic_speed = {
+		
+			picture = generic_refining_concern_1
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				production_speed_synthetic_refinery_factor = 0.15
+			}
+		}
+		nef_ideofanat = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = air_war_plans_division_focus
+	
+			modifier = {
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+			}
+		}
+	
+
+#############################
+############################# Old Resistance national focus ideas
+#############################	
+
+		nef_fearhope = {
+		
+			picture = generic_morale_bonus
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+					army_core_defence_factor = 0.05
+			}
+		}
+		
+		nef_drumwar = {
+		
+			picture = generic_victors_of_ww1
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+					conscription = 0.01
+			}
+		}
+		
+		nef_decindep = {
+		
+			picture = generic_volunteer_expedition_bonus
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+					political_power_factor = 0.15
+			}
+		}
+		
+		nef_natthought = {
+		
+			picture = generic_research_bonus
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+					research_time_factor = -0.05
+			}
+		}
+		
+		nef_strsac = {
+		
+			picture = raj_risk_of_famine
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+					consumer_goods_factor = -0.10
+			}
+		}
+		
+		nef_domskies = {
+		
+			picture = air_war_plans_division_focus
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+					experience_gain_air_factor = 0.1
+					air_detection = 0.1
+			}
+			research_bonus = { air_equipment = 0.05 }
+		}
+		
+		nef_domseas = {
+		
+			picture = generic_navy_bonus
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+					experience_gain_navy_factor = 0.1
+					naval_detection = 0.1
+			}
+			research_bonus = { naval_equipment = 0.05 }
+		}
+		
+		nef_domearth = {
+		
+			picture = FRA_army_of_aggression_focus
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+					enemy_army_bonus_air_superiority_factor = -0.10
+					army_speed_factor = 0.1
+			}
+		}
+		
+		nef_deathcow = {
+		
+			picture = ast_classify_aliens
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+					army_org_factor = 0.1
+			}
+		}
+		
+		nef_destsalv = {
+		
+			picture = FRA_scw_intervention_nationalists_focus
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+					army_core_attack_factor = 0.05
+					neutrality_drift = 0.05
+			}
+		}
+		
+		nef_finalindoc = {
+		
+			picture = generic_pp_unity_bonus
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+					drift_defence_factor = 0.5
+					stability_weekly = 0.002
+					neutrality_drift = 0.05
+			}
+		}
+		
+#############################
+############################# Resistance grand council timed ideas
+#############################	
+		nef_openborders = {
+		
+			picture = generic_victors_of_ww1
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				stability_weekly = -0.001
+				consumer_goods_factor = 0.05
+				monthly_population = 10
+				research_time_factor = -0.3
+			}
+		}
+		nef_closedborders = {
+		
+			picture = saf_history_of_segregation
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				stability_weekly = 0.005
+			}
+		}
+		nef_merctrainer = {
+		
+			picture = generic_manpower_bonus
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				training_time_factor = -0.3
+				experience_gain_army = 0.1
+			}
+		}
+	}
+}

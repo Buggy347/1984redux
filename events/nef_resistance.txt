@@ -1,0 +1,216 @@
+﻿
+add_namespace = nef_resevent
+
+# Resistance countries lose their will to resist buff after the 1984 war begins
+country_event = {
+	id = nef_resevent.1
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		set_global_flag = nef_losewtr
+		hidden_effect = {
+			RAJ = { remove_ideas = nef_resist }
+			ETH = { remove_ideas = nef_resist }
+			SAU = { remove_ideas = nef_resist }
+			SIA = { remove_ideas = nef_resist }
+			INS = { remove_ideas = nef_resist }
+			RAJ = { remove_ideas = nef_resist2 }
+			ETH = { remove_ideas = nef_resist2 }
+			SAU = { remove_ideas = nef_resist2 }
+			SIA = { remove_ideas = nef_resist2 }
+			INS = { remove_ideas = nef_resist2 }
+			RAJ = { remove_ideas = nef_resist3 }
+			ETH = { remove_ideas = nef_resist3 }
+			SAU = { remove_ideas = nef_resist3 }
+			SIA = { remove_ideas = nef_resist3 }
+			INS = { remove_ideas = nef_resist3 }
+		}
+	}
+	
+	trigger = {
+		OR = {
+			tag = ETH
+			tag = SAU
+			tag = SIA
+			tag = INS
+			tag = RAJ
+			}
+		date > 1984.1.5
+		date < 1984.2.1
+		has_global_flag = nef_warstarted1
+		NOT = { has_global_flag = nef_losewtr }
+	}
+
+	option = {
+		name = nef_resevent.1.a
+		trigger = {
+			has_government = neutrality
+		}
+	}
+}
+
+country_event = {
+	id = nef_resevent.2
+	hidden = yes
+	
+	major = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {
+		ISR = {	
+			add_to_faction = RAJ
+			add_to_faction = ETH
+			add_to_faction = SIA
+			add_to_faction = INS
+			add_to_faction = SAU
+			RAJ = { remove_ideas = nef_disjointed_industry }
+			ETH = { remove_ideas = nef_disjointed_industry }
+			SIA = { remove_ideas = nef_disjointed_industry }
+			INS = { remove_ideas = nef_disjointed_industry }
+			SAU = { remove_ideas = nef_disjointed_industry }
+			RAJ = { remove_ideas = nef_disjointed_industry2 }
+			ETH = { remove_ideas = nef_disjointed_industry2 }
+			SIA = { remove_ideas = nef_disjointed_industry2 }
+			INS = { remove_ideas = nef_disjointed_industry2 }
+			SAU = { remove_ideas = nef_disjointed_industry2 }
+			}
+		}
+	option = {
+		name = nef_resevent.2.a
+		trigger = {
+			has_government = neutrality
+		}
+	}
+}
+
+
+country_event = {
+	id = nef_resevent.3
+	title = nef_resevent.3.t
+	desc = nef_resevent.3.d
+	picture = GFX_report_event_generic_parliament
+	
+	major = no
+	is_triggered_only = yes
+	hidden = yes
+	
+	option = {
+		name = nef_resevent.3.a
+		trigger = {
+			has_completed_focus = nef_res_destruction_is_salvation
+		}
+		country_event = { id = nef_resevent.4 }
+	}
+	option = {
+		name = nef_resevent.3.b
+		trigger = {
+			NOT = { has_completed_focus = nef_res_destruction_is_salvation }
+		}
+	}
+}
+
+country_event = {
+	id = nef_resevent.4
+	title = nef_resevent.4.t
+	desc = nef_resevent.4.d
+	picture = GFX_report_event_generic_parliament
+	
+	major = no
+	is_triggered_only = yes
+	
+	option = {
+		name = nef_resevent.4.a
+		trigger = {
+			tag = ETH
+			ETH = { has_completed_focus = nef_res_destruction_is_salvation }
+		}
+		set_cosmetic_tag = ETH_TT
+	}
+	option = {
+		name = nef_resevent.4.b
+		trigger = {
+			tag = SIA
+			SIA = { has_completed_focus = nef_res_destruction_is_salvation }
+		}
+		set_cosmetic_tag = SIA_TT
+	}
+	option = {
+		name = nef_resevent.4.c
+		trigger = {
+			tag = SAU
+			SAU = { has_completed_focus = nef_res_destruction_is_salvation }
+		}
+		set_cosmetic_tag = SAU_TT
+	}
+	option = {
+		name = nef_resevent.4.e
+		trigger = {
+			tag = RAJ
+			RAJ = { has_completed_focus = nef_res_destruction_is_salvation }
+		}
+		set_cosmetic_tag = RAJ_TT
+	}
+	option = {
+		name = nef_resevent.4.f
+		trigger = {
+			tag = INS
+			INS = { has_completed_focus = nef_res_destruction_is_salvation }
+		}
+		set_cosmetic_tag = INS_TT
+	}
+}
+country_event = {
+	id = nef_resevent.5
+	title = nef_resevent.5.t
+	desc = nef_resevent.5.d
+	picture = GFX_report_event_military_planning
+	
+	major = no
+	
+	trigger = {
+		OR = {
+			tag = ETH
+			tag = SAU
+			tag = SIA
+			tag = INS
+			tag = RAJ
+		}
+		NOT = { has_completed_focus = nef_res_destruction_is_salvation }
+		NOT = { has_country_flag = nef_resdespdefenseflag }
+		surrender_progress > 0.2
+	}
+	
+	option = {
+		name = nef_resevent.5.a
+		custom_effect_tooltip = nef_restt_despdefense_available
+		hidden_effect = {
+			set_variable = { nef_var_despdefense_available = 1 }
+			set_country_flag = nef_resdespdefenseflag
+		}
+	}
+}
+
+##### All countries capitulated?
+country_event = {
+	id = nef_resevent.6
+	
+	hidden = yes
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = ISR
+		NOT = { has_global_flag = resistance_capitulated }
+		RAJ = { has_capitulated = yes }
+		SIA = { has_capitulated = yes }
+		SAU = { has_capitulated = yes }
+		INS = { has_capitulated = yes }
+		ETH = { has_capitulated = yes }
+	}
+	
+	option = {
+		name = nef_resevent.6.a
+		news_event = { id = nef_news.20 }
+	}
+}

@@ -1,0 +1,217 @@
+﻿###########################
+# Election Events
+###########################
+
+add_namespace = nef_election
+
+country_event = {
+	id = nef_election.01
+	title = nef_election.01.t
+	desc = nef_election.01.d
+	picture = GFX_report_event_generic_riot
+		
+	trigger = {
+		NOT = {
+			has_government = neutrality
+			has_idea = nef_turmoil
+			}
+		neutrality > 0.4
+		has_civil_war = no
+	}
+
+	immediate = {
+		hidden_effect = {
+			add_ideas = nef_turmoil
+			}
+	}
+	
+	option = {
+		name = nef_election.01.a
+		custom_effect_tooltip = nef_civwar_tt
+	}
+}
+
+country_event = {
+	id = nef_election.011
+	title = nef_election.011.t
+	desc = nef_election.011.d
+	picture = GFX_report_event_generic_riot
+		
+	trigger = {
+		NOT = {
+			has_government = neutrality
+			}
+		has_idea = nef_turmoil
+		neutrality < 0.4
+		has_civil_war = no
+	}
+
+	immediate = {
+		hidden_effect = {
+		remove_ideas = nef_turmoil
+		}
+	}
+	
+	option = {
+		name = nef_election.011.a
+	}
+}
+
+country_event = {
+	id = nef_election.02
+	title = nef_election.02.t
+	desc = nef_election.02.d
+	picture = GFX_report_event_generic_riot
+		
+	trigger = {
+		NOT = {
+			has_government = democratic 
+			has_idea = nef_turmoil
+		}
+			democratic > 0.4
+			has_civil_war = no
+	}
+
+	immediate = {
+		hidden_effect = {
+			add_ideas = nef_turmoil
+			}
+	}
+	
+	option = {
+		name = nef_election.02.a
+		custom_effect_tooltip = nef_civwar_tt
+	}
+}
+
+country_event = {
+	id = nef_election.022
+	title = nef_election.022.t
+	desc = nef_election.022.d
+	picture = GFX_report_event_generic_riot
+		
+	trigger = {
+		NOT = {
+			has_government = democratic 
+		}
+			has_idea = nef_turmoil
+			democratic > 0.4
+			has_civil_war = no
+	}
+
+	immediate = {
+		hidden_effect = {
+			add_ideas = nef_turmoil
+			}
+	}
+	
+	option = {
+		name = nef_election.022.a
+	}
+}
+
+country_event = {
+	id = nef_election.03
+	title = nef_election.03.t
+	desc = nef_election.03.d
+	picture = GFX_report_event_generic_riot
+		
+	trigger = {
+		NOT = {
+			has_government = communism
+			has_idea = nef_turmoil
+		}
+			communism > 0.4
+			has_civil_war = no
+	}
+	
+	immediate = {
+		hidden_effect = {
+			add_ideas = nef_turmoil
+			}
+	}
+	
+	option = {
+		name = nef_election.03.a
+		custom_effect_tooltip = nef_civwar_tt
+	}
+}
+country_event = {
+	id = nef_election.033
+	title = nef_election.033.t
+	desc = nef_election.033.d
+	picture = GFX_report_event_generic_riot
+		
+	trigger = {
+		NOT = {
+			has_government = communism
+		}
+			has_idea = nef_turmoil
+			communism > 0.4
+			has_civil_war = no
+	}
+	
+	immediate = {
+		hidden_effect = {
+			add_ideas = nef_turmoil
+			}
+	}
+	
+	option = {
+		name = nef_election.033.a
+		custom_effect_tooltip = nef_civwar_tt
+	}
+}
+
+country_event = {
+	id = nef_election.04
+	title = nef_election.04.t
+	desc = nef_election.04.d
+	picture = GFX_report_event_generic_riot
+		
+	trigger = {
+		NOT = {
+			has_government = fascism
+			has_idea = nef_turmoil
+		}
+			fascism > 0.4
+			has_civil_war = no
+	}
+	
+	immediate = {
+		hidden_effect = {
+			add_ideas = nef_turmoil
+			}
+	}
+	
+	option = {
+		name = nef_election.04.a
+		custom_effect_tooltip = nef_civwar_tt
+	}
+}
+country_event = {
+	id = nef_election.044
+	title = nef_election.044.t
+	desc = nef_election.044.d
+	picture = GFX_report_event_generic_riot
+		
+	trigger = {
+		NOT = {
+			has_government = fascism
+		}
+			has_idea = nef_turmoil
+			fascism > 0.4
+			has_civil_war = no
+	}
+	
+	immediate = {
+		hidden_effect = {
+			add_ideas = nef_turmoil
+			}
+	}
+	
+	option = {
+		name = nef_election.044.a
+		custom_effect_tooltip = nef_civwar_tt
+	}
+}

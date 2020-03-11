@@ -1,0 +1,870 @@
+﻿##############################################
+# Resistance Focus Tree - Grand Council Events
+##############################################
+
+add_namespace = nef_council
+
+country_event = {
+	id = nef_council.1
+	title = nef_council.1.t
+	desc = nef_council.1.d
+	picture = GFX_report_event_generic_parliament
+	is_triggered_only = yes
+	
+	option = {
+		name = nef_council.1.a
+		hidden_effect = {
+			country_event = { id = nef_council.2 days = 15 }
+			set_country_flag = council_started
+		}
+	}
+}
+country_event = {
+	id = nef_council.2
+	title = nef_council.2.t
+	desc = nef_council.2.d
+	picture = GFX_report_event_generic_parliament
+	is_triggered_only = yes
+	
+	option = {
+		name = nef_council.2.a
+		ai_chance = { factor = 100 }
+		hidden_effect = {
+			set_country_flag = council_mil
+			country_event = { id = nef_council.3 days = 15 }
+		}
+	}
+	option = {
+		name = nef_council.2.b
+		hidden_effect = {
+			set_country_flag = council_ind
+			country_event = { id = nef_council.5 days = 15 }
+		} 
+	}
+}
+country_event = {
+	id = nef_council.3
+	title = nef_council.3.t
+	desc = nef_council.3.d
+	picture = GFX_report_event_military_planning
+	is_triggered_only = yes
+	
+	option = {
+		name = nef_council.3.a
+		ai_chance = { factor = 100 }
+		complete_national_focus = nef_res_drums_of_war
+		hidden_effect = {
+			country_event = { id = nef_council.7 days = 15 }
+		}
+	}
+	option = {
+		name = nef_council.3.b
+		custom_effect_tooltip = nef_council_tt_darkpath
+		add_war_support = 0.2
+		hidden_effect = {
+			country_event = { id = nef_council.4 }
+			country_event = { id = nef_council.7 days = 15 }
+			set_country_flag = council_milloyalty
+		}
+	}
+}
+country_event = {
+	id = nef_council.4
+	title = nef_council.4.t
+	desc = nef_council.4.d
+	picture = GFX_report_event_military_planning
+	is_triggered_only = yes
+	
+	option = {
+		name = nef_council.4.a
+	}
+}
+country_event = {
+	id = nef_council.5
+	title = nef_council.5.t
+	desc = nef_council.5.d
+	picture = GFX_report_event_partition_of_india
+	is_triggered_only = yes
+	
+	option = {
+		name = nef_council.5.a
+		swap_ideas = {
+			remove_idea = nef_disjointed_industry
+			add_idea = nef_disjointed_industry2
+		}
+		hidden_effect = {
+			country_event = { id = nef_council.7 days = 15 }
+		}
+	}
+	option = {
+		name = nef_council.5.b
+		custom_effect_tooltip = nef_council_tt_darkpath
+		add_offsite_building = { type = industrial_complex level = 5 }
+		hidden_effect = {
+			country_event = { id = nef_council.6 }
+			set_country_flag = council_indnationalize
+			country_event = { id = nef_council.7 days = 15 }
+		}
+	}
+}
+country_event = {
+	id = nef_council.6
+	title = nef_council.6.t
+	desc = nef_council.6.d
+	picture = GFX_report_event_partition_of_india
+	is_triggered_only = yes
+	
+	option = {
+		name = nef_council.6.a
+	}
+}
+country_event = {
+	id = nef_council.7
+	title = nef_council.7.t
+	desc = nef_council.7.d
+	picture = GFX_report_event_long_march
+	is_triggered_only = yes
+	
+	option = {
+		name = nef_council.7.a
+		add_timed_idea = {
+			idea = nef_openborders
+			days = 120
+		}
+		hidden_effect = {
+			country_event = { id = nef_council.8 days = 15 }
+		}
+	}
+	option = {
+		name = nef_council.7.b
+		ai_chance = { factor = 100 }
+		add_timed_idea = {
+			idea = nef_closedborders
+			days = 120
+		}
+		hidden_effect = {
+			country_event = { id = nef_council.8 days = 15 }
+		}
+	}
+}
+country_event = {
+	id = nef_council.8
+	title = nef_council.8.t
+	desc = nef_council.8.d
+	picture = GFX_report_event_generic_ruins
+	is_triggered_only = yes
+	
+	option = {
+		name = nef_council.8.a
+		ai_chance = { factor = 0 }
+		add_offsite_building = { type = arms_factory level = 5 }
+		hidden_effect = {
+			country_event = { id = nef_council.9 days = 15 }
+		}
+	}
+	option = {
+		name = nef_council.8.b
+		trigger = { tag = RAJ }
+		ai_chance = { factor = 100 }
+		custom_effect_tooltip = nef_council_tt_forts
+		hidden_effect = {
+			country_event = { id = nef_council.9 days = 15 }
+			country_event = { id = nef_aiforts.01 days = 1 }
+		}
+	}
+	option = {
+		name = nef_council.8.c
+		trigger = { tag = ETH }
+		ai_chance = { factor = 100 }
+		custom_effect_tooltip = nef_council_tt_forts
+		hidden_effect = {
+			country_event = { id = nef_council.9 days = 15 }
+			country_event = { id = nef_aiforts.02 days = 1 }
+		}
+	}
+	option = {
+		name = nef_council.8.z
+		trigger = { tag = SAU }
+		ai_chance = { factor = 100 }
+		custom_effect_tooltip = nef_council_tt_forts
+		hidden_effect = {
+			country_event = { id = nef_council.9 days = 15 }
+			country_event = { id = nef_aiforts.03 days = 1 }
+		}
+	}
+	option = {
+		name = nef_council.8.e
+		trigger = { tag = SIA }
+		ai_chance = { factor = 100 }
+		custom_effect_tooltip = nef_council_tt_forts
+		hidden_effect = {
+			country_event = { id = nef_council.9 days = 15 }
+			country_event = { id = nef_aiforts.04 days = 1 }
+		}
+	}
+	option = {
+		name = nef_council.8.f
+		trigger = { tag = INS }
+		ai_chance = { factor = 100 }
+		custom_effect_tooltip = nef_council_tt_forts
+		hidden_effect = {
+			country_event = { id = nef_council.9 days = 15 }
+			country_event = { id = nef_aiforts.05 days = 1 }
+		}
+	}
+}
+country_event = {
+	id = nef_council.9
+	title = nef_council.9.t
+	desc = nef_council.9.d
+	picture = GFX_report_event_fascist_militia
+	is_triggered_only = yes
+	
+	option = {
+		name = nef_council.9.a
+		ai_chance = { factor = 100 }
+		trigger = { tag = RAJ }
+		create_corps_commander = {
+			name = "Karam Pavagi"
+			gfx = "GFX_nefleader_rajmerc"
+			traits = { infantry_leader skilled_staffer hill_fighter }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+		}
+		custom_effect_tooltip = nef_council_tt_divisions
+		custom_effect_tooltip = nef_council_tt_traits
+		hidden_effect = {
+			country_event = { id = nef_council.10 days = 15 }
+			division_template = {
+				name = "Warband"
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+		
+		        	infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 1 y = 3 }
+				}
+			}
+
+		random_owned_controlled_state = {
+			prioritize = { 425 }
+			create_unit = { 
+				division = "name = \"1. Warband\" division_template = \"Warband\" start_experience_factor = 0.75" 
+				owner = RAJ
+				}
+			create_unit = { 
+				division = "name = \"2. Warband\" division_template = \"Warband\" start_experience_factor = 0.75" 
+				owner = RAJ
+				}
+			create_unit = { 
+				division = "name = \"3. Warband\" division_template = \"Warband\" start_experience_factor = 0.75" 
+				owner = RAJ
+				}
+			create_unit = { 
+				division = "name = \"4. Warband\" division_template = \"Warband\" start_experience_factor = 0.75" 
+				owner = RAJ
+				}
+			create_unit = { 
+				division = "name = \"5. Warband\" division_template = \"Warband\" start_experience_factor = 0.75" 
+				owner = RAJ
+				}
+			create_unit = { 
+				division = "name = \"6. Warband\" division_template = \"Warband\" start_experience_factor = 0.75" 
+				owner = RAJ
+				}
+			}
+		}
+	}
+	option = {
+		name = nef_council.9.b
+		trigger = { tag = RAJ }
+		create_corps_commander = {
+			name = "Karam Pavagi"
+			gfx = "GFX_nefleader_rajmerc"
+			traits = { }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+		}
+		add_timed_idea = {
+			idea = nef_merctrainer
+			days = 356
+		}	
+		hidden_effect = {
+			country_event = { id = nef_council.10 days = 15 }
+		}
+	}
+	option = {
+		name = nef_council.9.c
+		trigger = { tag = ETH }
+		ai_chance = { factor = 100 }
+		create_corps_commander = {
+			name = "Shomari"
+			gfx = "GFX_nefleader_ethmerc"
+			traits = { cavalry_leader trait_engineer trickster }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+		}
+		custom_effect_tooltip = nef_council_tt_divisions
+		custom_effect_tooltip = nef_council_tt_traits
+		hidden_effect = {
+			country_event = { id = nef_council.10 days = 15 }
+			division_template = {
+				name = "Warband"
+				regiments = {
+					cavalry = { x = 0 y = 0 }
+					cavalry = { x = 0 y = 1 }
+					cavalry = { x = 0 y = 2 }
+					cavalry = { x = 0 y = 3 }
+		
+		        	cavalry = { x = 1 y = 0 }
+					cavalry = { x = 1 y = 1 }
+					cavalry = { x = 1 y = 2 }
+					cavalry = { x = 1 y = 3 }
+				}
+			}
+
+		random_owned_controlled_state = {
+			prioritize = { 558 }
+			create_unit = { 
+				division = "name = \"1. Warband\" division_template = \"Warband\" start_experience_factor = 0.75" 
+				owner = ETH
+				}
+			create_unit = { 
+				division = "name = \"2. Warband\" division_template = \"Warband\" start_experience_factor = 0.75" 
+				owner = ETH
+				}
+			create_unit = { 
+				division = "name = \"3. Warband\" division_template = \"Warband\" start_experience_factor = 0.75" 
+				owner = ETH
+				}
+			create_unit = { 
+				division = "name = \"4. Warband\" division_template = \"Warband\" start_experience_factor = 0.75" 
+				owner = ETH
+				}
+			create_unit = { 
+				division = "name = \"5. Warband\" division_template = \"Warband\" start_experience_factor = 0.75" 
+				owner = ETH
+				}
+			create_unit = { 
+				division = "name = \"6. Warband\" division_template = \"Warband\" start_experience_factor = 0.75" 
+				owner = ETH
+				}
+			}
+		}
+	}
+	option = {
+		name = nef_council.9.z
+		trigger = { tag = ETH }
+		create_corps_commander = {
+			name = "Shomari"
+			gfx = "GFX_nefleader_ethmerc"
+			traits = { }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+		}
+		add_timed_idea = {
+			idea = nef_merctrainer
+			days = 356
+		}	
+		hidden_effect = {
+			country_event = { id = nef_council.10 days = 15 }
+		}
+	}
+	option = {
+		name = nef_council.9.e
+		ai_chance = { factor = 100 }
+		trigger = { tag = SAU }
+		create_corps_commander = {
+			name = "Jubair al'Rahimi"
+			gfx = "GFX_nefleader_saumerc"
+			traits = { cavalry_leader commando desert_fox }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+		}
+		custom_effect_tooltip = nef_council_tt_divisions
+		custom_effect_tooltip = nef_council_tt_traits
+		hidden_effect = {
+			country_event = { id = nef_council.10 days = 15 }
+			division_template = {
+				name = "Warband"
+				regiments = {
+					cavalry = { x = 0 y = 0 }
+					cavalry = { x = 0 y = 1 }
+					cavalry = { x = 0 y = 2 }
+					cavalry = { x = 0 y = 3 }
+		
+		        	cavalry = { x = 1 y = 0 }
+					cavalry = { x = 1 y = 1 }
+					cavalry = { x = 1 y = 2 }
+					cavalry = { x = 1 y = 3 }
+				}
+			}
+
+		random_owned_controlled_state = {
+			prioritize = { 554 }
+			create_unit = { 
+				division = "name = \"1. Warband\" division_template = \"Warband\" start_experience_factor = 0.75" 
+				owner = SAU
+				}
+			create_unit = { 
+				division = "name = \"2. Warband\" division_template = \"Warband\" start_experience_factor = 0.75" 
+				owner = SAU
+				}
+			create_unit = { 
+				division = "name = \"3. Warband\" division_template = \"Warband\" start_experience_factor = 0.75" 
+				owner = SAU
+				}
+			create_unit = { 
+				division = "name = \"4. Warband\" division_template = \"Warband\" start_experience_factor = 0.75" 
+				owner = SAU
+				}
+			create_unit = { 
+				division = "name = \"5. Warband\" division_template = \"Warband\" start_experience_factor = 0.75" 
+				owner = SAU
+				}
+			create_unit = { 
+				division = "name = \"6. Warband\" division_template = \"Warband\" start_experience_factor = 0.75" 
+				owner = SAU
+				}
+			}
+		}
+	}
+	option = {
+		name = nef_council.9.f
+		trigger = { tag = SAU }
+		create_corps_commander = {
+			name = "Jubair al'Rahimi"
+			gfx = "GFX_nefleader_saumerc"
+			traits = { }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+		}
+		add_timed_idea = {
+			idea = nef_merctrainer
+			days = 356
+		}	
+		hidden_effect = {
+			country_event = { id = nef_council.10 days = 15 }
+		}
+	}
+	option = {
+		name = nef_council.9.g
+		ai_chance = { factor = 100 }
+		trigger = { tag = SIA }
+		create_corps_commander = {
+			name = "Tong Dinh Hao"
+			gfx = "GFX_nefleader_siamerc"
+			traits = { infantry_leader ambusher hill_fighter }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+		}
+		custom_effect_tooltip = nef_council_tt_divisions
+		custom_effect_tooltip = nef_council_tt_traits
+		hidden_effect = {
+			country_event = { id = nef_council.10 days = 15 }
+			division_template = {
+				name = "Warband"
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+		
+		        	infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 1 y = 3 }
+				}
+			}
+
+		random_owned_controlled_state = {
+			prioritize = { 286 }
+			create_unit = { 
+				division = "name = \"1. Warband\" division_template = \"Warband\" start_experience_factor = 0.75" 
+				owner = SIA
+				}
+			create_unit = { 
+				division = "name = \"2. Warband\" division_template = \"Warband\" start_experience_factor = 0.75" 
+				owner = SIA
+				}
+			create_unit = { 
+				division = "name = \"3. Warband\" division_template = \"Warband\" start_experience_factor = 0.75" 
+				owner = SIA
+				}
+			create_unit = { 
+				division = "name = \"4. Warband\" division_template = \"Warband\" start_experience_factor = 0.75" 
+				owner = SIA
+				}
+			create_unit = { 
+				division = "name = \"5. Warband\" division_template = \"Warband\" start_experience_factor = 0.75" 
+				owner = SIA
+				}
+			create_unit = { 
+				division = "name = \"6. Warband\" division_template = \"Warband\" start_experience_factor = 0.75" 
+				owner = SIA
+				}
+			}
+		}
+	}
+	option = {
+		name = nef_council.9.h
+		trigger = { tag = SIA }
+		create_corps_commander = {
+			name = "Tong Dinh Hao"
+			gfx = "GFX_nefleader_siamerc"
+			traits = { }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+		}
+		add_timed_idea = {
+			idea = nef_merctrainer
+			days = 356
+		}	
+		hidden_effect = {
+			country_event = { id = nef_council.10 days = 15 }
+		}
+	}
+	option = {
+		name = nef_council.9.i
+		ai_chance = { factor = 100 }
+		trigger = { tag = INS }
+		create_corps_commander = {
+			name = "Sriwidadi"
+			gfx = "GFX_nefleader_insmerc"
+			traits = { naval_invader naval_liason jungle_rat }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+		}
+		custom_effect_tooltip = nef_council_tt_divisions
+		custom_effect_tooltip = nef_council_tt_traits
+		hidden_effect = {
+			country_event = { id = nef_council.10 days = 15 }
+			division_template = {
+				name = "Warband"
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+		
+		        	infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 1 y = 3 }
+				}
+			}
+
+		random_owned_controlled_state = {
+			prioritize = { 335 }
+			create_unit = { 
+				division = "name = \"1. Warband\" division_template = \"Warband\" start_experience_factor = 0.75" 
+				owner = INS
+				}
+			create_unit = { 
+				division = "name = \"2. Warband\" division_template = \"Warband\" start_experience_factor = 0.75" 
+				owner = INS
+				}
+			create_unit = { 
+				division = "name = \"3. Warband\" division_template = \"Warband\" start_experience_factor = 0.75" 
+				owner = INS
+				}
+			create_unit = { 
+				division = "name = \"4. Warband\" division_template = \"Warband\" start_experience_factor = 0.75" 
+				owner = INS
+				}
+			create_unit = { 
+				division = "name = \"5. Warband\" division_template = \"Warband\" start_experience_factor = 0.75" 
+				owner = INS
+				}
+			create_unit = { 
+				division = "name = \"6. Warband\" division_template = \"Warband\" start_experience_factor = 0.75" 
+				owner = INS
+				}
+			}
+		}
+	}
+	option = {
+		name = nef_council.9.j
+		trigger = { tag = INS }
+		create_corps_commander = {
+			name = "Sriwidadi"
+			gfx = "GFX_nefleader_insmerc"
+			traits = { }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+		}
+		add_timed_idea = {
+			idea = nef_merctrainer
+			days = 356
+		}	
+		hidden_effect = {
+			country_event = { id = nef_council.10 days = 15 }
+		}
+	}
+}
+country_event = {
+	id = nef_council.10
+	title = nef_council.10.t
+	desc = nef_council.10.d
+	picture = GFX_report_event_generic_parliament
+	is_triggered_only = yes
+	
+	option = {
+		name = nef_council.10.a
+		ai_chance = { factor = 100 }
+		add_political_power = 50
+		hidden_effect = {
+			country_event = { id = nef_council.11 }
+			country_event = { id = nef_council.13 days = 15 }
+		}
+	}
+	option = {
+		name = nef_council.10.b
+		ai_chance = { factor = 0 }
+		custom_effect_tooltip = nef_council_tt_darkpath
+		add_political_power = 50
+		hidden_effect = {
+			set_country_flag = council_demands
+			country_event = { id = nef_council.12 }
+			country_event = { id = nef_council.13 days = 15 }
+		}
+	}
+}
+country_event = {
+	id = nef_council.11
+	title = nef_council.11.t
+	desc = nef_council.11.d
+	picture = GFX_report_event_generic_sign_treaty2
+	is_triggered_only = yes
+	
+	option = {
+		name = nef_council.11.a
+	}
+}
+country_event = {
+	id = nef_council.12
+	title = nef_council.12.t
+	desc = nef_council.12.d
+	picture = GFX_report_event_generic_sign_treaty2
+	is_triggered_only = yes
+	
+	option = {
+		name = nef_council.12.a
+	}
+}
+country_event = {
+	id = nef_council.13
+	title = nef_council.13.t
+	desc = nef_council.13.d
+	picture = GFX_report_event_generic_conference
+	is_triggered_only = yes
+	
+	option = {
+		name = nef_council.13.a
+		ai_chance = { factor = 100 }
+		add_political_power = 50
+		hidden_effect = {
+			set_country_flag = council_constitution
+			country_event = { id = nef_council.21 }
+			country_event = { id = nef_council.16 days = 15 }
+		}
+	}
+	option = {
+		name = nef_council.13.b
+		ai_chance = { factor = 0 }
+		custom_effect_tooltip = nef_council_tt_darkpath
+		trigger = {
+			has_country_flag = council_milloyalty
+			has_country_flag = council_demands
+			}
+		add_political_power = 50
+		hidden_effect = {
+			set_country_flag = council_arrests
+			country_event = { id = nef_council.14 }
+			country_event = { id = nef_council.16 days = 15 }
+		}
+	}
+	option = {
+		name = nef_council.13.c
+		ai_chance = { factor = 0 }
+		custom_effect_tooltip = nef_council_tt_darkpath
+		trigger = {
+			has_country_flag = council_indnationalize
+			has_country_flag = council_demands
+			}
+		add_political_power = 50
+		hidden_effect = {
+			set_country_flag = council_arrests
+			country_event = { id = nef_council.15 }
+			country_event = { id = nef_council.16 days = 15 }
+		}
+	}
+}
+country_event = {
+	id = nef_council.14
+	title = nef_council.14.t
+	desc = nef_council.14.d
+	picture = GFX_report_event_romanian_soldiers
+	is_triggered_only = yes
+	
+	option = {
+		name = nef_council.14.a
+	}
+}
+country_event = {
+	id = nef_council.15
+	title = nef_council.15.t
+	desc = nef_council.15.d
+	picture = GFX_report_event_saf_coup
+	is_triggered_only = yes
+	
+	option = {
+		name = nef_council.15.a
+	}
+}
+country_event = {
+	id = nef_council.21
+	title = nef_council.21.t
+	desc = nef_council.21.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	
+	option = {
+		name = nef_council.21.a
+	}
+}
+country_event = {
+	id = nef_council.16
+	title = nef_council.16.t
+	desc = nef_council.16.d
+	picture = GFX_report_event_india_protests
+	is_triggered_only = yes
+	
+	option = {
+		name = nef_council.16.a
+		ai_chance = { factor = 100 }
+		custom_effect_tooltip = nef_council_tt_freepath
+		trigger = { has_country_flag = council_constitution }
+		add_political_power = 50
+		hidden_effect = {
+			set_country_flag = council_savior
+		}
+	}
+	option = {
+		name = nef_council.16.b
+		ai_chance = { factor = 0 }
+		custom_effect_tooltip = nef_council_tt_kingpath
+		add_political_power = 50
+		trigger = {
+			NOT = {
+				has_country_flag = council_constitution
+			}
+		}
+		hidden_effect = {
+			set_country_flag = council_strongman
+		}
+	}
+	option = {
+		name = nef_council.16.c
+		ai_chance = { factor = 0 }
+		custom_effect_tooltip = nef_council_tt_totpath
+		trigger = { has_country_flag = council_arrests }
+		hidden_effect = {
+			set_country_flag = council_dictator
+		}
+		add_political_power = 50
+	}
+}
+country_event = {
+	id = nef_council.17
+	title = nef_council.17.t
+	desc = nef_council.17.d
+	picture = GFX_report_event_soldiers_marching
+	is_triggered_only = yes
+	
+	option = {
+		name = nef_council.17.a
+		complete_national_focus = nef_res_beacon_of_hope
+	}
+}
+country_event = {
+	id = nef_council.18
+	title = nef_council.18.t
+	desc = nef_council.18.d
+	picture = GFX_report_event_soldiers_marching
+	is_triggered_only = yes
+	
+	option = {
+		name = nef_council.18.a
+		complete_national_focus = nef_res_the_strong_survive
+	}
+}
+country_event = {
+	id = nef_council.19
+	title = nef_council.19.t
+	desc = nef_council.19.d
+	picture = GFX_report_event_soldiers_marching
+	is_triggered_only = yes
+	
+	option = {
+		name = nef_council.19.a
+		complete_national_focus = nef_res_the_abyss_stares_back
+	}
+}
+country_event = {
+	id = nef_council.20
+	title = nef_council.20.t
+	desc = nef_council.20.d
+	picture = GFX_report_event_generic_parliament
+	is_triggered_only = yes
+	hidden = yes
+	option = {
+		name = nef_council.20.a
+		trigger = { has_country_flag = council_savior }
+		country_event = { id = nef_council.17 }
+	}
+	option = {
+		name = nef_council.20.b
+		trigger = { has_country_flag = council_strongman }
+		country_event = { id = nef_council.18 }
+	}
+	option = {
+		name = nef_council.20.b
+		trigger = { has_country_flag = council_dictator }
+		country_event = { id = nef_council.19 }
+	}
+}

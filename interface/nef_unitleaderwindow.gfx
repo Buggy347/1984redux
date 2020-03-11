@@ -1,0 +1,12 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_trait_nefmovement_expert"
+		texturefile = "gfx/interface/traits/trait_nefmovement_expert.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_nefnight_fighter"
+		texturefile = "gfx/interface/traits/trait_nefnight_fighter.dds"
+	}
+
+}

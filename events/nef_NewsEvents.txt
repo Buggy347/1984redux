@@ -1,0 +1,606 @@
+﻿###########################
+# News Events
+###########################
+
+add_namespace = nef_news
+
+news_event = {
+	id = nef_news.01
+	title = nef_news.01.t
+	desc = nef_news.01.d
+	picture = GFX_news_event_neflogo
+	
+	major = yes
+	immediate = {
+		set_global_flag = mod_start
+	}
+			
+	trigger = {
+		AND = {
+			date > 1980.6.1
+			NOT = { has_global_flag = mod_start_1983 }
+			NOT = { has_global_flag = mod_start }
+			}
+		}
+
+	mean_time_to_happen = {
+		days = 0
+		}
+		
+	option = {
+		name = nef_news.01.a
+		hidden_effect = {
+			set_global_flag = mod_start
+			}
+		}
+}
+
+news_event = {
+	id = nef_news.02
+	title = nef_news.02.t
+	desc = nef_news.02.d
+	picture = GFX_news_event_neflogo
+
+	major = yes
+	
+	immediate = {
+		set_global_flag = mod_start2
+		country_event = { id = nef_warstart.9 }
+			}
+
+	mean_time_to_happen = {
+		days = 0
+			}	
+
+	trigger = {
+			AND = {
+				date > 1983.12.1
+				has_global_flag = mod_start_1983
+				NOT = { has_global_flag = mod_start2 }
+				}
+			}			
+			
+	option = {
+		name = nef_news.02.a
+		hidden_effect = {
+			set_global_flag = mod_start2
+				}
+			}
+
+		}
+
+news_event = {
+	id = nef_news.03
+	title = nef_news.03.t
+	desc = nef_news.03.d
+	picture = GFX_news_event_032
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = nef_news.03.a
+		trigger = {
+			NOT = { tag = SPR }
+			NOT = { has_government = neutrality }
+		}
+	}
+	
+	option = {
+		name = nef_news.03.b
+		trigger = {
+			NOT = { tag = SPR }
+			has_government = neutrality
+		}
+	}
+	
+	option = {
+		name = nef_news.03.c
+		trigger = {
+			tag = SPR
+		}
+	}
+}
+
+news_event = {
+	id = nef_news.04
+	title = nef_news.04.t
+	desc = nef_news.04.d
+	picture = GFX_news_event_destroyers
+	
+	major = yes
+	
+	immediate = {
+		hidden_effect = {
+			set_global_flag = resistance_faction_created
+			country_event = { id = nef_resevent.2 }
+			}
+		}
+
+	trigger = {
+		AND = {
+			has_government = neutrality
+			threat > 0.75
+			NOT = { has_global_flag = resistance_faction_created }
+			}
+		}
+
+	mean_time_to_happen = {
+		days = 0
+		}
+		
+	option = {
+		name = nef_news.04.a
+		hidden_effect = {
+			set_global_flag = resistance_faction_created
+			}
+		}
+}
+##################### Create resistance faction by 1984 if the players haven't raised WT
+news_event = {
+	id = nef_news.99
+	title = nef_news.04.t
+	desc = nef_news.04.d
+	picture = GFX_news_event_generic_rally2
+	
+	major = yes
+	
+	immediate = {
+		hidden_effect = {
+			set_global_flag = resistance_faction_created
+			country_event = { id = nef_resevent.2 }
+			}
+		}
+
+	trigger = {
+		AND = {
+			has_government = neutrality
+			date > 1984.1.1
+			NOT = { has_global_flag = resistance_faction_created }
+			}
+		}
+
+	mean_time_to_happen = {
+		days = 0
+		}
+		
+	option = {
+		name = nef_news.04.a
+		hidden_effect = {
+			set_global_flag = resistance_faction_created
+			}
+		}
+}
+# Hindenburg Trigger (HIDDEN)
+news_event = {
+	id = nef_news.51
+	hidden = yes
+	
+	fire_only_once = yes
+	
+	trigger = {
+		date > 1981.5.5
+		date < 1983.5.5
+		country_exists = ENG
+		country_exists = SOV
+	}
+	
+	mean_time_to_happen = {
+		days = 90
+	}
+	
+	immediate = {
+		set_temp_variable = { nef_r = random }
+		if = {
+			limit = { check_variable = { nef_r > 0.3 } }
+			ENG = { news_event = { id = nef_news.05 } }
+		}
+		else = {
+			ENG = { news_event = { id = nef_news.06 } }
+		}
+	}
+	
+	option = {
+		name = news.51.a
+	}
+}
+
+# Flight of Rudolf Hess (Hindenburg) Rudolf Dies
+news_event = {
+	id = nef_news.05
+	title = nef_news.05.t
+	desc = nef_news.05.d
+	picture = GFX_news_event_026
+		
+	major = yes
+	
+	is_triggered_only = yes
+	
+	immediate = { clear_variable = nef_r }
+	
+	option = {
+		name = nef_news.05.a
+	}
+}
+
+# Flight of Rudolf Hess (Hindenburg) Rudolf Lives
+news_event = {
+	id = nef_news.06
+	title = nef_news.06.t
+	desc = nef_news.06.d
+	picture = GFX_news_event_026
+	
+	major = yes
+	
+	immediate = { clear_variable = nef_r }
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = nef_news.06.a
+	}
+}
+
+news_event = {
+	id = nef_news.07
+	hidden = yes
+	
+	fire_only_once = yes
+	
+	trigger = {
+		date > 1984.6.1
+		date < 1985.6.1
+		country_exists = ENG
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	immediate = {
+			ENG = { news_event = { id = nef_news.08 } }
+	}
+	
+	option = {
+		name = nef_news.07.a
+	}
+}
+
+news_event = {
+	id = nef_news.08
+	title = nef_news.08.t
+	desc = nef_news.08.d
+	picture = GFX_news_event_winston_smith
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = nef_news.08.a
+		trigger = {
+			has_government = democratic
+			OR = {
+				is_in_faction_with = ENG
+				tag = ENG
+				}
+		}
+	}
+	
+	option = {
+		name = nef_news.08.b
+		trigger = {
+			NOT = { tag = ENG }
+			NOT = { is_in_faction_with = ENG }
+			NOT = { has_government = democratic }
+		}
+	}
+}
+
+########## Start the races
+news_event = {
+	id = nef_news.09
+	title = nef_news.09.t
+	desc = nef_news.09.d
+	picture = GFX_news_event_destroyers
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = nef_news.09.a
+	}
+}
+########## Players avoided attacking disputed zone
+news_event = {
+	id = nef_news.10
+	title = nef_news.10.t
+	desc = nef_news.10.d
+	picture = GFX_news_event_destroyers
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = nef_news.10.a
+	}
+}
+######### War is coming 1
+news_event = {
+	id = nef_news.11
+	hidden = yes
+	
+	fire_only_once = yes
+	
+	trigger = {
+		date > 1983.1.1
+		date < 1983.2.1
+		country_exists = ENG
+		country_exists = SOV
+		country_exists = PRC
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	immediate = {
+			news_event = { id = nef_news.12 }
+	}
+	
+	option = {
+		name = nef_news.11.a
+	}
+}
+news_event = {
+	id = nef_news.12
+	title = nef_news.12.t
+	desc = nef_news.12.d
+	picture = GFX_news_event_german_speech
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+			country_event = { id = nef_warstart.9 }
+	}
+	option = {
+		name = nef_news.12.a
+		trigger = {
+			NOT = { has_government = neutrality }
+			}
+	}
+	
+	option = {
+		name = nef_news.12.b
+		trigger = {
+			has_government = neutrality
+			}
+	}
+}
+############### War is coming 2
+news_event = {
+	id = nef_news.13
+	hidden = yes
+	
+	fire_only_once = yes
+	
+	trigger = {
+		date > 1983.12.10
+		date < 1983.12.30
+		country_exists = ENG
+		country_exists = SOV
+		country_exists = PRC
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+			news_event = { id = nef_news.14 }
+	}
+	
+	option = {
+		name = nef_news.13.a
+	}
+}
+news_event = {
+	id = nef_news.14
+	title = nef_news.14.t
+	desc = nef_news.14.d
+	picture = GFX_news_event_soldiers_marching
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = nef_news.14.a
+		trigger = {
+			has_government = democratic
+			}
+	}
+	option = {
+		name = nef_news.14.b
+		trigger = {
+			has_government = communism
+			}
+	}
+	option = {
+		name = nef_news.14.c
+		trigger = {
+			has_government = fascism
+			}
+	}
+	option = {
+		name = nef_news.14.e
+		trigger = {
+			has_government = neutrality
+			}
+	}
+}
+##### Desperate Defense News Events
+# RAJ
+news_event = {
+	id = nef_news.15
+	title = nef_news.15.t
+	desc = nef_news.15.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = nef_news.15.a
+		trigger = {
+			NOT = { has_government = neutrality }
+			}
+	}
+	option = {
+		name = nef_news.15.b
+		trigger = {
+			has_government = neutrality
+			}
+	}
+}
+# ETH
+news_event = {
+	id = nef_news.16
+	title = nef_news.16.t
+	desc = nef_news.16.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = nef_news.16.a
+		trigger = {
+			NOT = { has_government = neutrality }
+			}
+	}
+	option = {
+		name = nef_news.16.b
+		trigger = {
+			has_government = neutrality
+			}
+	}
+}
+# SAU
+news_event = {
+	id = nef_news.17
+	title = nef_news.17.t
+	desc = nef_news.17.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = nef_news.17.a
+		trigger = {
+			NOT = { has_government = neutrality }
+			}
+	}
+	option = {
+		name = nef_news.17.b
+		trigger = {
+			has_government = neutrality
+			}
+	}
+}
+# SIA
+news_event = {
+	id = nef_news.18
+	title = nef_news.18.t
+	desc = nef_news.18.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = nef_news.18.a
+		trigger = {
+			NOT = { has_government = neutrality }
+			}
+	}
+	option = {
+		name = nef_news.18.b
+		trigger = {
+			has_government = neutrality
+			}
+	}
+}
+# INS
+news_event = {
+	id = nef_news.19
+	title = nef_news.19.t
+	desc = nef_news.19.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = nef_news.19.a
+		trigger = {
+			NOT = { has_government = neutrality }
+			}
+	}
+	option = {
+		name = nef_news.19.b
+		trigger = {
+			has_government = neutrality
+			}
+	}
+}
+############################ Resistance is dead
+news_event = {
+	id = nef_news.20
+	title = nef_news.20.t
+	desc = nef_news.20.d
+	picture = GFX_news_event_resistance_dead
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		set_global_flag = resistance_capitulated
+	}
+			
+	option = {
+		name = nef_news.20.a
+		trigger = {
+			NOT = { has_government = neutrality }
+		}
+	}
+	
+	option = {
+		name = nef_news.20.b
+		trigger = {
+			has_government = neutrality
+		}
+	}
+}

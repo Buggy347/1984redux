@@ -1,0 +1,43 @@
+﻿###########################
+# Spanish Events
+###########################
+
+add_namespace = nef_spr
+
+# Spanish Civil War
+
+country_event = {
+	id = nef_spr.1
+	title = nef_spr.1.t
+	desc = nef_spr.1.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	
+	immediate = {
+		set_global_flag = spanish_civil_war
+			}
+	
+	trigger = {
+		tag = SPR
+		has_defensive_war = no
+		date > 1980.7.16 # Trigger at some point after game start
+		NOT = { has_global_flag = spanish_civil_war }
+	}
+
+	mean_time_to_happen = {
+		days = 151	
+	}
+	
+	option = {
+		name = nef_spr.1.a
+		trigger = { tag = SPR }
+		hidden_effect = {
+			news_event = { hours = 6 id = nef_news.03 }
+			add_popularity = {
+			ideology = neutrality
+			popularity = 0.01
+			}
+			set_global_flag = spanish_civil_war
+		}
+		custom_effect_tooltip = nef_spr_tt
+	}
+}

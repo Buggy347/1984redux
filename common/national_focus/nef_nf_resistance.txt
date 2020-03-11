@@ -1,0 +1,2517 @@
+focus_tree = {
+	id = nef_resistance_focus
+	
+	country = {
+		factor = 1
+		
+		modifier = {
+			add = 10
+			tag = RAJ
+		}
+		modifier = {
+			add = 10
+			tag = INS
+		}
+		modifier = {
+			add = 10
+			tag = SIA
+		}
+		modifier = {
+			add = 10
+			tag = ETH
+		}
+		modifier = {
+			add = 10
+			tag = SAU
+		}
+	}
+	
+	default = no
+	reset_on_civilwar = no
+	
+	focus = {
+		id = nef_res_grand_council
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 11
+		y = 0
+		cost = 20
+		
+		available_if_capitulated = no
+	
+		ai_will_do = {
+			factor = 100
+		}	
+		select_effect = {
+			country_event = { id = nef_council.1 days = 5 }
+		}
+		
+		completion_reward = {
+			add_political_power = 150
+			hidden_effect = { country_event = { id = nef_council.20 } }
+		}
+	}
+
+##############################################################################
+############ IDEOLOGY TREES ##################################################
+##############################################################################
+
+	focus = {
+		id = nef_res_beacon_of_hope
+		icon = GFX_focus_generic_treaty
+		available = { has_country_flag = council_savior }
+		prerequisite = { focus = nef_res_grand_council }
+		x = 0
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			add_ideas = nef_defendhomeland
+		}
+	}
+	focus = {
+		id = nef_res_the_strong_survive
+		icon = GFX_goal_generic_demand_territory
+		available = { has_country_flag = council_strongman }
+		prerequisite = { focus = nef_res_grand_council }
+		x = 2
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			add_ideas = nef_defendhomeland
+		}
+	}
+	focus = {
+		id = nef_res_the_abyss_stares_back
+		icon = GFX_goal_generic_wolf_pack
+		available = { has_country_flag = council_dictator }
+		prerequisite = { focus = nef_res_grand_council }
+		x = 4
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			add_ideas = nef_defendhomeland
+		}
+	}
+	focus = {
+		id = nef_res_galvanize_support
+		icon = GFX_goal_tripartite_pact
+		prerequisite = { focus = nef_res_beacon_of_hope }
+		x = 0
+		y = 2
+		cost = 5
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			add_ideas = nef_resist
+			custom_effect_tooltip = nef_res_tt_expiration
+		}
+	}
+	
+	focus = {
+		id = nef_res_consolidate_power
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = nef_res_the_strong_survive }
+		x = 2
+		y = 2
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = nef_resist2
+			custom_effect_tooltip = nef_res_tt_expiration
+		}
+	}
+	focus = {
+		id = nef_res_fearmongering
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = nef_res_the_abyss_stares_back }
+		x = 4
+		y = 2
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = nef_resist3
+			custom_effect_tooltip = nef_res_tt_expiration
+		}
+	}
+	focus = {
+		id = nef_res_salvation_of_mankind
+		icon = GFX_goal_support_democracy
+		available = {
+			date > 1984.1.1
+		}
+		prerequisite = { focus = nef_res_galvanize_support focus = nef_res_consolidate_power }
+		mutually_exclusive = { focus = nef_res_destruction_is_salvation }
+		x = 0
+		y = 3
+		cost = 5
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			add_stability = 0.2
+		}
+	}
+	focus = {
+		id = nef_res_destruction_is_salvation
+		icon = GFX_focus_generic_strike_at_democracy2
+		available = {
+			date > 1984.1.1
+		}
+		prerequisite = {focus = nef_res_consolidate_power focus = nef_res_fearmongering }
+		mutually_exclusive = { focus = nef_res_salvation_of_mankind }
+		x = 4
+		y = 3
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			hidden_effect = {
+				remove_ideas =  {
+					res_volunteer_only
+					res_limited_conscription
+					res_extensive_conscription
+					res_service_by_requirement
+					res_all_adults_serve
+					res_scraping_the_barrel
+				}
+				add_ideas = {
+					nef_destsalv
+					res_disarmed_nation
+					}
+			}
+			country_event = { id = nef_resevent.3 days = 1 }
+			set_party_name = { ideology = neutrality name = newsoc_short long_name = newsoc_long }
+			set_rule = {
+				can_create_factions = yes
+			}
+		}
+	}
+	focus = {
+		id = nef_res_break_the_chains
+		icon = GFX_goal_continuous_boost_freedom
+		prerequisite = { focus = nef_res_salvation_of_mankind }
+		x = 0
+		y = 4
+		cost = 5
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			add_ideas = nef_breakchains
+		}
+	}
+	
+	focus = {
+		id = nef_res_two_minutes_hate
+		icon = GFX_focus_generic_strike_at_democracy1
+		prerequisite = { focus = nef_res_destruction_is_salvation }
+		x = 4
+		y = 4
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = nef_tmhate
+		}
+	}
+	focus = {
+		id = nef_res_liberate_oceania
+		icon = GFX_goal_generic_territory_or_war
+		available = {
+			has_completed_focus = nef_res_break_the_chains
+			}
+		x = 0
+		y = 5
+		cost = 1
+
+		available_if_capitulated = no
+		
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 50
+				date > 1984.1.1
+			}
+		}
+		completion_reward = {
+			add_named_threat = { threat = 5 name = nef_threat_liberateoceania }
+			create_wargoal = {
+				target = ENG
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = USA
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = MEX
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = BRA
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = SAF
+				type = annex_everything
+			}
+		}
+	}
+	
+	focus = {
+		id = nef_res_liberate_eurasia
+		icon = GFX_goal_generic_territory_or_war
+		available = {
+			has_completed_focus = nef_res_break_the_chains
+			}
+		x = 2
+		y = 5
+		cost = 1
+
+		available_if_capitulated = no
+		
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 50
+				date > 1984.1.1
+			}
+		}
+		completion_reward = {
+			add_named_threat = { threat = 5 name = nef_threat_liberateeurasia }
+			create_wargoal = {
+				target = SOV
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = DEN
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = GER
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = SPR
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = TUR
+				type = annex_everything
+			}
+		}
+	}
+	
+	focus = {
+		id = nef_res_liberate_eastasia
+		icon = GFX_goal_generic_territory_or_war
+		available = {
+			has_completed_focus = nef_res_break_the_chains
+			}
+		x = 1
+		y = 6
+		cost = 1
+
+		available_if_capitulated = no
+		
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 50
+				date > 1984.1.1
+			}
+		}
+		completion_reward = {
+			add_named_threat = { threat = 5 name = nef_threat_liberateeastasia }
+			create_wargoal = {
+				target = PRC
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = JAP
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = MAN
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = NEP
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = PER
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = nef_res_reprogramming
+		icon = GFX_goal_generic_military_deal
+		prerequisite = { focus = nef_res_two_minutes_hate }
+		x = 4
+		y = 5
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = nef_reprogramming
+		}
+	}
+	
+##############################################################################
+############ ECONOMY TREES ###################################################
+##############################################################################
+	focus = {
+		id = nef_res_concrete_jungles
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = nef_res_grand_council }
+		x = 7
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		completion_reward = {
+			
+			add_tech_bonus = {
+				name = construction_bonus
+				bonus = 0.5
+				uses = 1
+				category = construction_tech
+			}
+		}
+	}
+	focus = {
+		id = nef_res_one_year_plan
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = nef_res_concrete_jungles }
+		x = 7
+		y = 2
+		cost = 8
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = nef_oneyearplan
+				days = 365
+			}
+		}
+	}
+	focus = {
+		id = nef_res_victory_goods
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = nef_res_one_year_plan }
+		mutually_exclusive = { focus = nef_res_state_capitalism }
+		x = 6
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		completion_reward = {
+			add_ideas = nef_patrationing
+		}
+	}
+	focus = {
+		id = nef_res_state_capitalism
+		icon = GFX_focus_generic_industry_3
+		prerequisite = { focus = nef_res_one_year_plan}
+		mutually_exclusive = { focus = nef_res_victory_goods }
+		x = 8
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		completion_reward = {
+			add_ideas = nef_statecapt2
+		}
+	}
+
+	focus = {
+		id = nef_res_industrial_strength_victory
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = nef_res_grand_council }
+		x = 11
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		completion_reward = {
+			
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+		}
+	}
+	focus = {
+		id = nef_res_war_machine
+		icon = GFX_goal_generic_construct_military
+		prerequisite = { focus = nef_res_industrial_strength_victory }
+		x = 11
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		completion_reward = {
+			
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+		}
+	}
+	focus = {
+		id = nef_res_unpaid_overtime
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = nef_res_war_machine }
+		mutually_exclusive = { focus = nef_res_adapt_and_overcome }
+		x = 10
+		y = 3
+		cost = 12
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		completion_reward = {
+			add_ideas = nef_upot
+		}
+	}
+	focus = {
+		id = nef_res_adapt_and_overcome
+		icon = GFX_focus_generic_license_production
+		prerequisite = { focus = nef_res_war_machine }
+		mutually_exclusive = { focus = nef_res_unpaid_overtime }
+		x = 12
+		y = 3
+		cost = 12
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		completion_reward = {
+			add_ideas = nef_adaptovercome
+		}
+	}
+	focus = {
+		id = nef_res_coal_of_duty
+		icon = GFX_focus_generic_steel
+		prerequisite = { focus = nef_res_grand_council }
+		x = 14
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = excavation_bonus
+				bonus = 0.5
+				uses = 2
+				category = excavation_tech
+			}
+		}
+	}
+	focus = {
+		id = nef_res_beans_and_bullets
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = nef_res_coal_of_duty }
+		x = 14
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		completion_reward = {
+			add_ideas = nef_beansbullets
+		}
+	}
+	focus = {
+		id = nef_res_inspect_your_gadgets
+		icon = GFX_goal_continuous_research
+		prerequisite = { focus = nef_res_grand_council }
+		x = 17
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				name = electronics_bonus
+				category = electronics
+			}
+		}
+	}
+	focus = {
+		id = nef_res_secrets_are_no_fun
+		icon = GFX_focus_generic_cryptologic_bomb
+		prerequisite = { focus = nef_res_inspect_your_gadgets }
+		x = 17
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				name = encryption_bonus
+				category = encryption_tech
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				name = decryption_bonus
+				category = decryption_tech
+			}
+		}
+	}
+	focus = {
+		id = nef_res_civil_defense_battalions
+		icon = GFX_goal_generic_radar
+		prerequisite = { focus = nef_res_secrets_are_no_fun }
+		mutually_exclusive = { focus = nef_res_flak_boats }
+		x = 16
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				name = radar_bonus
+				category = radar_tech
+			}
+			add_ideas = nef_civildefense
+		}
+	}
+	focus = {
+		id = nef_res_flak_boats
+		icon = GFX_focus_generic_air_defense
+		prerequisite = { focus = nef_res_secrets_are_no_fun }
+		mutually_exclusive = { focus = nef_res_civil_defense_battalions }
+		x = 18
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				name = radar_bonus
+				category = radar_tech
+			}
+			add_ideas = nef_flakboats
+		}
+	}
+	focus = {
+		id = nef_res_the_dark_arts
+		icon = GFX_focus_research
+		prerequisite = { focus = nef_res_grand_council }
+		available = {
+				has_war = yes
+				date > 1983.1.1
+		}
+		x = 20
+		y = 1
+		cost = 15
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = nef_res_nuclear_reproliferation
+		icon = GFX_focus_wonderweapons
+		prerequisite = { focus = nef_res_the_dark_arts }
+		x = 19
+		y = 2
+		cost = 20
+			
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		completion_reward = {
+			set_technology = {
+				atomic_research = 1
+			}
+		}
+	}
+	focus = {
+		id = nef_res_depleted_uranium
+		icon = GFX_goal_generic_secret_weapon
+		available = { date > 1991.1.1 }
+		prerequisite = { focus = nef_res_the_dark_arts }
+		x = 21
+		y = 2
+		cost = 15
+
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 100
+		}
+
+		completion_reward = {
+			add_ideas = nef_depura
+		}
+	}
+	focus = {
+		id = nef_res_unrestricted_armaments
+		icon = GFX_goal_generic_secret_weapon
+		available = { date > 1992.1.1 }
+		prerequisite = { focus = nef_res_the_dark_arts }
+		x = 21
+		y = 3
+		cost = 15
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 100
+		}
+
+		completion_reward = {
+			add_ideas = nef_unrarm2
+		}
+	}
+	focus = {
+		id = nef_res_high_on_violence
+		icon = GFX_goal_generic_secret_weapon
+		available = { date > 1993.1.1 }
+		prerequisite = { focus = nef_res_unrestricted_armaments }
+		x = 21
+		y = 4
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 100
+		}
+
+		completion_reward = {
+			add_ideas = nef_hovio2
+		}
+	}
+
+##############################################################################
+############ DRUMS OF WAR ####################################################
+##############################################################################
+
+	focus = {
+		id = nef_res_drums_of_war
+		icon = GFX_goal_generic_major_war 
+		available = { has_country_flag = council_started }
+		x = 15
+		y = 5
+		cost = 7
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			add_ideas = nef_mopeace2
+		}
+	}
+
+############# ARMY
+
+	focus = {
+		id = nef_res_reform_the_army
+		icon = GFX_goal_generic_build_tank
+		prerequisite = { focus = nef_res_drums_of_war }
+		x = 7
+		y = 6
+		cost = 7
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		completion_reward = {
+			army_experience = 25
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				name = land_doctrine
+				category = land_doctrine
+			}
+		}
+	}
+
+### MANPOWER TREE
+
+	focus = {
+		id = nef_res_our_countrys_pride
+		icon = GFX_idea_generic_manpower_bonus
+		prerequisite = { focus = nef_res_reform_the_army }
+		
+		x = 1
+		y = 7
+		cost = 10
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = nef_mopeace2
+				add_idea = nef_ocpres
+			}
+		}
+	}	
+
+
+	focus = {
+		id = nef_res_tiny_training_world
+		icon = GFX_focus_generic_military_academy
+		prerequisite = { focus = nef_res_our_countrys_pride }
+		mutually_exclusive = { focus = nef_res_sheep_to_slaughter }
+		
+		x = 0
+		y = 8
+		cost = 5
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = nef_ocpres
+				add_idea = nef_tinytraining
+			}
+		}
+	}
+
+	focus = {
+		id = nef_res_sheep_to_slaughter
+		icon = GFX_focus_generic_little_entente
+		prerequisite = { focus = nef_res_our_countrys_pride }
+		mutually_exclusive = { focus = nef_res_tiny_training_world }
+		
+		x = 2
+		y = 8
+		cost = 5
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = nef_ocpres
+				add_idea = nef_sheepslaughter
+			}
+		}
+	}
+
+	focus = {
+		id = nef_res_desperate_times
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = nef_res_tiny_training_world focus = nef_res_sheep_to_slaughter }
+		x = 1
+		y = 9
+		cost = 5
+			
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 50
+				has_manpower < 2000000
+			}
+		}
+		
+		completion_reward = {
+			add_stability = -0.05
+			if = {
+				limit = {
+					NOT = {
+						has_idea = nef_tinytraining
+						has_idea = nef_sheepslaughter
+						}
+				}
+				add_ideas = nef_desptimes
+			}
+			if = {
+				limit = {
+					has_idea = nef_tinytraining
+				}
+				swap_ideas = {
+					remove_idea = nef_tinytraining
+					add_idea = nef_tinytrainingdesptimes
+				}
+			}
+			if = {
+				limit = {
+					has_idea = nef_sheepslaughter
+				}
+				swap_ideas = {
+					remove_idea = nef_sheepslaughter
+					add_idea = nef_sheepslaughterdesptimes
+				}
+			}
+		}
+	}
+
+
+	focus = {
+		id = nef_res_desperate_measures
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = nef_res_desperate_times }
+		available = {
+			surrender_progress > 0.2
+			}		
+		x = 1
+		y = 10
+		cost = 5
+
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 50
+				has_manpower < 2000000
+			}
+		}
+		completion_reward = {
+			add_stability = -0.15
+			if = {
+				limit = {
+					NOT = {
+						has_idea = nef_tinytrainingdesptimes
+						has_idea = nef_sheepslaughterdesptimes
+						}
+				}
+				add_ideas = nef_despmeasures
+			}
+			if = {
+				limit = {
+					has_idea = nef_tinytrainingdesptimes
+				}
+				swap_ideas = {
+					remove_idea = nef_tinytrainingdesptimes
+					add_idea = nef_tinytrainingdespmeasures
+				}
+			}
+			if = {
+				limit = {
+					has_idea = nef_sheepslaughterdesptimes
+				}
+				swap_ideas = {
+					remove_idea = nef_sheepslaughterdesptimes
+					add_idea = nef_sheepslaughterdespmeasures
+				}
+			}
+			
+			}
+	}	
+	
+### QUEEN OF BATTLE
+
+
+	focus = {
+		id = nef_res_queen_of_battle
+		icon = GFX_focus_secret_rearmament
+		prerequisite = { focus = nef_res_reform_the_army }
+		x = 5
+		y = 7
+		cost = 10
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 2
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons
+				bonus = 0.5
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+	}
+	
+	focus = {
+		id = nef_res_sticks_and_stones
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = nef_res_queen_of_battle }
+		mutually_exclusive = { focus = nef_res_old_dogs }
+		x = 4
+		y = 8
+		cost = 5
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				OR = {
+					tag = SIA
+					tag = INS
+					tag = MEX
+					tag = BRA
+					tag = DEN
+					tag = JAP
+					tag = SAF
+					tag = ETH
+					tag = SAU
+					tag = GER
+					tag = SPR
+					tag = MAN
+					tag = PER
+					tag = USA
+					}
+				}
+		}
+		completion_reward = {
+			add_ideas = nef_sticksstones
+		}
+	}
+	
+	focus = {
+		id = nef_res_old_dogs
+		icon = GFX_focus_generic_military_mission
+		prerequisite = { focus = nef_res_queen_of_battle }
+		mutually_exclusive = { focus = nef_res_sticks_and_stones }
+		x = 6
+		y = 8
+		cost = 5
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				OR = {
+					tag = SOV
+					tag = TUR
+					tag = PRC
+					tag = RAJ
+					tag = NEP
+					tag = JAP
+					}
+				}
+		}
+		completion_reward = {
+			add_ideas = nef_olddogs
+		}
+	}
+	
+	focus = {
+		id = nef_res_what_makes_grass_grow
+		icon = GFX_goal_generic_small_arms
+		available = { 
+			OR = {
+				has_completed_focus = nef_res_sticks_and_stones
+				has_completed_focus = nef_res_old_dogs
+			}
+		}
+		x = 5
+		y = 10
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons
+				bonus = 0.5
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+	}
+	
+	focus = {
+		id = nef_res_supporting_cast
+		icon = GFX_focus_chi_army_reform
+		prerequisite = { focus = nef_res_what_makes_grass_grow }
+		mutually_exclusive = { focus = nef_res_high_speed_low_drag }
+		x = 4
+		y = 11
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {	
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				name = support_tech
+				category = support_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = nef_res_high_speed_low_drag
+		icon = GFX_goal_generic_special_forces
+		prerequisite = { focus = nef_res_what_makes_grass_grow }
+		mutually_exclusive = { focus = nef_res_supporting_cast }
+		x = 6
+		y = 11
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {	
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				name = special_forces_bonus
+				category = mountaineers_tech
+				category = marine_tech
+				category = para_tech
+			}
+		}
+	}
+
+### KING OF BATTLE
+
+	focus = {
+		id = nef_res_king_of_battle
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = { focus = nef_res_reform_the_army }
+		x = 9
+		y = 7
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = artillery
+				bonus = 0.5
+				uses = 1
+				category = artillery
+			}
+		}
+	}
+	
+	focus = {
+		id = nef_res_no_guns_no_glory
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = nef_res_king_of_battle }
+		mutually_exclusive = { focus = nef_res_willy_pete }
+		x = 8
+		y = 8
+		cost = 5
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				OR = {
+					tag = SOV
+					tag = TUR
+					tag = PRC
+					tag = RAJ
+					tag = NEP
+					tag = JAP
+					}
+				}
+		}
+		completion_reward = {
+			add_ideas = nef_nogunsnoglory
+		}
+	}
+	
+	focus = {
+		id = nef_res_willy_pete
+		icon = GFX_goal_poland_goal
+		prerequisite = { focus = nef_res_king_of_battle }
+		mutually_exclusive = { focus = nef_res_no_guns_no_glory }
+		x = 10
+		y = 8
+		cost = 5
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				OR = {
+					tag = SIA
+					tag = INS
+					tag = MEX
+					tag = BRA
+					tag = DEN
+					tag = JAP
+					tag = SAF
+					tag = ETH
+					tag = SAU
+					tag = GER
+					tag = SPR
+					tag = MAN
+					tag = PER
+					tag = USA
+					}
+				}
+		}
+		completion_reward = {
+			add_ideas = nef_willypete
+		}
+	}
+	
+	focus = {
+		id = nef_res_smells_like_victory
+		icon = GFX_focus_rocketry
+		available = { 
+			OR = {
+				has_completed_focus = nef_res_no_guns_no_glory
+				has_completed_focus = nef_res_willy_pete
+			}
+		}
+		x = 9
+		y = 10
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = artillery
+				bonus = 0.5
+				uses = 2
+				category = artillery
+			}
+		}
+	}
+	
+	focus = {
+		id = nef_res_jungle_rats
+		icon = GFX_focus_RAJ_indian_gentlemen_offcers
+		prerequisite = { focus = nef_res_smells_like_victory }
+		mutually_exclusive = { focus = nef_res_mountain_gods }
+		x = 8
+		y = 11
+		cost = 5
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				OR = {
+					tag = SIA
+					tag = INS
+					tag = BRA
+					}
+				}
+		}
+		completion_reward = {
+			set_technology = {
+				jungle_warfare = 1
+			}
+		}
+	}
+	
+	focus = {
+		id = nef_res_mountain_gods
+		icon = GFX_focus_RAJ_indian_gurkhas
+		prerequisite = { focus = nef_res_smells_like_victory }
+		mutually_exclusive = { focus = nef_res_jungle_rats }
+		x = 10
+		y = 11
+		cost = 5
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				OR = {
+					tag = RAJ
+					tag = NEP
+					tag = PRC
+					}
+				}
+		}
+		completion_reward = {
+			set_technology = {
+				mountain_gun = 1
+			}
+		}
+	}
+	
+
+### TANKS FOR YOUR SERVICE
+
+	focus = {
+		id = nef_res_tanks_for_your_service
+		icon = GFX_idea_generic_acquire_tanks
+		prerequisite = { focus = nef_res_reform_the_army }
+		x = 13
+		y = 7
+		cost = 10
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				OR = {
+					tag = ETH
+					tag = SAU
+					tag = GER
+					tag = SPR
+					tag = MAN
+					tag = PER
+					tag = USA
+					}
+				}
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 0.5
+				uses = 1
+				category = armor
+			}
+		}
+	}
+	
+	focus = {
+		id = nef_res_instruments_of_death
+		icon = GFX_focus_generic_tank_production
+		prerequisite = { focus = nef_res_tanks_for_your_service }
+		mutually_exclusive = { focus = nef_res_concentration_of_force }
+		x = 12
+		y = 8
+		cost = 5
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				OR = {
+					tag = SIA
+					tag = INS
+					tag = MEX
+					tag = BRA
+					tag = DEN
+					tag = JAP
+					tag = SAF
+					}
+				}
+		}
+		completion_reward = {
+			add_ideas = nef_instrumentsdeath
+		}
+	}
+	
+	focus = {
+		id = nef_res_concentration_of_force
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = nef_res_tanks_for_your_service }
+		mutually_exclusive = { focus = nef_res_instruments_of_death }
+		x = 14
+		y = 8
+		cost = 5
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				OR = {
+					tag = ETH
+					tag = SAU
+					tag = GER
+					tag = SPR
+					tag = MAN
+					tag = PER
+					tag = USA
+					}
+				}
+		}
+		completion_reward = {
+			add_ideas = nef_concentrationforce
+		}
+	}
+
+	focus = {
+		id = nef_res_my_tank_is_fight
+		icon = GFX_focus_generic_army_tanks2
+		available = { 
+			OR = {
+				has_completed_focus = nef_res_instruments_of_death
+				has_completed_focus = nef_res_concentration_of_force
+			}
+		}
+		x = 13
+		y = 10
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 0.5
+				uses = 1
+				category = armor
+			}
+		}
+	}
+
+	focus = {
+		id = nef_res_bleeding_edge
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = nef_res_my_tank_is_fight }
+		mutually_exclusive = { focus = nef_res_ironclad_legions }
+		x = 12
+		y = 11
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+					name = armor_bonus
+					bonus = 0.5
+					ahead_reduction = 1
+					category = armor
+			}
+		}
+	}
+	
+	focus = {
+		id = nef_res_ironclad_legions
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = nef_res_my_tank_is_fight }
+		mutually_exclusive = { focus = nef_res_bleeding_edge }
+		x = 14
+		y = 11
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = nef_ironlegions
+			}
+		}
+
+### NO HORSEPLAY
+
+	focus = {
+		id = nef_res_no_horseplay
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = nef_res_reform_the_army }
+		x = 16
+		y = 7
+		cost = 10
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				OR = {
+					tag = ETH
+					tag = SAU
+					tag = GER
+					tag = SPR
+					tag = MAN
+					tag = PER
+					tag = USA
+					}
+				}
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 0.75
+				category = motorized_equipment
+			}
+		}
+	}
+	
+	focus = {
+		id = nef_res_maneuver_improver
+		icon = GFX_focus_prc_infiltration
+		prerequisite = { focus = nef_res_no_horseplay }
+		x = 16
+		y = 8
+		cost = 5
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				OR = {
+					tag = ETH
+					tag = SAU
+					tag = GER
+					tag = SPR
+					tag = MAN
+					tag = PER
+					tag = USA
+					}
+				}
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = { nef_maneuverimprover }
+		}
+	}
+
+### ARMY DOCTRINE
+
+	focus = {
+		id = nef_res_there_will_be_blood
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = nef_res_sheep_to_slaughter focus = nef_res_sticks_and_stones }
+		mutually_exclusive = { focus = nef_res_ghost_of_clausewitz_past }
+		mutually_exclusive = { focus = nef_res_fire_and_brimstone }
+		mutually_exclusive = { focus = nef_res_unto_the_breach }
+		x = 3
+		y = 9
+		cost = 15
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = ma_focus_tooltip
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.75
+				uses = 1
+				category = cat_mass_assault
+				}
+		}
+	}
+	
+	focus = {
+		id = nef_res_ghost_of_clausewitz_past
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = nef_res_old_dogs focus = nef_res_no_guns_no_glory }
+		mutually_exclusive = { focus = nef_res_there_will_be_blood }
+		mutually_exclusive = { focus = nef_res_fire_and_brimstone }
+		mutually_exclusive = { focus = nef_res_unto_the_breach }
+		x = 7
+		y = 9
+		cost = 15
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 4
+				OR = {
+					tag = SOV
+					tag = TUR
+					tag = PRC
+					tag = RAJ
+					tag = NEP
+					tag = JAP
+					}
+				}
+		}
+		completion_reward = {
+			custom_effect_tooltip = gbp_focus_tooltip
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.75
+				uses = 1
+				category = cat_grand_battle_plan
+				}
+		}
+	}
+	
+	focus = {
+		id = nef_res_fire_and_brimstone
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = nef_res_willy_pete focus = nef_res_instruments_of_death }
+		mutually_exclusive = { focus = nef_res_there_will_be_blood }
+		mutually_exclusive = { focus = nef_res_ghost_of_clausewitz_past }
+		mutually_exclusive = { focus = nef_res_unto_the_breach }
+		x = 11
+		y = 9
+		cost = 15
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 4
+				OR = {
+					tag = SIA
+					tag = INS
+					tag = MEX
+					tag = BRA
+					tag = DEN
+					tag = JAP
+					tag = SAF
+					}
+				}
+		}
+		completion_reward = {
+			custom_effect_tooltip = sf_focus_tooltip
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.75
+				uses = 1
+				category = cat_superior_firepower
+				}
+		}
+	}
+	
+	focus = {
+		id = nef_res_unto_the_breach
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = nef_res_concentration_of_force focus = nef_res_maneuver_improver }
+		mutually_exclusive = { focus = nef_res_there_will_be_blood }
+		mutually_exclusive = { focus = nef_res_ghost_of_clausewitz_past }
+		mutually_exclusive = { focus = nef_res_fire_and_brimstone }
+		x = 15
+		y = 9
+		cost = 15
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 4
+				OR = {
+					tag = ETH
+					tag = SAU
+					tag = GER
+					tag = SPR
+					tag = MAN
+					tag = PER
+					tag = USA
+					}
+				}
+		}
+		completion_reward = {
+			custom_effect_tooltip = mw_focus_tooltip
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.75
+				uses = 1
+				category = cat_mobile_warfare
+				}
+		}
+	}
+
+	focus = {
+		id = nef_res_path_to_glory
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = nef_res_supporting_cast focus = nef_res_high_speed_low_drag}
+		x = 5
+		y = 12
+		cost = 10
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				name = land_doctrine
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = nef_res_keys_to_victory
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = nef_res_mountain_gods focus = nef_res_jungle_rats}
+		x = 9
+		y = 12
+		cost = 10
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				name = land_doctrine
+				category = land_doctrine
+			}
+		}
+	}
+	
+	focus = {
+		id = nef_res_winning_strategies
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = nef_res_bleeding_edge focus = nef_res_ironclad_legions}
+		x = 13
+		y = 12
+		cost = 10
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				name = land_doctrine
+				category = land_doctrine
+			}
+		}
+	}
+############# NAVY
+
+	focus = {
+		id = nef_res_reform_the_navy
+		icon = GFX_goal_generic_build_navy
+		prerequisite = { focus = nef_res_drums_of_war }
+		x = 20
+		y = 6
+		cost = 7
+
+		available_if_capitulated = yes
+
+		available = {
+			any_state = {
+				is_coastal = yes
+				is_controlled_by = ROOT
+			}
+		}
+		
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 2
+				OR = {
+					tag = INS
+					tag = JAP
+					tag = MEX
+					tag = DEN
+					}
+				}
+		}
+
+		completion_reward = {
+			navy_experience = 25
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				name = naval_doctrine
+				category = naval_doctrine
+			}
+		}
+	}
+	focus = {
+		id = nef_res_little_boats
+		icon = GFX_focus_generic_destroyer
+		prerequisite = { focus = nef_res_reform_the_navy }
+		x = 18
+		y = 7
+		cost = 10
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				name = dd_tech
+				category = dd_tech
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				name = cl_tech
+				category = cl_tech
+			}
+		}
+	}
+	focus = {
+		id = nef_res_big_boats
+		icon = GFX_focus_generic_cruiser2
+		prerequisite = { focus = nef_res_reform_the_navy }
+		x = 20
+		y = 7
+		cost = 10
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				name = ca_tech
+				category = ca_tech
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				name = bc_tech
+				category = bc_tech
+			}
+		}
+	}
+	focus = {
+		id = nef_res_bigger_boats
+		icon = GFX_focus_generic_navy_battleship2
+		prerequisite = { focus = nef_res_reform_the_navy }
+		x = 22
+		y = 7
+		cost = 10
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 2
+				OR = {
+					tag = INS
+					tag = JAP
+					tag = MEX
+					tag = DEN
+					}
+				}
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				name = bb_tech
+				category = bb_tech
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				name = cv_tech
+				category = cv_tech
+			}
+		}
+	}
+	focus = {
+		id = nef_res_run_silent_run_deep
+		icon = GFX_goal_generic_navy_submarine
+		prerequisite = { focus = nef_res_little_boats }
+		x = 18
+		y = 8
+		cost = 10
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				OR = {
+					tag = RAJ
+					tag = SOV
+					tag = ETH
+					tag = PRC
+				}
+			}
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				ahead_reduction = 1
+				uses = 1
+				name = ss_tech
+				category = ss_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = nef_res_surprise_party
+		icon = GFX_goal_generic_amphibious_assault
+		prerequisite = { focus = nef_res_little_boats focus = nef_res_big_boats focus = nef_res_bigger_boats }
+		x = 20
+		y = 8
+		cost = 10
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 2
+				OR = {
+					tag = INS
+					tag = JAP
+					tag = MEX
+					tag = DEN
+					}
+				}
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				ahead_reduction = 1
+				uses = 1
+				name = tp_tech
+				category = tp_tech
+			}
+		}
+	}
+	focus = {
+		id = nef_res_heavy_metal
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = { focus = nef_res_bigger_boats }
+		x = 22
+		y = 8
+		cost = 10
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				name = shbb_tech
+				category = shbb_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = nef_res_sir_long_lancealot
+		icon = GFX_idea_the_long_lance
+		prerequisite = { focus = nef_res_run_silent_run_deep }
+		mutually_exclusive = { focus = nef_res_run_them_down }
+		x = 17
+		y = 9
+		cost = 5
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 3
+				OR = {
+					tag = RAJ
+					tag = SOV
+					tag = ETH
+					tag = PRC
+				}
+			}
+		}
+
+		completion_reward = {
+			add_ideas = nef_longlance
+		}
+	}
+	
+	focus = {
+		id = nef_res_run_them_down
+		icon = GFX_idea_liberty_ships_focus
+		prerequisite = { focus = nef_res_run_silent_run_deep focus = nef_res_surprise_party}
+		mutually_exclusive = { focus = nef_res_sir_long_lancealot }
+		x = 19
+		y = 9
+		cost = 5
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		completion_reward = {
+			add_ideas = nef_runemdown
+		}
+	}
+	
+	focus = {
+		id = nef_res_fire_for_effect
+		icon = GFX_idea_generic_artillery_manufacturer_2
+		prerequisite = { focus = nef_res_surprise_party focus = nef_res_heavy_metal }
+		mutually_exclusive = { focus = nef_res_life_preservers }
+		x = 21
+		y = 9
+		cost = 5
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		completion_reward = {
+			add_ideas = nef_fireforeffect
+		}
+	}
+	focus = {
+		id = nef_res_life_preservers
+		icon = GFX_idea_generic_coastal_navy
+		prerequisite = { focus = nef_res_heavy_metal }
+		mutually_exclusive = { focus = nef_res_fire_for_effect }
+		x = 23
+		y = 9
+		cost = 5
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_ideas = nef_lifepreservers
+		}
+	}
+	focus = {
+		id = nef_res_hoist_the_jolly_roger
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		prerequisite = { focus = nef_res_sir_long_lancealot focus = nef_res_run_them_down }
+		mutually_exclusive = { focus = nef_res_bigger_is_better }
+		mutually_exclusive = { focus = nef_res_force_projection }
+		x = 18
+		y = 10
+		cost = 15
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 3
+				OR = {
+					tag = RAJ
+					tag = SOV
+					tag = ETH
+					tag = PRC
+				}
+			}
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = ci_focus_tooltip
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 2
+				name = cat_trade_interdiction
+				category = cat_trade_interdiction
+			}
+		}
+	}
+	focus = {
+		id = nef_res_bigger_is_better
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		prerequisite = { focus = nef_res_run_them_down focus = nef_res_fire_for_effect }
+		mutually_exclusive = { focus = nef_res_hoist_the_jolly_roger }
+		mutually_exclusive = { focus = nef_res_force_projection }
+		x = 20
+		y = 10
+		cost = 15
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = fib_focus_tooltip
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 2
+				name = cat_fleet_in_being
+				category = cat_fleet_in_being
+			}
+		}
+	}
+	focus = {
+		id = nef_res_force_projection
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		prerequisite = { focus = nef_res_fire_for_effect focus = nef_res_life_preservers }
+		mutually_exclusive = { focus = nef_res_hoist_the_jolly_roger }
+		mutually_exclusive = { focus = nef_res_bigger_is_better }
+		x = 22
+		y = 10
+		cost = 15
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = bs_focus_tooltip
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 2
+				name = cat_base_strike
+				category = cat_base_strike
+			}
+		}
+	}
+############# AIR
+
+	focus = {
+		id = nef_res_reform_the_air_force
+		icon = GFX_goal_generic_build_airforce
+		prerequisite = { focus = nef_res_drums_of_war }
+		x = 27
+		y = 6
+		cost = 7
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		completion_reward = {
+			air_experience = 25
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				name = air_doctrine
+				category = air_doctrine
+			}
+		}
+	}
+	
+	focus = {
+		id = nef_res_delete_boats
+		icon = GFX_goal_generic_air_naval_bomber
+		prerequisite = { focus = nef_res_reform_the_air_force }
+		x = 24
+		y = 7
+		cost = 10
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				OR = {
+					tag = ENG
+					tag = JAP
+					tag = SAF
+					tag = MEX
+					tag = DEN
+					tag = INS
+				}
+			}
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				ahead_reduction = 1
+				uses = 1
+				name = naval_bomber
+				category = naval_bomber
+			}
+		}
+	}
+	focus = {
+		id = nef_res_roaring_eagles
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = nef_res_reform_the_air_force }
+		x = 26
+		y = 7
+		cost = 10
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				name = light_fighter
+				category = light_fighter
+			}
+		}
+	}
+	focus = {
+		id = nef_res_close_air_support
+		icon = GFX_goal_generic_occupy_start_war
+		prerequisite = { focus = nef_res_reform_the_air_force }
+		x = 28
+		y = 7
+		cost = 10
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				name = cas_bomber
+				category = cas_bomber
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				name = cat_heavy_fighter
+				category = cat_heavy_fighter
+			}
+		}
+	}
+	focus = {
+		id = nef_res_death_from_above
+		icon = GFX_goal_generic_CAS
+		prerequisite = { focus = nef_res_reform_the_air_force }
+		x = 30
+		y = 7
+		cost = 10
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				name = tactical_bomber
+				category = tactical_bomber
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				name = cat_strategic_bomber
+				category = cat_strategic_bomber
+			}
+		}
+	}
+	focus = {
+		id = nef_res_smoke_on_the_water
+		icon = GFX_goal_generic_navy_carrier
+		prerequisite = { focus = nef_res_delete_boats }
+		prerequisite = { focus = nef_res_roaring_eagles }
+		x = 25
+		y = 8
+		cost = 10
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 2
+				name = naval_air
+				category = naval_air
+			}
+		}
+	}
+	focus = {
+		id = nef_res_doctrinal_review
+		icon = GFX_goal_generic_air_doctrine
+		prerequisite = { focus = nef_res_roaring_eagles focus = nef_res_close_air_support focus = nef_res_death_from_above }
+		available = { has_war = yes }
+		x = 28
+		y = 8
+		cost = 10
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = airdoc_focus_tooltip
+			air_experience = 30
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				name = air_doctrine
+				category = air_doctrine
+			}
+		}
+	}
+	focus = {
+		id = nef_res_low_life_expectancy
+		icon = GFX_focus_YUG_rogozarski
+		prerequisite = { focus = nef_res_doctrinal_review }
+		mutually_exclusive = { focus = nef_res_quality_craftsmanship }
+		x = 27
+		y = 9
+		cost = 10
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		completion_reward = {
+			add_ideas = nef_lowlifeexpectancy
+		}
+	}
+	focus = {
+		id = nef_res_quality_craftsmanship
+		icon = GFX_goal_generic_air_fighter2
+		prerequisite = { focus = nef_res_doctrinal_review }
+		mutually_exclusive = { focus = nef_res_low_life_expectancy }
+		x = 29
+		y = 9
+		cost = 10
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		completion_reward = {
+			add_ideas = nef_qualitycraftsmanship
+		}
+	}
+	focus = {
+		id = nef_res_honor_in_death
+		icon = GFX_goal_generic_secret_weapon
+		prerequisite = { focus = nef_res_low_life_expectancy }
+		x = 27
+		y = 10
+		cost = 10
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		completion_reward = {
+			hidden_effect = {
+				set_rule = { can_use_kamikaze_pilots = yes }
+			}
+			custom_effect_tooltip = kamikaze_focus_tooltip
+		}
+	}
+	focus = {
+		id = nef_res_top_gun
+		icon = GFX_focus_chi_flying_tigers
+		prerequisite = { focus = nef_res_quality_craftsmanship }
+		x = 29
+		y = 10
+		cost = 10
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				add_idea = nef_topgun
+				remove_idea = nef_qualitycraftsmanship
+			}
+		}
+	}
+	focus = {
+		id = nef_res_best_practices
+		icon = GFX_goal_generic_air_doctrine
+		prerequisite = { focus = nef_res_honor_in_death focus = nef_res_top_gun }
+		available = {
+			has_war = yes
+		}
+		x = 28
+		y = 11
+		cost = 10
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		completion_reward = {
+			air_experience = 100
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				name = air_doctrine
+				category = air_doctrine
+			}
+		}
+	}	
+############################# END
+}

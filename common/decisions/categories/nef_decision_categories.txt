@@ -1,0 +1,9 @@
+nef_dec_resistance = {
+	icon = generic_independence
+	allowed = {
+		is_freenation = yes
+	}
+	visible = {
+		always = yes
+	}
+}

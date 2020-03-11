@@ -1,0 +1,77 @@
+
+technology_sharing_group = {
+
+	id = oceania_research
+	name = oceania_research_name
+	desc = oceania_research_desc
+	picture = GFX_technology_sharing_default
+    
+	research_sharing_per_country_bonus = 0.1
+
+    available = {
+        is_in_faction_with = ENG
+    }
+
+}
+
+
+technology_sharing_group = {
+
+	id = eurasia_research
+	name = eurasia_research_name
+	desc = eurasia_research_desc
+	picture = GFX_technology_sharing_default
+    
+	research_sharing_per_country_bonus = 0.1
+
+    available = {
+        is_in_faction_with = SOV
+    }
+
+}
+
+ technology_sharing_group = {
+
+	id = eastasia_research
+	name = eastasia_research_name
+	desc = eastasia_research_desc
+	picture = GFX_technology_sharing_default
+    
+	research_sharing_per_country_bonus = 0.1
+
+    available = {
+        is_in_faction_with = PRC
+    }
+
+}
+
+technology_sharing_group = {
+
+	id = resistance_research
+	name = resistance_research_name
+	desc = resistance_research_desc
+	picture = GFX_technology_sharing_default
+    
+	research_sharing_per_country_bonus = 0.1
+
+    available = {
+		is_in_faction_with = ISR
+    }
+
+}
+
+technology_sharing_group = {
+
+	id = continuous_tech_share
+	name = continuous_tech_share_group_name
+	desc = continuous_tech_share_group_desc
+	picture = GFX_technology_sharing_default
+    
+	research_sharing_per_country_bonus = 0.1
+	is_faction_sharing = yes
+
+    available = {
+        is_in_faction = yes
+    }
+
+}

@@ -1,0 +1,1538 @@
+﻿###########################
+# These events are to give the free nations free forts at the beginning of the game.
+# Only AI nations get free forts. Player-controlled countries need to build their own.
+###########################
+
+add_namespace = nef_aiforts
+
+# India
+
+country_event = {
+	id = nef_aiforts.01
+	title = nef_aiforts.01.t
+	desc = nef_aiforts.01.d
+	hidden = yes
+	major = no
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = nef_aiforts.01.a
+		443 = {
+			add_building_construction = {
+				type = bunker
+				province = 4003
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 4110
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 7084
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 1971
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 3456
+				level = 2
+				instant_build = yes
+			}
+		}
+		428 = {
+			add_building_construction = {
+				type = coastal_bunker
+				province = 9975
+				level = 2
+				instant_build = yes
+			}
+		}
+		440 = {
+			add_building_construction = {
+				type = bunker
+				province = 10898
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 10843
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 10772
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 10729
+				level = 1
+				instant_build = yes
+			}
+		}
+		439 = {
+			add_building_construction = {
+				type = bunker
+				province = 10729
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 12708
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 2032
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 2086
+				level = 2
+				instant_build = yes
+			}
+		}
+		433 = {
+			add_building_construction = {
+				type = bunker
+				province = 4915
+				level = 1
+				instant_build = yes
+			}
+		}
+		437 = {
+			add_building_construction = {
+				type = bunker
+				province = 10807
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 2036
+				level = 1
+				instant_build = yes
+			}
+		}
+		438 = {
+			add_building_construction = {
+				type = bunker
+				province = 4045
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 5040
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 7938
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 2005
+				level = 1
+				instant_build = yes
+			}
+		}
+		435 = {
+			add_building_construction = {
+				type = bunker
+				province = 4516
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 4544
+				level = 1
+				instant_build = yes
+			}
+		}
+		431 = {
+			add_building_construction = {
+				type = bunker
+				province = 7537
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 7593
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 4644
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 1609
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 4245
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 4245
+				level = 2
+				instant_build = yes
+			}
+		}
+		430 = {
+			add_building_construction = {
+				type = bunker
+				province = 7124
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 4162
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 11968
+				level = 2
+				instant_build = yes
+			}
+		}
+		429 = {
+			add_building_construction = {
+				type = bunker
+				province = 1349
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 4353
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 12142
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 1349
+				level = 2
+				instant_build = yes
+			}
+		}
+		427 = {
+			add_building_construction = {
+				type = bunker
+				province = 5063
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 12226
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 11950
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 12114
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 4280
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 1359
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 5104
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 1317
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 1275
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 7340
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 1228
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 7297
+				level = 1
+				instant_build = yes
+			}
+		}
+		321 = {
+			add_building_construction = {
+				type = coastal_bunker
+				province = 1273
+				level = 2
+				instant_build = yes
+			}
+		}
+		422 = {
+			add_building_construction = {
+				type = coastal_bunker
+				province = 7260
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 10201
+				level = 2
+				instant_build = yes
+			}
+		}
+		320 = {
+			add_building_construction = {
+				type = coastal_bunker
+				province = 1049
+				level = 2
+				instant_build = yes
+			}
+		}
+		423 = {
+			add_building_construction = {
+				type = coastal_bunker
+				province = 10278
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}
+
+# Africa
+
+country_event = {
+	id = nef_aiforts.02
+	title = nef_aiforts.02.t
+	desc = nef_aiforts.02.d
+	hidden = yes
+	major = no
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = nef_aiforts.02.a
+		447 = {
+			add_building_construction = {
+				type = bunker
+				province = 1071
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 4076
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 4076
+				level = 2
+				instant_build = yes
+			}
+		}
+		446 = {
+			add_building_construction = {
+				type = bunker
+				province = 10005
+				level = 4
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 12049
+				level = 4
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 10031
+				level = 4
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 7188
+				level = 4
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 7011
+				level = 6
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 4073
+				level = 6
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 10005
+				level = 4
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 12049
+				level = 4
+				instant_build = yes
+			}
+		}
+		448 = {
+			add_building_construction = {
+				type = bunker
+				province = 1149
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 1149
+				level = 2
+				instant_build = yes
+			}
+		}
+		458 = {
+			add_building_construction = {
+				type = bunker
+				province = 11969
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 9994
+				level = 2
+				instant_build = yes
+			}
+		}
+		451 = {
+			add_building_construction = {
+				type = coastal_bunker
+				province = 1130
+				level = 2
+				instant_build = yes
+			}
+		}
+		450 = {
+			add_building_construction = {
+				type = coastal_bunker
+				province = 11954
+				level = 2
+				instant_build = yes
+			}
+		}
+		459 = {
+			add_building_construction = {
+				type = coastal_bunker
+				province = 1145
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 7132
+				level = 3
+				instant_build = yes
+			}
+		}
+		290 = {
+			add_building_construction = {
+				type = coastal_bunker
+				province = 12100
+				level = 2
+				instant_build = yes
+			}
+		}
+		461 = {
+			add_building_construction = {
+				type = coastal_bunker
+				province = 7069
+				level = 2
+				instant_build = yes
+			}
+		}
+		462 = {
+			add_building_construction = {
+				type = coastal_bunker
+				province = 12857
+				level = 2
+				instant_build = yes
+			}
+		}
+		699 = {
+			add_building_construction = {
+				type = coastal_bunker
+				province = 8038
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}
+
+# Arabia
+
+country_event = {
+	id = nef_aiforts.03
+	title = nef_aiforts.03.t
+	desc = nef_aiforts.03.d
+	hidden = yes
+	major = no
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = nef_aiforts.03.a
+		658 = {
+			add_building_construction = {
+				type = bunker
+				province = 10904
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 7960
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 2048
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 8051
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 10904
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 7960
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 2048
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 8051
+				level = 1
+				instant_build = yes
+			}
+		}
+		294 = {
+			add_building_construction = {
+				type = coastal_bunker
+				province = 10760
+				level = 2
+				instant_build = yes
+			}
+		}
+		659 = {
+			add_building_construction = {
+				type = coastal_bunker
+				province = 8000
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 5074
+				level = 2
+				instant_build = yes
+			}
+		}
+		293 = {
+			add_building_construction = {
+				type = coastal_bunker
+				province = 10840
+				level = 2
+				instant_build = yes
+			}
+		}
+		679 = {
+			add_building_construction = {
+				type = coastal_bunker
+				province = 12883
+				level = 2
+				instant_build = yes
+			}
+		}
+		453 = {
+			add_building_construction = {
+				type = coastal_bunker
+				province = 1155
+				level = 6
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 1155
+				level = 6
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 9947
+				level = 6
+				instant_build = yes
+			}
+		}
+		292 = {
+			add_building_construction = {
+				type = bunker
+				province = 12727
+				level = 2
+				instant_build = yes
+			}
+		}
+		656 = {
+			add_building_construction = {
+				type = bunker
+				province = 8085
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 8085
+				level = 3
+				instant_build = yes
+			}
+		}
+		291 = {
+			add_building_construction = {
+				type = bunker
+				province = 2089
+				level = 6
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 2089
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 12726
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 7977
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 7994
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 2097
+				level = 6
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 12046
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 12839
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 12876
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 8001
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 3795
+				level = 2
+				instant_build = yes
+			}
+		}
+		675 = {
+			add_building_construction = {
+				type = bunker
+				province = 12413
+				level = 1
+				instant_build = yes
+			}
+		}
+		676 = {
+			add_building_construction = {
+				type = bunker
+				province = 1600
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 10106
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 10804
+				level = 1
+				instant_build = yes
+			}
+		}
+		680 = {
+			add_building_construction = {
+				type = bunker
+				province = 1549
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 1578
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 1634
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 6883
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 3942
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 7513
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 2013
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 1634
+				level = 2
+				instant_build = yes
+			}
+		}
+		677 = {
+			add_building_construction = {
+				type = bunker
+				province = 7671
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 12473
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 12029
+				level = 1
+				instant_build = yes
+			}
+		}
+		554 = {
+			add_building_construction = {
+				type = bunker
+				province = 4111
+				level = 6
+				instant_build = yes
+			}
+		}
+		553 = {
+			add_building_construction = {
+				type = bunker
+				province = 792
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 792
+				level = 2
+				instant_build = yes
+			}
+		}
+		454 = {
+			add_building_construction = {
+				type = bunker
+				province = 4206
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 4206
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}
+
+# Indochina
+
+country_event = {
+	id = nef_aiforts.04
+	title = nef_aiforts.04.t
+	desc = nef_aiforts.04.d
+	hidden = yes
+	major = no
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = nef_aiforts.04.a
+		336 = {
+			add_building_construction = {
+				type = bunker
+				province = 12299
+				level = 6
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 10313
+				level = 5
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 4424
+				level = 3
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 12271
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 4412
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 7329
+				level = 6
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 4310
+				level = 5
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 7342
+				level = 5
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 12299
+				level = 6
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 10297
+				level = 6
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 7329
+				level = 6
+				instant_build = yes
+			}
+		}
+		288 = {
+			add_building_construction = {
+				type = bunker
+				province = 1403
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 12238
+				level = 1
+				instant_build = yes
+			}
+		}
+		640 = {
+			add_building_construction = {
+				type = bunker
+				province = 12317
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 7647
+				level = 2
+				instant_build = yes
+			}
+		}
+		289 = {
+			add_building_construction = {
+				type = bunker
+				province = 1253
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 1990
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 10456
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 10330
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 10356
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 10384
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 7516
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 4511
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 1535
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 1548
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 12417
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 7408
+				level = 6
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 7408
+				level = 6
+				instant_build = yes
+			}
+		}
+		670 = {
+			add_building_construction = {
+				type = bunker
+				province = 1592
+				level = 2
+				instant_build = yes
+			}
+		}
+		741 = {
+			add_building_construction = {
+				type = bunker
+				province = 12447
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 12475
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 4639
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 7376
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 10317
+				level = 2
+				instant_build = yes
+			}
+		}
+		286 = {
+			add_building_construction = {
+				type = bunker
+				province = 4401
+				level = 5
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 4401
+				level = 3
+				instant_build = yes
+			}
+		}
+		671 = {
+			add_building_construction = {
+				type = coastal_bunker
+				province = 1185
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+# Indonesia
+
+country_event = {
+	id = nef_aiforts.05
+	title = nef_aiforts.05.t
+	desc = nef_aiforts.05.d
+	hidden = yes
+	major = no
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = nef_aiforts.05.a
+		327 = {
+			add_building_construction = {
+				type = bunker
+				province = 1288
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 7323
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 10265
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 10265
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 1221
+				level = 1
+				instant_build = yes
+			}
+		}
+		623 = {
+			add_building_construction = {
+				type = coastal_bunker
+				province = 1415
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 12213
+				level = 2
+				instant_build = yes
+			}
+		}
+		628 = {
+			add_building_construction = {
+				type = coastal_bunker
+				province = 12118
+				level = 1
+				instant_build = yes
+			}
+		}
+		626 = {
+			add_building_construction = {
+				type = coastal_bunker
+				province = 4429
+				level = 1
+				instant_build = yes
+			}
+		}
+		627 = {
+			add_building_construction = {
+				type = coastal_bunker
+				province = 4241
+				level = 1
+				instant_build = yes
+			}
+		}
+		668 = {
+			add_building_construction = {
+				type = coastal_bunker
+				province = 7413
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 1351
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 1574
+				level = 1
+				instant_build = yes
+			}
+		}
+		333 = {
+			add_building_construction = {
+				type = coastal_bunker
+				province = 7371
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 1208
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 1208
+				level = 2
+				instant_build = yes
+			}
+		}
+		334 = {
+			add_building_construction = {
+				type = coastal_bunker
+				province = 10325
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 10237
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 10237
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 1316
+				level = 2
+				instant_build = yes
+			}
+		}
+		673 = {
+			add_building_construction = {
+				type = coastal_bunker
+				province = 10263
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 10263
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 1589
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 10464
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 10153
+				level = 2
+				instant_build = yes
+			}
+		}
+		738 = {
+			add_building_construction = {
+				type = coastal_bunker
+				province = 4579
+				level = 1
+				instant_build = yes
+			}
+		}
+		669 = {
+			add_building_construction = {
+				type = coastal_bunker
+				province = 12371
+				level = 1
+				instant_build = yes
+			}
+		}
+		523 = {
+			add_building_construction = {
+				type = coastal_bunker
+				province = 12240
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 12154
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 12237
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 4329
+				level = 1
+				instant_build = yes
+			}
+		}
+		737 = {
+			add_building_construction = {
+				type = coastal_bunker
+				province = 7339
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 4352
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 7251
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 7251
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 10166
+				level = 2
+				instant_build = yes
+			}
+		}
+		634 = {
+			add_building_construction = {
+				type = coastal_bunker
+				province = 10234
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 4226
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 1269
+				level = 1
+				instant_build = yes
+			}
+		}
+		721 = {
+			add_building_construction = {
+				type = coastal_bunker
+				province = 1326
+				level = 1
+				instant_build = yes
+			}
+		}
+		711 = {
+			add_building_construction = {
+				type = coastal_bunker
+				province = 13005
+				level = 1
+				instant_build = yes
+			}
+		}
+		667 = {
+			add_building_construction = {
+				type = coastal_bunker
+				province = 1355
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 12234
+				level = 1
+				instant_build = yes
+			}
+		}
+		335 = {
+			add_building_construction = {
+				type = coastal_bunker
+				province = 4608
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 7381
+				level = 3
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 7381
+				level = 3
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 4406
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 1425
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 10307
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 1398
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 10279
+				level = 2
+				instant_build = yes
+			}
+		}
+		672 = {
+			add_building_construction = {
+				type = coastal_bunker
+				province = 12268
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 4652
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 1648
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 4652
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}

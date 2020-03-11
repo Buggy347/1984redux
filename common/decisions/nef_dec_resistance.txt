@@ -1,0 +1,234 @@
+nef_dec_resistance = {
+	
+	nef_dec_res_despdefense_RAJ = {
+
+		icon = generic_nationalism
+
+		visible = {
+			original_tag = RAJ
+			RAJ = { 
+				exists = yes
+				has_capitulated = no
+				has_variable = nef_var_despdefense_available
+				NOT = { has_completed_focus = nef_res_destruction_is_salvation }
+				}
+		}
+
+		available = {
+			RAJ = {
+				surrender_progress > 0.25
+			}
+		}
+		
+		fire_only_once = yes
+
+		days_remove = 45
+		
+		modifier = {
+				army_core_attack_factor = 0.5
+				army_core_defence_factor = 0.25
+				army_morale_factor = 0.15
+		}
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 100
+		}
+		
+		complete_effect = {
+			custom_effect_tooltip = nef_dec_res_despdefense_RAJ_tt
+			hidden_effect = {
+				RAJ = {
+					clear_variable = nef_var_despdefense_available
+				}
+				news_event = { id = nef_news.15 }
+				}
+		}
+	}
+	nef_dec_res_despdefense_ETH = {
+
+		icon = generic_nationalism
+
+		visible = {
+			original_tag = ETH
+			ETH = { 
+				exists = yes
+				has_capitulated = no
+				has_variable = nef_var_despdefense_available
+				NOT = { has_completed_focus = nef_res_destruction_is_salvation }
+				}
+		}
+
+		available = {
+			ETH = {
+				surrender_progress > 0.25
+			}
+		}
+		
+		fire_only_once = yes
+
+		days_remove = 45
+		
+		modifier = {
+				army_core_attack_factor = 0.5
+				army_core_defence_factor = 0.25
+				army_morale_factor = 0.15
+		}
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = nef_dec_res_despdefense_ETH_tt
+			hidden_effect = {
+				ETH = {
+					clear_variable = nef_var_despdefense_available
+				}
+				news_event = { id = nef_news.16 }
+				}
+		}
+	}
+	nef_dec_res_despdefense_SAU = {
+
+		icon = generic_nationalism
+
+		visible = {
+			original_tag = SAU
+			SAU = { 
+				exists = yes
+				has_capitulated = no
+				has_variable = nef_var_despdefense_available
+				NOT = { has_completed_focus = nef_res_destruction_is_salvation }
+				}
+		}
+
+		available = {
+			SAU = {
+				surrender_progress > 0.25
+			}
+		}
+		
+		fire_only_once = yes
+
+		days_remove = 45
+		
+		modifier = {
+				army_core_attack_factor = 0.5
+				army_core_defence_factor = 0.25
+				army_morale_factor = 0.15
+		}
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = nef_dec_res_despdefense_SAU_tt
+			hidden_effect = {
+				SAU = {
+					clear_variable = nef_var_despdefense_available
+				}
+				news_event = { id = nef_news.17 }
+				}
+		}
+	}
+	nef_dec_res_despdefense_SIA = {
+
+		icon = generic_nationalism
+
+		visible = {
+			original_tag = SIA
+			SIA = { 
+				exists = yes
+				has_capitulated = no
+				has_variable = nef_var_despdefense_available
+				NOT = { has_completed_focus = nef_res_destruction_is_salvation }
+				}
+		}
+
+		available = {
+			SIA = {
+				surrender_progress > 0.25
+			}
+		}
+		
+		fire_only_once = yes
+
+		days_remove = 45
+		
+		modifier = {
+				army_core_attack_factor = 0.5
+				army_core_defence_factor = 0.25
+				army_morale_factor = 0.15
+		}
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = nef_dec_res_despdefense_SIA_tt
+			hidden_effect = {
+				SIA = {
+					clear_variable = nef_var_despdefense_available
+				}
+				news_event = { id = nef_news.18 }
+				}
+		}
+	}
+	nef_dec_res_despdefense_INS = {
+
+		icon = generic_nationalism
+
+		visible = {
+			original_tag = INS
+			INS = { 
+				exists = yes
+				has_capitulated = no
+				has_variable = nef_var_despdefense_available
+				NOT = { has_completed_focus = nef_res_destruction_is_salvation }
+				}
+		}
+
+		available = {
+			INS = {
+				surrender_progress > 0.25
+			}
+		}
+		
+		fire_only_once = yes
+
+		days_remove = 45
+		
+		modifier = {
+				army_core_attack_factor = 0.5
+				army_core_defence_factor = 0.25
+				army_morale_factor = 0.15
+		}
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = nef_dec_res_despdefense_INS_tt
+			hidden_effect = {
+				INS = {
+					clear_variable = nef_var_despdefense_available
+				}
+				news_event = { id = nef_news.19 }
+			}
+		}
+	}
+	
+}
