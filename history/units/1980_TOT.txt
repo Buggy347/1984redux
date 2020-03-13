@@ -1,0 +1,154 @@
+﻿##### Division Templates #####
+division_template = {
+	name = "Infantry Division"  	# Standard formation for frontline divisions
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Garrison Brigade" 
+
+	regiments = {						
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "Cavalry Brigade"
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Motorized Division"
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+        motorized = { x = 0 y = 2 }
+        motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+        motorized = { x = 1 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Mountain Division"
+	
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+	    mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 0 y = 3 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 1 y = 3 }
+	}
+	priority = 2
+}
+
+division_template = {
+	name = "Marine Division"
+	
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+		marine = { x = 0 y = 3 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+		marine = { x = 1 y = 2 }
+		marine = { x = 1 y = 3 }
+	}
+	priority = 2
+}
+
+###### OOB ######
+units = {
+	division = {			
+		name = "1. Infantry Division"
+		location = 1440
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+
+	##### NAVAL UNITS #####
+	navy = {					
+		name = "Task Force"				
+		base = 10265
+		location = 10265 
+		ship = { definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA } } }				
+		ship = { definition = battle_cruiser equipment = { battle_cruiser_1 = { amount = 1 owner = USA } } }				
+		ship = { definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = USA } } }				
+		ship = { definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = USA } } }
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
+	}					
+	navy = {					
+		name = "1. Wolf Pack"				
+		base = 10265
+		location = 10265				
+		ship = { name = "USS S-36" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+	}					
+
+}
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+instant_effect = {
+		
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_0
+		amount = 18250
+		producer = USA
+		}
+	add_equipment_to_stockpile = {
+		type = support_equipment_1
+		amount = 1369
+		producer = USA
+		}
+	add_equipment_to_stockpile = {
+		type = artillery_equipment_1
+		amount = 1564
+		producer = USA
+		}
+	add_equipment_to_stockpile = {
+		type = fighter_equipment_0
+		amount = 249
+		producer = USA
+		}
+	add_equipment_to_stockpile = {
+		type = tac_bomber_equipment_0
+		amount = 156
+		producer = USA
+		}
+	454 = { add_building_construction = {
+		type = naval_base
+		province = 4206
+		level = 1
+		instant_build = yes
+				} }
+}
+#####################

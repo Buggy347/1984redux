@@ -3,16 +3,16 @@ leader_traits = {
 	warmonger = {
 		random = no
 		ai_focus_aggressive_factor = 0.5
-		
+
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	
+
 	nef_leader_nightfighter = {
 		random = no
 		land_night_attack = 0.15
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -34,7 +34,7 @@ leader_traits = {
 	}
 	nef_leader_partisan = {
 		random = no
-		partisan_effect = 0.25
+		#partisan_effect = 0.25
 		army_core_defence_factor = 0.05
 		ai_will_do = {
 			factor = 1
@@ -44,168 +44,168 @@ leader_traits = {
 	### IDEA TRAITS ###
 
 
-	nef_drt_rallies_oc = { 
+	nef_drt_rallies_oc = {
 		random = yes
 		sprite = 13
 		democratic_drift = 0.05
 		stability_weekly = 0.002
 		industrial_capacity_factory = -0.05
 		industrial_capacity_dockyard = -0.05
-		
+
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	
-	nef_drt_rallies_eu = { 
+
+	nef_drt_rallies_eu = {
 		random = yes
 		sprite = 13
 		communism_drift = 0.05
 		stability_weekly = 0.002
 		industrial_capacity_factory = -0.05
 		industrial_capacity_dockyard = -0.05
-		
+
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	
-	nef_drt_rallies_ea = { 
+
+	nef_drt_rallies_ea = {
 		random = yes
 		sprite = 13
 		fascism_drift = 0.05
 		stability_weekly = 0.002
 		industrial_capacity_factory = -0.05
 		industrial_capacity_dockyard = -0.05
-		
+
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	
-	nef_drt_recycling = { 
+
+	nef_drt_recycling = {
 		random = yes
 		sprite = 13
 		local_resources_factor = 0.15
 		consumer_goods_factor = 0.05
-		
+
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	
-	nef_drt_infiltrate = { 
+
+	nef_drt_infiltrate = {
 		random = yes
 		sprite = 13
-		enemy_partisan_effect = -0.25
+		#resistance_damage_to_garrisons = -0.25
 		political_power_gain = -0.25
-		
+
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	
-	nef_drt_research = { 
+
+	nef_drt_research = {
 		random = yes
 		sprite = 13
-		research_time_factor = -0.075
+		research_speed_factor = -0.075
 		neutrality_drift = 0.1
-		
+
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	
-	nef_drt_purges = { 
+
+	nef_drt_purges = {
 		random = yes
 		sprite = 13
 		political_power_gain = 1.5
-		research_time_factor = 0.15
+		research_speed_factor = 0.15
 		army_org_factor = -0.25
-		
+
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	
-	nef_drt_fuel = { 
+
+	nef_drt_fuel = {
 		random = yes
 		sprite = 13
 		supply_consumption_factor = -0.05
 		political_power_gain = -0.05
-		
+
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	
-	nef_drt_pow = { 
+
+	nef_drt_pow = {
 		random = yes
 		sprite = 13
 		non_core_manpower = 0.05
-		enemy_partisan_effect = 0.1
+		#resistance_damage_to_garrisons = 0.1
 		army_morale_factor = -0.05
 		political_power_gain = -0.05
-		
+
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	
-	nef_drt_no1 = { 
+
+	nef_drt_no1 = {
 		random = yes
 		sprite = 13
-		
+
 		ai_will_do = {
 			factor = 0
 		}
 	}
-	
-	nef_drt_no2 = { 
+
+	nef_drt_no2 = {
 		random = yes
 		sprite = 13
-		
+
 		ai_will_do = {
 			factor = 0
 		}
 	}
-	
-	nef_drt_no3 = { 
+
+	nef_drt_no3 = {
 		random = yes
 		sprite = 13
-		
+
 		ai_will_do = {
 			factor = 0
 		}
 	}
-	
+
 	military_theorist = {
 		sprite = 14
 		experience_gain_army = 0.05
-		
+
 		ai_will_do = {
 			factor = 500
 		}
 	}
-	
+
 	air_warfare_theorist = {
 		sprite = 14
 		experience_gain_air = 0.1
-		
+
 		ai_will_do = {
 			factor = 500
 		}
 	}
-	
+
 	naval_theorist = {
 		sprite = 14
 		experience_gain_navy = 0.1
-		
+
 		ai_will_do = {
 			factor = 100
 		}
 	}
-	
+
 	nef_mnt_airagile = {
 		random = no
 		equipment_bonus = {
@@ -237,7 +237,7 @@ leader_traits = {
 				air_agility = 0.05
 			}
 		}
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -273,7 +273,7 @@ leader_traits = {
 				air_range = 0.15
 			}
 		}
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -293,28 +293,13 @@ leader_traits = {
 			cv_cas_equipment = {
 				air_attack = 0.1
 			}
-			nav_bomber_equipment = {
-				air_defense = 0.1
-			}
-			cv_nav_bomber_equipment = {
-				air_defense = 0.1
-			}
-			tac_bomber_equipment = {
-				air_defense = 0.1
-			}
-			heavy_fighter_equipment = {
-				air_defense = 0.1
-			}
-			strat_bomber_equipment = {
-				air_defense = 0.1
-			}
 		}
-		
+
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	
+
 	nef_mnt_tanksfast = {
 		random = no
 		equipment_bonus = {
@@ -323,12 +308,12 @@ leader_traits = {
 				armor_value = -0.05
 			}
 		}
-		
+
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	
+
 	nef_mnt_tanksarmor = {
 		random = no
 		equipment_bonus = {
@@ -337,12 +322,12 @@ leader_traits = {
 				maximum_speed = -0.05
 			}
 		}
-		
+
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	
+
 	nef_mnt_tankscheap = {
 		random = no
 		equipment_bonus = {
@@ -350,13 +335,13 @@ leader_traits = {
 				reliability = 0.1 build_cost_ic = -0.05
 			}
 		}
-		
+
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	
-	nef_mnt_navrange = { 
+
+	nef_mnt_navrange = {
 		random = no
 		equipment_bonus = {
 			carrier = {
@@ -372,13 +357,13 @@ leader_traits = {
 				naval_range = 0.25
 			}
 		}
-		
+
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	
-	nef_mnt_navarmor = { 
+
+	nef_mnt_navarmor = {
 		random = no
 		equipment_bonus = {
 			carrier = {
@@ -394,12 +379,12 @@ leader_traits = {
 				armor_value = 0.1 anti_air_attack = 0.1
 			}
 		}
-		
+
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	
+
 	nef_mnt_navcheap = {
 		random = no
 		equipment_bonus = {
@@ -416,20 +401,20 @@ leader_traits = {
 				build_cost_ic = -0.15 naval_range = -0.2
 			}
 		}
-		
+
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	
+
 	nef_mnt_matresearch = {
 		random = no
-		
+
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	
+
 	nef_mnt_matbreak = {
 		random = no
 		equipment_bonus = {
@@ -443,7 +428,7 @@ leader_traits = {
 				breakthrough = 0.1
 			}
 		}
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -462,209 +447,208 @@ leader_traits = {
 				reliability = 0.1
 			}
 		}
-		
+
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	
+
 	nef_mnt_industrial = {
 		random = no
-		
+
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	
+
 	nef_mnt_electronic = {
 		random = no
-		
+
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	
+
 	### Military Minister Traits
-	
-	nef_mnt_hcsupply = { # 
+
+	nef_mnt_hcsupply = { #
 		sprite = 9
 		supply_consumption_factor = -0.15
-		
+
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	
-	nef_mnt_hcdefense = { 
+
+	nef_mnt_hcdefense = {
 		sprite = 7
 		army_core_defence_factor = 0.1
 		mobilization_speed = -0.25
-		
+
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	
-	nef_mnt_hcleadercost = { 
-		sprite = 5 
+
+	nef_mnt_hcleadercost = {
+		sprite = 5
 		army_leader_start_level = 1
 		army_leader_start_attack_level = 1
 		army_leader_start_defense_level = 1
 		army_leader_start_logistics_level = 1
-		army_leader_start_logistics_level = 1
-		
+
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	
-	nef_mnt_hcnavalinvasion = { 
+
+	nef_mnt_hcnavalinvasion = {
 		sprite = 5
 		naval_invasion_capacity = 10
 		invasion_preparation = -0.1
-		
+
 		ai_will_do = {
 			factor = 1
 		}
-	}	
-	
+	}
+
 	nef_mnt_hcmobspeed = {
 		sprite = 5
 		mobilization_speed = 0.3
-		
+
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	
-	nef_mnt_hcsfcap = { 
+
+	nef_mnt_hcsfcap = {
 		sprite = 5
 		special_forces_cap = 0.02
-		
+
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	
+
 	nef_mnt_hcparadrop = {
 		sprite = 5
 		air_paradrop_attack_factor = 0.25
 		air_paradrop_defence_factor = 0.25
-		
+
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	
-	nef_mnt_armyrecon = { 
+
+	nef_mnt_armyrecon = {
 		sprite = 9
 		recon_factor = 0.1
-		
+
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	
-	nef_mnt_armyexp = { 
+
+	nef_mnt_armyexp = {
 		sprite = 8
 		experience_gain_army_factor = 0.1
-		
+
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	
-	
+
+
 	nef_mnt_armyplan = {
 		sprite = 8
 		max_planning = 0.15
 		army_morale_factor = -0.05
-		
+
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	
-	nef_mnt_armyspeed = { 
+
+	nef_mnt_armyspeed = {
 		sprite = 5
 		planning_speed = 0.15
 		land_reinforce_rate = -0.02
-		
+
 		ai_will_do = {
 			factor = 1
 		}
-	}	
-	
-	nef_mnt_afnight = { 
+	}
+
+	nef_mnt_afnight = {
 		sprite = 5
 		air_night_penalty = -0.25
-		
+
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	
-	nef_mnt_afexp = {  
+
+	nef_mnt_afexp = {
 		sprite = 1
 		experience_gain_air_factor = 0.1
-		
+
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	
+
 	nef_mnt_afcas = {
 		sprite = 1
 		air_close_air_support_attack_factor = 0.1
-		
+
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	
+
 	nef_mnt_afnaval = {
 		sprite = 1
 		naval_strike_attack_factor = 0.1
-		
+
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	
+
 	nef_mnt_navycapital = {
 		sprite = 1
 		navy_capital_ship_attack_factor = 0.1
-		
+
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	
-	
+
+
 	nef_mnt_navyscreen = {
 		sprite = 3
 		naval_coordination = 0.1
 		spotting_chance = 0.15
 		navy_submarine_detection_factor = 0.1
-		
+
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	
+
 	nef_mnt_navysortie = {
 		sprite = 3
 		sortie_efficiency = 0.1
-		
+
 		ai_will_do = {
 			factor = 3
 		}
 	}
-	
+
 	nef_mnt_navyexp = {
 		sprite = 3
 		experience_gain_navy_factor = 0.1
-		
+
 		ai_will_do = {
 			factor = 1
 		}

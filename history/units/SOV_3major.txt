@@ -1,0 +1,817 @@
+﻿##### Division Templates #####
+division_template = {
+	name = "Infantry Division"  	# Standard formation for frontline divisions
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Garrison Brigade" 
+
+	regiments = {						
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "Cavalry Brigade"
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Motorised Division"
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+        motorized = { x = 0 y = 2 }
+        motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+        motorized = { x = 1 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Marine Division"
+	
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+		marine = { x = 0 y = 3 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+		marine = { x = 1 y = 2 }
+		marine = { x = 1 y = 3 }
+	}
+	priority = 2
+}
+
+division_template = {
+	name = "Mountain Division"
+	
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+	    mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 0 y = 3 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 1 y = 3 }
+	}
+	priority = 2
+}
+
+###### OOB ######
+units = {
+#################################### SOVIET ARMY
+	division = {			
+		name = "1. Infantry Division"
+		location = 6380
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "2. Infantry Division"
+		location = 6380
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "3. Infantry Division"
+		location = 6380
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "4. Infantry Division"
+		location = 6380
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "5. Infantry Division"
+		location = 6380
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "1. Garrison Brigade"
+		location = 3151
+		division_template = "Garrison Brigade"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "2. Garrison Brigade"
+		location = 3151
+		division_template = "Garrison Brigade"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "3. Garrison Brigade"
+		location = 3151
+		division_template = "Garrison Brigade"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "4. Garrison Brigade"
+		location = 3151
+		division_template = "Garrison Brigade"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "5. Garrison Brigade"
+		location = 3151
+		division_template = "Garrison Brigade"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "1. Mountain Division"
+		location = 6380
+		division_template = "Mountain Division"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+
+	}	
+	
+############### DANISH ARMY
+	division = {			
+		name = "6. Infantry Division"
+		location = 6287
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "7. Infantry Division"
+		location = 6287
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "8. Infantry Division"
+		location = 6287
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "9. Infantry Division"
+		location = 6287
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "10. Infantry Division"
+		location = 6287
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "6. Garrison Brigade"
+		location = 3325
+		division_template = "Garrison Brigade"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "7. Garrison Brigade"
+		location = 9296
+		division_template = "Garrison Brigade"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "8. Garrison Brigade"
+		location = 6176
+		division_template = "Garrison Brigade"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "9. Garrison Brigade"
+		location = 394
+		division_template = "Garrison Brigade"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "10. Garrison Brigade"
+		location = 12674
+		division_template = "Garrison Brigade"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "1. Marine Division"
+		location = 6287
+		division_template = "Marine Division"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+
+	}	
+########### GERMAN ARMY
+	division = {			
+		name = "11. Infantry Division"
+		location = 6521
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "12. Infantry Division"
+		location = 6521
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "13. Infantry Division"
+		location = 6521
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "14. Infantry Division"
+		location = 6521
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "15. Infantry Division"
+		location = 6521
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "11. Garrison Brigade"
+		location = 3314
+		division_template = "Garrison Brigade"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "12. Garrison Brigade"
+		location = 6446
+		division_template = "Garrison Brigade"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "13. Garrison Brigade"
+		location = 575
+		division_template = "Garrison Brigade"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "14. Garrison Brigade"
+		location = 6449
+		division_template = "Garrison Brigade"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "15. Garrison Brigade"
+		location = 3552
+		division_template = "Garrison Brigade"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "2. Mountain Division"
+		location = 6521
+		division_template = "Mountain Division"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+
+	}	
+
+################# TURKISH ARMY
+	division = {			
+		name = "16. Infantry Division"
+		location = 12387
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "17. Infantry Division"
+		location = 12416
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "18. Infantry Division"
+		location = 11871
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "19. Infantry Division"
+		location = 9823
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "20. Infantry Division"
+		location = 3889
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "16. Garrison Brigade"
+		location = 4109
+		division_template = "Garrison Brigade"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "17. Garrison Brigade"
+		location = 9940
+		division_template = "Garrison Brigade"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "18. Garrison Brigade"
+		location = 4170
+		division_template = "Garrison Brigade"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "19. Garrison Brigade"
+		location = 9833
+		division_template = "Garrison Brigade"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "20. Garrison Brigade"
+		location = 11984
+		division_template = "Garrison Brigade"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "3. Mountain Division"
+		location = 806
+		division_template = "Mountain Division"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+
+	}	
+##################### SPANISH ARMY
+	division = {			
+		name = "21. Infantry Division"
+		location = 6906
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "22. Infantry Division"
+		location = 6906
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "23. Infantry Division"
+		location = 6906
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "24. Infantry Division"
+		location = 6906
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "25. Infantry Division"
+		location = 6906
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "21. Garrison Brigade"
+		location = 758
+		division_template = "Garrison Brigade"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "22. Garrison Brigade"
+		location = 740
+		division_template = "Garrison Brigade"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "23. Garrison Brigade"
+		location = 6657
+		division_template = "Garrison Brigade"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "24. Garrison Brigade"
+		location = 7059
+		division_template = "Garrison Brigade"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "25. Garrison Brigade"
+		location = 12003
+		division_template = "Garrison Brigade"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "2. Marine Division"
+		location = 4135
+		division_template = "Marine Division"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+
+	}	
+
+	##### NAVAL UNITS #####
+	navy = {					
+		name = "Task Force Poseidon"				
+		base = 4135
+		location = 4135 			
+		ship = { definition = battleship equipment = { battleship_1 = { amount = 1 owner = SOV } } }
+		ship = { definition = battle_cruiser equipment = { battle_cruiser_1 = { amount = 1 owner = SOV } } }					
+		ship = { definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = SOV } } }					
+		ship = { definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = SOV } } }	
+		ship = { definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SOV } } }	
+		ship = { definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SOV } } }	
+		ship = { definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SOV } } }	
+		ship = { definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SOV } } }	
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }	
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }	
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }	
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }	
+	}				
+	navy = {					
+		name = "Task Force Kraken"				
+		base = 6287
+		location = 6287 			
+		ship = { definition = battleship equipment = { battleship_1 = { amount = 1 owner = SOV } } }
+		ship = { definition = battle_cruiser equipment = { battle_cruiser_1 = { amount = 1 owner = SOV } } }					
+		ship = { definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = SOV } } }					
+		ship = { definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = SOV } } }	
+		ship = { definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SOV } } }	
+		ship = { definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SOV } } }	
+		ship = { definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SOV } } }	
+		ship = { definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SOV } } }	
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }	
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }	
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }	
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }	
+	}				
+	navy = {					
+		name = "Strike Group Centurion"				
+		base = 6788
+		location = 6788 								
+		ship = { definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = SOV } } }	
+		ship = { definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SOV } } }	
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }	
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }	
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }
+	}		
+	navy = {					
+		name = "Strike Group Ordnung"				
+		base = 3314
+		location = 3314 								
+		ship = { definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = SOV } } }	
+		ship = { definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SOV } } }	
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }	
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }	
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }
+	}		
+	navy = {					
+		name = "Strike Group Lenin"				
+		base = 3151
+		location = 3151 								
+		ship = { definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = SOV } } }	
+		ship = { definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SOV } } }	
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }	
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }	
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }
+	}		
+	navy = {					
+		name = "Strike Group Ragnarok"				
+		base = 11805
+		location = 11805 								
+		ship = { definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SOV } } }	
+		ship = { definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SOV } } }	
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }	
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }	
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }
+	}			
+	navy = {					
+		name = "1. Wolf Pack"				
+		base = 12674
+		location = 12674				
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }
+	}			
+	navy = {					
+		name = "2. Wolf Pack"				
+		base = 12003
+		location = 12003				
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }
+	}			
+	navy = {					
+		name = "3. Wolf Pack"				
+		base = 122
+		location = 122				
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }
+	}		
+	navy = {					
+		name = "4. Wolf Pack"				
+		base = 3790
+		location = 3790				
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }
+	}				
+
+}
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+instant_effect = {
+		
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_0
+		amount = 85167
+		producer = SOV
+		}
+	add_equipment_to_stockpile = {
+		type = support_equipment_1
+		amount = 6388
+		producer = SOV
+		}
+	add_equipment_to_stockpile = {
+		type = artillery_equipment_1
+		amount = 7300
+		producer = SOV
+		}
+	add_equipment_to_stockpile = {
+		type = fighter_equipment_0
+		amount = 1161
+		producer = SOV
+		}
+	add_equipment_to_stockpile = {
+		type = tac_bomber_equipment_0
+		amount = 730
+		producer = SOV
+		}
+	add_equipment_to_stockpile = {
+		type = motorized_equipment_1
+		amount = 2500
+		producer = SOV
+		}
+	add_equipment_to_stockpile = {
+		type = gw_tank_equipment
+		amount = 750
+		producer = SOV
+		}
+	195 = { add_building_construction = {
+		type = naval_base
+		province = 3151
+		level = 1
+		instant_build = yes
+				} }
+	37 = { add_building_construction = {
+		type = naval_base
+		province = 6287
+		level = 1
+		instant_build = yes
+				} }
+	7 = { add_building_construction = {
+		type = naval_base
+		province = 3314
+		level = 1
+		instant_build = yes
+				} }
+	341 = { add_building_construction = {
+		type = naval_base
+		province = 9833
+		level = 1
+		instant_build = yes
+				} }
+	118 = { add_building_construction = {
+		type = naval_base
+		province = 4135
+		level = 1
+		instant_build = yes
+				} }
+}
+#####################

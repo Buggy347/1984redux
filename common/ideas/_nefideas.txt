@@ -26,7 +26,7 @@ ideas = {
 				industrial_capacity_factory = -0.2
 				industrial_capacity_dockyard = -0.2
 				production_speed_buildings_factor = -0.2
-				enemy_partisan_effect = 0.25
+				#resistance_damage_to_garrisons = 0.25
 				political_power_factor = 1.0
 			}
 		
@@ -184,7 +184,7 @@ ideas = {
 			}
 			
 			modifier = {
-				research_time_factor = 0.99
+				research_speed_factor = 0.99
 				production_speed_buildings_factor = -0.99
 				political_power_factor = -0.99
 				neutrality_drift = 0.5
@@ -266,7 +266,7 @@ ideas = {
 			}
 			
 			modifier = {
-					research_time_factor = -0.05
+					research_speed_factor = -0.05
 			}
 		}
 		
@@ -386,7 +386,7 @@ ideas = {
 			}
 			
 			modifier = {
-					research_time_factor = -0.05
+					research_speed_factor = -0.05
 			}
 		}
 		
@@ -552,7 +552,7 @@ ideas = {
 				stability_weekly = -0.001
 				consumer_goods_factor = 0.05
 				monthly_population = 10
-				research_time_factor = -0.3
+				research_speed_factor = -0.3
 			}
 		}
 		nef_closedborders = {

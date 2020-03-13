@@ -1,0 +1,282 @@
+﻿##### Division Templates #####
+division_template = {
+	name = "Infantry Division"  	# Standard formation for frontline divisions
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Garrison Brigade" 
+
+	regiments = {						
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "Cavalry Brigade"
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Motorised Division"
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+        motorized = { x = 0 y = 2 }
+        motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+        motorized = { x = 1 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Mountain Division"
+	
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+	    mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 0 y = 3 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 1 y = 3 }
+	}
+	priority = 2
+}
+
+###### OOB ######
+units = {
+	division = {			
+		name = "1. Infantry Division"
+		location = 1522
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "2. Infantry Division"
+		location = 1196
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "3. Infantry Division"
+		location = 4656
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "4. Infantry Division"
+		location = 4121
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "5. Infantry Division"
+		location = 10004
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "1. Garrison Brigade"
+		location = 10068
+		division_template = "Garrison Brigade"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "2. Garrison Brigade"
+		location = 12068
+		division_template = "Garrison Brigade"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "3. Garrison Brigade"
+		location = 1070
+		division_template = "Garrison Brigade"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "4. Garrison Brigade"
+		location = 10062
+		division_template = "Garrison Brigade"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "5. Garrison Brigade"
+		location = 7014
+		division_template = "Garrison Brigade"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "1. Mountain Division"
+		location = 10776
+		division_template = "Mountain Division"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+
+	}	
+
+	##### NAVAL UNITS #####
+	navy = {					
+		name = "Task Force Overlord"				
+		base = 7014
+		location = 7014 
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = PRC } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = PRC } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = PRC } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = PRC } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = PRC } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = PRC } } }		
+	}					
+	navy = {					
+		name = "1. Wolf Pack"				
+		base = 7014
+		location = 7014				
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = PRC } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = PRC } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = PRC } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = PRC } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = PRC } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = PRC } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = PRC } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = PRC } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = PRC } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = PRC } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = PRC } } }
+	}			
+	navy = {					
+		name = "2. Wolf Pack"				
+		base = 10062
+		location = 10062				
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = PRC } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = PRC } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = PRC } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = PRC } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = PRC } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = PRC } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = PRC } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = PRC } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = PRC } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = PRC } } }
+	}			
+	navy = {					
+		name = "3. Wolf Pack"				
+		base = 1070
+		location = 1070				
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = PRC } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = PRC } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = PRC } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = PRC } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = PRC } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = PRC } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = PRC } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = PRC } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = PRC } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = PRC } } }
+	}		
+	navy = {					
+		name = "4. Wolf Pack"				
+		base = 12068
+		location = 12068				
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = PRC } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = PRC } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = PRC } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = PRC } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = PRC } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = PRC } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = PRC } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = PRC } } }
+	}				
+
+}
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+instant_effect = {
+		
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_0
+		amount = 24333
+		producer = PRC
+		}
+	add_equipment_to_stockpile = {
+		type = support_equipment_1
+		amount = 1825
+		producer = PRC
+		}
+	add_equipment_to_stockpile = {
+		type = artillery_equipment_1
+		amount = 2086
+		producer = PRC
+		}
+	add_equipment_to_stockpile = {
+		type = fighter_equipment_0
+		amount = 332
+		producer = PRC
+		}
+	add_equipment_to_stockpile = {
+		type = tac_bomber_equipment_0
+		amount = 209
+		producer = PRC
+		}
+	add_equipment_to_stockpile = {
+		type = motorized_equipment_1
+		amount = 500
+		producer = PRC
+		}
+	add_equipment_to_stockpile = {
+		type = gw_tank_equipment
+		amount = 150
+		producer = PRC
+		}
+	613 = { add_building_construction = {
+		type = naval_base
+		province = 7014
+		level = 1
+		instant_build = yes
+				} }
+}
+#####################

@@ -1,0 +1,288 @@
+# unit_base is the base value used for evaluating how important it is to deploy the various categories
+# Written by Henrik "Groogy" Hansson
+# Changed by Daniel "Da9L" Sjöberg
+
+# befriend
+# conquer
+# antagonize
+# build_ship
+# build_army
+# unit_ratio
+# build_building
+# research_tech
+# garrison
+# protect
+# influence
+# contain
+# area_priority
+
+
+nefai_sauarea_priority = {
+	enable = {
+		original_tag = SAU }
+
+	ai_strategy = {
+		type = area_priority
+		id = europe
+		value = 75
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = north_america
+		value = 25
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = south_america
+		value = 25
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = asia
+		value = 150
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = middle_east
+		value = 250
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = africa
+		value = 200
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = pacific
+		value = 50
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = oceania
+		value = 50
+	}
+
+}
+
+nefai_etharea_priority = {
+	enable = {
+		original_tag = ETH }
+
+	ai_strategy = {
+		type = area_priority
+		id = europe
+		value = 125
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = north_america
+		value = 75
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = south_america
+		value = 75
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = asia
+		value = 50
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = middle_east
+		value = 100
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = africa
+		value = 250
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = pacific
+		value = 50
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = oceania
+		value = 50
+	}
+
+}
+
+nefai_rajarea_priority = {
+	enable = {
+		original_tag = RAJ }
+
+	ai_strategy = {
+		type = area_priority
+		id = europe
+		value = 50
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = north_america
+		value = 25
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = south_america
+		value = 25
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = asia
+		value = 250
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = middle_east
+		value = 150
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = africa
+		value = 100
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = pacific
+		value = 75
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = oceania
+		value = 75
+	}
+
+}
+
+nefai_siaarea_priority = {
+	enable = {
+		original_tag = SIA }
+
+	ai_strategy = {
+		type = area_priority
+		id = europe
+		value = 25
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = north_america
+		value = 25
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = south_america
+		value = 25
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = asia
+		value = 250
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = middle_east
+		value = 75
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = africa
+		value = 75
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = pacific
+		value = 150
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = oceania
+		value = 150
+	}
+
+}
+
+nefai_insarea_priority = {
+	enable = {
+		original_tag = INS }
+
+	ai_strategy = {
+		type = area_priority
+		id = europe
+		value = 25
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = north_america
+		value = 75
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = south_america
+		value = 75
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = asia
+		value = 175
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = middle_east
+		value = 75
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = africa
+		value = 75
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = pacific
+		value = 200
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = oceania
+		value = 250
+	}
+
+}

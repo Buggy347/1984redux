@@ -1,0 +1,310 @@
+﻿##### Division Templates #####
+division_template = {
+	name = "Infantry Division"  	# Standard formation for frontline divisions
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Garrison Brigade" 
+
+	regiments = {						
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "Cavalry Brigade"
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Motorised Division"
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+        motorized = { x = 0 y = 2 }
+        motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+        motorized = { x = 1 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Marine Division"
+	
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+		marine = { x = 0 y = 3 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+		marine = { x = 1 y = 2 }
+		marine = { x = 1 y = 3 }
+	}
+	priority = 2
+}
+
+###### OOB ######
+units = {
+	division = {			
+		name = "1. Infantry Division"
+		location = 12364
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "2. Infantry Division"
+		location = 12364
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "3. Infantry Division"
+		location = 12364
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "4. Infantry Division"
+		location = 12364
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "5. Infantry Division"
+		location = 12364
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "1. Garrison Brigade"
+		location = 7617
+		division_template = "Garrison Brigade"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "2. Garrison Brigade"
+		location = 7617
+		division_template = "Garrison Brigade"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "3. Garrison Brigade"
+		location = 12960
+		division_template = "Garrison Brigade"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "4. Garrison Brigade"
+		location = 10995
+		division_template = "Garrison Brigade"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "5. Garrison Brigade"
+		location = 13053
+		division_template = "Garrison Brigade"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}	
+	division = {			
+		name = "1. Marine Division"
+		location = 10980
+		division_template = "Marine Division"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+
+	}	
+
+	##### NAVAL UNITS #####
+	navy = {					
+		name = "Task Force Columbus"				
+		base = 10980
+		location = 10980 
+		ship = { definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = BRA } } }
+		ship = { definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = BRA } } }
+		ship = { definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = BRA } } }
+		ship = { definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = BRA } } }
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BRA } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BRA } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BRA } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BRA } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BRA } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BRA } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BRA } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BRA } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BRA } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BRA } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BRA } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BRA } } }		
+		ship = { definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BRA } } }		
+	}					
+	navy = {					
+		name = "1. Wolf Pack"				
+		base = 13053
+		location = 13053				
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
+	}			
+	navy = {					
+		name = "2. Wolf Pack"				
+		base = 5107
+		location = 5107				
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
+	}			
+	navy = {					
+		name = "3. Wolf Pack"				
+		base = 10995
+		location = 10995				
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
+	}		
+	navy = {					
+		name = "4. Wolf Pack"				
+		base = 7617
+		location = 7617				
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
+	}	
+	navy = {					
+		name = "5. Wolf Pack"				
+		base = 12997
+		location = 12997				
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
+		ship = { definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
+	}			
+
+}
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+instant_effect = {
+		
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_0
+		amount = 18250
+		producer = BRA
+		}
+	add_equipment_to_stockpile = {
+		type = support_equipment_1
+		amount = 1369
+		producer = BRA
+		}
+	add_equipment_to_stockpile = {
+		type = artillery_equipment_1
+		amount = 1564
+		producer = BRA
+		}
+	add_equipment_to_stockpile = {
+		type = fighter_equipment_0
+		amount = 249
+		producer = BRA
+		}
+	add_equipment_to_stockpile = {
+		type = tac_bomber_equipment_0
+		amount = 156
+		producer = BRA
+		}
+	add_equipment_to_stockpile = {
+		type = motorized_equipment_1
+		amount = 500
+		producer = BRA
+		}
+	add_equipment_to_stockpile = {
+		type = gw_tank_equipment
+		amount = 150
+		producer = BRA
+		}
+	500 = { add_building_construction = {
+		type = naval_base
+		province = 10980
+		level = 1
+		instant_build = yes
+				} }
+}
+#####################

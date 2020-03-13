@@ -1,0 +1,356 @@
+# befriend
+# conquer
+# antagonize
+# build_ship
+# build_army
+# unit_ratio
+# build_building
+# research_tech
+# garrison
+# protect
+# influence
+
+
+nefai_oceania_prenef = {
+	enable = {
+		has_government = fascism
+		date < 1983.10.1
+	}
+	abort = {
+		date > 1983.10.1
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = europe
+		value = -100
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = north_america
+		value = -100
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = south_america
+		value = -100
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = asia
+		value = 250
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = middle_east
+		value = 250
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = africa
+		value = 250
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = pacific
+		value = 150
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = oceania
+		value = 50
+	}	
+	
+	ai_strategy = {
+		type = ignore
+		id = "GER"			
+		value = 1000
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "GER"			
+		value = -1000
+	}
+	ai_strategy = {
+		type = ignore
+		id = "SPR"			
+		value = 1000
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "SPR"			
+		value = -1000
+	}
+	ai_strategy = {
+		type = ignore
+		id = "DEN"			
+		value = 1000
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "DEN"			
+		value = -1000
+	}
+	ai_strategy = {
+		type = ignore
+		id = "SOV"			
+		value = 1000
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "SOV"			
+		value = -1000
+	}
+	ai_strategy = {
+		type = ignore
+		id = "TUR"			
+		value = 1000
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "TUR"			
+		value = -1000
+	}
+	ai_strategy = {
+		type = ignore
+		id = "ENG"			
+		value = 1000
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "ENG"			
+		value = -1000
+	}
+	ai_strategy = {
+		type = ignore
+		id = "USA"			
+		value = 1000
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "USA"			
+		value = -1000
+	}
+	ai_strategy = {
+		type = ignore
+		id = "SAF"			
+		value = 1000
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "SAF"			
+		value = -1000
+	}
+	ai_strategy = {
+		type = ignore
+		id = "BRA"			
+		value = 1000
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "BRA"			
+		value = -1000
+	}
+	ai_strategy = {
+		type = ignore
+		id = "MEX"			
+		value = 1000
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "MEX"			
+		value = -1000
+	}
+	ai_strategy = {
+		type = conquer
+		id = "RAJ"			
+		value = 1000
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "RAJ"			
+		value = 1000
+	}
+	ai_strategy = {
+		type = conquer
+		id = "SAU"			
+		value = 1000
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "SAU"			
+		value = 1000
+	}
+	ai_strategy = {
+		type = conquer
+		id = "ETH"			
+		value = 1000
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "ETH"			
+		value = 1000
+	}
+	ai_strategy = {
+		type = conquer
+		id = "INS"			
+		value = 1000
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "INS"			
+		value = 1000
+	}
+	ai_strategy = {
+		type = conquer
+		id = "SIA"			
+		value = 1000
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "SIA"			
+		value = 1000
+	}
+
+}
+
+nefai_oceania_postnef = {
+	enable = {
+		has_government = fascism
+		date > 1983.10.1
+	}
+	abort = {
+		date > 1999.1.1
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = europe
+		value = 100
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = north_america
+		value = 100
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = south_america
+		value = 100
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = asia
+		value = 250
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = middle_east
+		value = 250
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = africa
+		value = 250
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = pacific
+		value = 150
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = oceania
+		value = 100
+	}		
+	ai_strategy = {
+		type = conquer
+		id = "GER"			
+		value = 1000
+	}
+	ai_strategy = {
+		type = conquer
+		id = "SPR"			
+		value = 1000
+	}
+	ai_strategy = {
+		type = conquer
+		id = "DEN"			
+		value = 1000
+	}
+	ai_strategy = {
+		type = conquer
+		id = "SOV"			
+		value = 1000
+	}
+	ai_strategy = {
+		type = conquer
+		id = "TUR"			
+		value = 1000
+	}
+	ai_strategy = {
+		type = conquer
+		id = "ENG"			
+		value = 1000
+	}
+	ai_strategy = {
+		type = conquer
+		id = "USA"			
+		value = 1000
+	}
+	ai_strategy = {
+		type = conquer
+		id = "SAF"			
+		value = 1000
+	}
+	ai_strategy = {
+		type = conquer
+		id = "BRA"			
+		value = 1000
+	}
+	ai_strategy = {
+		type = conquer
+		id = "MEX"			
+		value = 1000
+	}
+	ai_strategy = {
+		type = conquer
+		id = "RAJ"			
+		value = 1000
+	}
+	ai_strategy = {
+		type = conquer
+		id = "SAU"			
+		value = 1000
+	}
+	ai_strategy = {
+		type = conquer
+		id = "ETH"			
+		value = 1000
+	}
+	ai_strategy = {
+		type = conquer
+		id = "INS"			
+		value = 1000
+	}
+	ai_strategy = {
+		type = conquer
+		id = "SIA"			
+		value = 1000
+	}
+
+}

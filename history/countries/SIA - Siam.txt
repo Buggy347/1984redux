@@ -74,22 +74,6 @@ create_country_leader = {
 	}
 }
 
-set_popularities = {
-		democratic = 0
-		fascism = 0
-		communism = 0
-		neutrality = 100
-		ingsoc = 0
-		bolshevism = 0
-		deathworship = 0
-	}
-
-	set_politics = {
-	ruling_party = resistance
-	last_election = "1978.11.1"
-	election_frequency = 48
-	elections_allowed = no
-}
 
 create_country_leader = {
 	name = "Big Brother"
