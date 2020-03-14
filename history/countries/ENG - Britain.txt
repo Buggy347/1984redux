@@ -76,6 +76,7 @@ ruling_party = ingsoc
 	election_frequency = 48
 	elections_allowed = no
 }
+
 create_country_leader = {
 	name = "Big Brother"
 	desc = "POLITICS_WINSTON_CHURCHILL_DESC"
@@ -136,6 +137,7 @@ create_navy_leader = {
 	traits = { }
 	skill = 3
 }
+
 1980.6.2 = {
 	set_cosmetic_tag = ENG_OC
 	oob = ENG_3major

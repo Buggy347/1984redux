@@ -26,7 +26,7 @@ country_event = {
 			INS = { remove_ideas = nef_resist3 }
 		}
 	}
-	
+
 	trigger = {
 		OR = {
 			tag = ETH
@@ -44,7 +44,7 @@ country_event = {
 	option = {
 		name = nef_resevent.1.a
 		trigger = {
-			has_government = neutrality
+			has_government = resistance
 		}
 	}
 }
@@ -52,13 +52,13 @@ country_event = {
 country_event = {
 	id = nef_resevent.2
 	hidden = yes
-	
+
 	major = yes
 	fire_only_once = yes
 	is_triggered_only = yes
 
 	immediate = {
-		ISR = {	
+		ISR = {
 			add_to_faction = RAJ
 			add_to_faction = ETH
 			add_to_faction = SIA
@@ -79,7 +79,7 @@ country_event = {
 	option = {
 		name = nef_resevent.2.a
 		trigger = {
-			has_government = neutrality
+			has_government = resistance
 		}
 	}
 }
@@ -90,11 +90,11 @@ country_event = {
 	title = nef_resevent.3.t
 	desc = nef_resevent.3.d
 	picture = GFX_report_event_generic_parliament
-	
+
 	major = no
 	is_triggered_only = yes
 	hidden = yes
-	
+
 	option = {
 		name = nef_resevent.3.a
 		trigger = {
@@ -115,10 +115,10 @@ country_event = {
 	title = nef_resevent.4.t
 	desc = nef_resevent.4.d
 	picture = GFX_report_event_generic_parliament
-	
+
 	major = no
 	is_triggered_only = yes
-	
+
 	option = {
 		name = nef_resevent.4.a
 		trigger = {
@@ -165,9 +165,9 @@ country_event = {
 	title = nef_resevent.5.t
 	desc = nef_resevent.5.d
 	picture = GFX_report_event_military_planning
-	
+
 	major = no
-	
+
 	trigger = {
 		OR = {
 			tag = ETH
@@ -180,7 +180,7 @@ country_event = {
 		NOT = { has_country_flag = nef_resdespdefenseflag }
 		surrender_progress > 0.2
 	}
-	
+
 	option = {
 		name = nef_resevent.5.a
 		custom_effect_tooltip = nef_restt_despdefense_available
@@ -194,11 +194,11 @@ country_event = {
 ##### All countries capitulated?
 country_event = {
 	id = nef_resevent.6
-	
+
 	hidden = yes
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = ISR
 		NOT = { has_global_flag = resistance_capitulated }
@@ -208,7 +208,7 @@ country_event = {
 		INS = { has_capitulated = yes }
 		ETH = { has_capitulated = yes }
 	}
-	
+
 	option = {
 		name = nef_resevent.6.a
 		news_event = { id = nef_news.20 }

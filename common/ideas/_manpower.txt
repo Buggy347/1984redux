@@ -1,14 +1,14 @@
 ideas = {
 
-	mobilization_laws = { 
+	mobilization_laws = {
 		law = yes
 
 		disarmed_nation = {
-						
+
 			cost = 100
 			removal_cost = -1
 			level = 7
-			
+
 			allowed = {
 				OR = {
 					original_tag = ENG
@@ -37,16 +37,16 @@ ideas = {
 				#resistance_damage_to_garrisons = -0.15
 				foreign_subversive_activites = -0.15
 				stability_weekly = 0.003
-				neutrality_drift = -0.075
+				resistance_drift = -0.075
 				}
-			
+
 		ai_will_do = {
 			factor = 1
 			modifier = {
 				factor = 170
 				neutrality > 0.35
 			}
-			
+
 			modifier = {
 				factor = 250
 				has_stability < 0.3
@@ -55,17 +55,17 @@ ideas = {
 				factor = 1000
 				surrender_progress > 0.25
 			}
-		}			
+		}
 			cancel_if_invalid = no
 
 		}
-		
+
 		volunteer_only = {
-						
+
 			cost = 100
 			removal_cost = -1
 			level = 6
-			
+
 			allowed = {
 				OR = {
 					original_tag = ENG
@@ -93,7 +93,7 @@ ideas = {
 				#resistance_damage_to_garrisons = -0.05
 				foreign_subversive_activites = -0.05
 				stability_weekly = 0.001
-				neutrality_drift = -0.025
+				resistance_drift = -0.025
 			}
 
 		ai_will_do = {
@@ -111,18 +111,18 @@ ideas = {
 				has_stability < 0.4
 			}
 		}
-			
+
 			cancel_if_invalid = no
 
 		}
-		
+
 		limited_conscription = {
-					
+
 			cost = 100
 			removal_cost = -1
 			level = 5
 			default = yes
-			
+
 			allowed = {
 				OR = {
 					original_tag = ENG
@@ -142,12 +142,12 @@ ideas = {
 					original_tag = PER
 				}
 			}
-			
+
 			modifier = {
 				encryption = 1
 				drift_defence_factor = 0.50
 				stability_weekly = 0.0005
-				neutrality_drift = -0.01
+				resistance_drift = -0.01
 			}
 		ai_will_do = {
 			factor = 1
@@ -162,18 +162,18 @@ ideas = {
 			modifier = {
 				factor = 750
 				surrender_progress > 0.1
-			}			
-		}				
-			cancel_if_invalid = no						
-			
+			}
 		}
-		
+			cancel_if_invalid = no
+
+		}
+
 		extensive_conscription = {
-					
+
 			cost = 100
 			removal_cost = -1
 			level = 4
-			
+
 			allowed = {
 				OR = {
 					original_tag = ENG
@@ -193,7 +193,7 @@ ideas = {
 					original_tag = PER
 				}
 			}
-			
+
 			modifier = {
 				decryption = 1
 				drift_defence_factor = 0.25
@@ -215,13 +215,13 @@ ideas = {
 			}
 			cancel_if_invalid = no
 		}
-		
+
 		service_by_requirement = {
-						
+
 			cost = 100
 			removal_cost = -1
 			level = 3
-			
+
 			allowed = {
 				OR = {
 					original_tag = ENG
@@ -241,12 +241,12 @@ ideas = {
 					original_tag = PER
 				}
 			}
-			
+
 			modifier = {
 				decryption = 1
 				research_speed_factor = -0.025
 				stability_weekly = -0.0005
-				neutrality_drift = 0.05	
+				resistance_drift = 0.05
 			}
 		ai_will_do = {
 			factor = 1
@@ -258,16 +258,16 @@ ideas = {
 				factor = 120
 				neutrality > 0.1
 			}
-		}			
+		}
 			cancel_if_invalid = no
 		}
-		
+
 		all_adults_serve = {
-		
+
 			cost = 100
 			removal_cost = -1
 			level = 2
-			
+
 			allowed = {
 				OR = {
 					original_tag = ENG
@@ -287,7 +287,7 @@ ideas = {
 					original_tag = PER
 				}
 			}
-			
+
 			modifier = {
 				drift_defence_factor = -0.05
 				decryption = 2
@@ -296,7 +296,7 @@ ideas = {
 				naval_detection = 0.025
 				foreign_subversive_activites = 0.05
 				stability_weekly = -0.001
-				neutrality_drift = 0.1
+				resistance_drift = 0.1
 			}
 		ai_will_do = {
 			factor = 1
@@ -308,16 +308,16 @@ ideas = {
 				factor = 100
 				neutrality > 0.05
 			}
-		}			
+		}
 			cancel_if_invalid = no
 		}
-		
+
 		scraping_the_barrel = {
-			
+
 			cost = 100
 			removal_cost = -1
 			level = 1
-			
+
 			allowed = {
 				OR = {
 					original_tag = ENG
@@ -337,7 +337,7 @@ ideas = {
 					original_tag = PER
 				}
 			}
-			
+
 			modifier = {
 				drift_defence_factor = -0.25
 				decryption = 4
@@ -346,9 +346,9 @@ ideas = {
 				naval_detection = 0.1
 				foreign_subversive_activites = 0.15
 				stability_weekly = -0.003
-				neutrality_drift = 0.25
+				resistance_drift = 0.25
 			}
-			
+
 			ai_will_do = {
 			factor = 1
 			modifier = {

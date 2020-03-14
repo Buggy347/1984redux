@@ -143,7 +143,7 @@ ideas = {
 
 		nef_equalthanothers = {
 
-			picture = generic_neutrality_drift_bonus
+			picture = generic_resistance_drift_bonus
 
 			allowed = {
 				always = no
@@ -1107,7 +1107,7 @@ ideas = {
 			}
 
 			modifier = {
-				neutrality_drift = -0.05
+				resistance_drift = -0.05
 			}
 		}
 		nef_assimilation = {
@@ -1143,7 +1143,7 @@ ideas = {
 			}
 
 			modifier = {
-				neutrality_drift = -0.1
+				resistance_drift = -0.1
 			}
 		}
 
@@ -1180,7 +1180,7 @@ ideas = {
 			}
 
 			modifier = {
-				neutrality_drift = -0.15
+				resistance_drift = -0.15
 			}
 		}
 		nef_assimilationthoughtpolice = {
@@ -1199,7 +1199,7 @@ ideas = {
 
 			modifier = {
 				#resistance_damage_to_garrisons = -0.3
-				neutrality_drift = -0.1
+				resistance_drift = -0.1
 			}
 		}
 		nef_survstatereprogramming = {
@@ -1217,7 +1217,7 @@ ideas = {
 			}
 
 			modifier = {
-				neutrality_drift = -0.05
+				resistance_drift = -0.05
 				non_core_manpower = 0.08
 			}
 		}

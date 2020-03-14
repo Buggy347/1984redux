@@ -1,14 +1,14 @@
 ideas = {
 
-	mobilization_laws = { 
+	mobilization_laws = {
 		law = yes
-		
+
 		res_disarmed_nation = {
-						
+
 			cost = 100
 			removal_cost = -1
 			level = 7
-			
+
 			allowed = {
 				NOT = {
 					OR = {
@@ -30,7 +30,7 @@ ideas = {
 					}
 				}
 			}
-			
+
 			available = { has_completed_focus = nef_res_destruction_is_salvation }
 
 			modifier = {
@@ -41,16 +41,16 @@ ideas = {
 				#resistance_damage_to_garrisons = -0.15
 				foreign_subversive_activites = -0.15
 				stability_weekly = 0.003
-				neutrality_drift = 0.075
+				resistance_drift = 0.075
 				}
-			
+
 		ai_will_do = {
 			factor = 1
 			modifier = {
 				factor = 170
-				neutrality > 0.35
+				resistance > 0.35
 			}
-			
+
 			modifier = {
 				factor = 250
 				has_stability < 0.3
@@ -59,17 +59,17 @@ ideas = {
 				factor = 1000
 				surrender_progress > 0.25
 			}
-		}			
+		}
 			cancel_if_invalid = no
 
 		}
 		res_volunteer_only = {
-						
+
 			cost = 100
 			removal_cost = -1
 			level = 6
-			
-			
+
+
 			allowed = {
 				NOT = {
 					OR = {
@@ -100,7 +100,7 @@ ideas = {
 				#resistance_damage_to_garrisons = -0.05
 				foreign_subversive_activites = -0.05
 				stability_weekly = 0.001
-				neutrality_drift = 0.05
+				resistance_drift = 0.05
 			}
 
 		ai_will_do = {
@@ -114,18 +114,18 @@ ideas = {
 				has_stability < 0.4
 			}
 		}
-			
+
 			cancel_if_invalid = no
 
 		}
-		
+
 		res_limited_conscription = {
-					
+
 			cost = 100
 			removal_cost = -1
 			level = 5
 			default = yes
-			
+
 			allowed = {
 				NOT = {
 					OR = {
@@ -157,24 +157,24 @@ ideas = {
 			modifier = {
 				factor = 750
 				surrender_progress > 0.1
-			}			
+			}
 			modifier = {
 				factor = 1300
 				has_stability < 0.5
 			}
-		}				
-			cancel_if_invalid = no						
-			
 		}
-		
+			cancel_if_invalid = no
+
+		}
+
 		res_extensive_conscription = {
-					
+
 			cost = 100
 			removal_cost = -1
 			level = 4
-			
+
 			allowed = {
-				has_government = neutrality
+				has_government = resistance
 				NOT = { has_idea = nef_destsalv }
 				}
 			modifier = {
@@ -186,13 +186,13 @@ ideas = {
 			}
 			cancel_if_invalid = no
 		}
-		
+
 		res_service_by_requirement = {
-						
+
 			cost = 100
 			removal_cost = -1
 			level = 3
-			
+
 			allowed = {
 				NOT = {
 					OR = {
@@ -224,23 +224,23 @@ ideas = {
 			modifier = {
 				factor = 1000
 				has_stability < 0.5
-				has_government = neutrality
+				has_government = resistance
 			}
 			modifier = {
 				factor = 900
 				has_stability > 0.5
-				has_government = neutrality
+				has_government = resistance
 			}
-		}			
+		}
 			cancel_if_invalid = no
 		}
-		
+
 		res_all_adults_serve = {
-		
+
 			cost = 100
 			removal_cost = -1
 			level = 2
-			
+
 			allowed = {
 				NOT = {
 					OR = {
@@ -281,16 +281,16 @@ ideas = {
 				factor = 1000
 				has_stability > 0.6
 			}
-		}			
+		}
 			cancel_if_invalid = no
 		}
-		
+
 		res_scraping_the_barrel = {
-			
+
 			cost = 100
 			removal_cost = -1
 			level = 1
-			
+
 			allowed = {
 				NOT = {
 					OR = {
@@ -312,7 +312,7 @@ ideas = {
 					}
 				}
 			}
-				
+
 			modifier = {
 				drift_defence_factor = -0.25
 				decryption = 4
@@ -322,7 +322,7 @@ ideas = {
 				foreign_subversive_activites = 0.15
 				stability_weekly = -0.005
 			}
-			
+
 			ai_will_do = {
 			factor = 1
 			modifier = {

@@ -112,32 +112,23 @@ create_country_leader = {
 }
 
 1983.12.1 = {
-	set_politics = {
-
-		parties = {
-			democratic = {
-				popularity = 0
-			}
-
-			fascism = {
-				popularity = 0
-			}
-
-			communism = {
-				popularity = 0
-				#banned = no #default is no
-			}
-
-			neutrality = {
-				popularity = 100
-			}
-		}
-
-		ruling_party = resistance
-		last_election = "1982.11.1"
-		election_frequency = 48
-		elections_allowed = no
+set_popularities = {
+		democratic = 0
+		fascism = 0
+		communism = 0
+		neutrality = 0
+		ingsoc = 0
+		bolshevism = 0
+		deathworship = 0
+		resistance = 100
 	}
+
+	set_politics = {
+	ruling_party = resistance
+	last_election = "1978.11.1"
+	election_frequency = 48
+	elections_allowed = no
+}
 }
 
 create_corps_commander = {

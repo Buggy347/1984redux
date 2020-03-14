@@ -1,12 +1,12 @@
 nef_dec_resistance = {
-	
+
 	nef_dec_res_despdefense_RAJ = {
 
 		icon = generic_nationalism
 
 		visible = {
 			original_tag = RAJ
-			RAJ = { 
+			RAJ = {
 				exists = yes
 				has_capitulated = no
 				has_variable = nef_var_despdefense_available
@@ -19,11 +19,11 @@ nef_dec_resistance = {
 				surrender_progress > 0.25
 			}
 		}
-		
+
 		fire_only_once = yes
 
 		days_remove = 45
-		
+
 		modifier = {
 				army_core_attack_factor = 0.5
 				army_core_defence_factor = 0.25
@@ -35,7 +35,7 @@ nef_dec_resistance = {
 		ai_will_do = {
 			factor = 100
 		}
-		
+
 		complete_effect = {
 			custom_effect_tooltip = nef_dec_res_despdefense_RAJ_tt
 			hidden_effect = {
@@ -52,7 +52,7 @@ nef_dec_resistance = {
 
 		visible = {
 			original_tag = ETH
-			ETH = { 
+			ETH = {
 				exists = yes
 				has_capitulated = no
 				has_variable = nef_var_despdefense_available
@@ -65,11 +65,11 @@ nef_dec_resistance = {
 				surrender_progress > 0.25
 			}
 		}
-		
+
 		fire_only_once = yes
 
 		days_remove = 45
-		
+
 		modifier = {
 				army_core_attack_factor = 0.5
 				army_core_defence_factor = 0.25
@@ -98,7 +98,7 @@ nef_dec_resistance = {
 
 		visible = {
 			original_tag = SAU
-			SAU = { 
+			SAU = {
 				exists = yes
 				has_capitulated = no
 				has_variable = nef_var_despdefense_available
@@ -111,11 +111,11 @@ nef_dec_resistance = {
 				surrender_progress > 0.25
 			}
 		}
-		
+
 		fire_only_once = yes
 
 		days_remove = 45
-		
+
 		modifier = {
 				army_core_attack_factor = 0.5
 				army_core_defence_factor = 0.25
@@ -144,7 +144,7 @@ nef_dec_resistance = {
 
 		visible = {
 			original_tag = SIA
-			SIA = { 
+			SIA = {
 				exists = yes
 				has_capitulated = no
 				has_variable = nef_var_despdefense_available
@@ -157,11 +157,11 @@ nef_dec_resistance = {
 				surrender_progress > 0.25
 			}
 		}
-		
+
 		fire_only_once = yes
 
 		days_remove = 45
-		
+
 		modifier = {
 				army_core_attack_factor = 0.5
 				army_core_defence_factor = 0.25
@@ -190,7 +190,7 @@ nef_dec_resistance = {
 
 		visible = {
 			original_tag = INS
-			INS = { 
+			INS = {
 				exists = yes
 				has_capitulated = no
 				has_variable = nef_var_despdefense_available
@@ -203,11 +203,11 @@ nef_dec_resistance = {
 				surrender_progress > 0.25
 			}
 		}
-		
+
 		fire_only_once = yes
 
 		days_remove = 45
-		
+
 		modifier = {
 				army_core_attack_factor = 0.5
 				army_core_defence_factor = 0.25
@@ -230,5 +230,5 @@ nef_dec_resistance = {
 			}
 		}
 	}
-	
+
 }

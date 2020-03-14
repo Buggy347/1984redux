@@ -11,6 +11,13 @@ propaganda_efforts = {
 
 	}
 }
+nef_dec_resistance = {
+	icon = generic_propaganda
+
+	visible = {
+has_government = resistance
+	}
+}
 MTG_naval_treaties = {
 	picture = GFX_decision_cat_picture_naval_treaties
 	allowed = {
@@ -18,7 +25,7 @@ MTG_naval_treaties = {
 	}
 	visible = {
 		OR = {
-			has_naval_treaty_trigger = yes
+			#has_naval_treaty_trigger = yes
 			is_major = yes
 		}
 		any_owned_state = {
@@ -46,11 +53,11 @@ operations = {
 
 foreign_support = {
 	icon = generic_political_actions
-	
+
 }
 
 prestigious_projects = {
-	
+
 }
 
 foreign_politics = {
@@ -84,7 +91,7 @@ fascism_on_the_rise = {
 			}
 		}
 	}
-	
+
 	#visible = {
 	#	NOT = { has_government = fascism }
 	#	has_idea_with_trait = fascist_demagogue
@@ -97,7 +104,7 @@ democratic_on_the_rise = {
 	allowed = {
 		always = yes
 	}
-	
+
 	#visible = {
 	#	NOT = { has_government = democratic }
 	#	has_idea_with_trait = democratic_reformer
@@ -119,7 +126,7 @@ communism_on_the_rise = {
 			}
 		}
 	}
-	
+
 	#visible = {
 	#	NOT = { has_government = communism }
 	#	has_idea_with_trait = communist_revolutionary
@@ -141,7 +148,7 @@ crisis = {
 demobilization = {
 	icon = generic_crisis
 	priority = 100
-	
+
 	visible = {
 		has_war = no
 	}
@@ -161,7 +168,7 @@ prospect_for_resources = {
 }
 
 special_projects = {
-	
+
 	icon = generic_prospect_for_resources
 
 	allowed = {
@@ -170,7 +177,7 @@ special_projects = {
 }
 
 governments_in_exile = {
-	
+
 	icon = generic_formable_nations
 	picture = GFX_decision_cat_picture_government_in_exile
 	allowed = {
@@ -179,7 +186,7 @@ governments_in_exile = {
 }
 
 category_exile_forces = {
-	
+
 	icon = infiltration
 	picture = GFX_decision_cat_picture_government_in_exile
 	allowed = {
@@ -199,12 +206,12 @@ lar_local_recruitment = {
 	visible = { has_done_agency_upgrade = upgrade_training_centers }
 
 	visibility_type = map_and_decisions_view
-	
+
 	on_map_area = {
 		state = 8
 		name = LAR_recruitment_europe
 		zoom = 650
-		
+
 		target_root_trigger = {
 			OR = {
 				has_country_flag = europe_recruitment_unlocked

@@ -28,7 +28,7 @@ ideas = {
 
    				modifier = {
 					factor = 100
-					NOT = { has_government = neutrality }
+					NOT = { has_government = resistance }
 					has_war = no
 					OR = {
 						date < 1981.1.1
@@ -38,7 +38,7 @@ ideas = {
 				modifier = {
 					factor = 1000
 					has_war = no
-					has_government = neutrality
+					has_government = resistance
 					date > 1984.1.1
 				}
    			}
@@ -69,7 +69,7 @@ ideas = {
 
    				modifier = {
 					factor = 100
-					NOT = { has_government = neutrality }
+					NOT = { has_government = resistance }
 					has_war = no
 					date > 1981.1.1
 					date < 1983.1.1
@@ -132,7 +132,7 @@ ideas = {
 			available = {
 				OR = {
 					has_completed_focus = nef_tot_desperate_times
-					has_government = neutrality
+					has_government = resistance
 				}	
 			}
 				
@@ -181,7 +181,7 @@ ideas = {
    				modifier = {
 					factor = 100
 					has_war = no
-					has_government = neutrality
+					has_government = resistance
 					date < 1981.1.1
 				}
 
@@ -245,7 +245,7 @@ ideas = {
 
    				modifier = {
 					factor = 100
-					NOT = { has_government = neutrality }
+					NOT = { has_government = resistance }
 					OR = {
 						has_war = yes
 						date > 1983.1.1

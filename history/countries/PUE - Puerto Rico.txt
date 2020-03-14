@@ -1,0 +1,89 @@
+capital = 686
+
+oob = "1980_GENERIC"
+
+set_research_slots = 3
+
+set_technology = {
+	infantry_weapons = 1
+	tech_engineers = 1
+	tech_support = 1
+	tech_recon = 1
+	gw_artillery = 1
+	early_fighter = 1
+	early_bomber = 1
+	early_submarine = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+	early_heavy_cruiser = 1
+	early_battleship = 1
+	early_battlecruiser = 1
+	early_carrier = 1
+	transport = 1
+	gwtank = 1
+	basic_machine_tools = 1
+	support_weapons = 1
+	motorised_infantry = 1
+}
+
+set_popularities = {
+		democratic = 0
+		fascism = 0
+		communism = 0
+		neutrality = 0
+		ingsoc = 0
+		bolshevism = 0
+		deathworship = 0
+		resistance = 100
+	}
+
+	set_politics = {
+	ruling_party = resistance
+	last_election = "1978.11.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Big Brother"
+	desc = "POLITICS_WINSTON_CHURCHILL_DESC"
+	picture = "gfx/leaders/ENG/Portrait_Big_Brother.dds"
+	expire = "1999.12.1"
+	ideology = invasivism
+	traits = {
+
+	}
+}
+
+create_country_leader = {
+	name = "Mother Russia"
+	desc = "POLITICS_JOSEPH_STALIN_DESC"
+	picture = "gfx/leaders/SOV/Portrait_Mother_Russia.dds"
+	expire = "1999.12.1"
+	ideology = stalinism
+	traits = {
+
+	}
+}
+
+create_country_leader = {
+	name = "Immortal Father"
+	desc = "POLITICS_MAO_ZEDONG_DESC"
+	picture = "gfx/leaders/PRC/Portrait_Immortal_Mao.dds"
+	expire = "1999.12.1"
+	ideology = rexism
+	traits = {
+
+	}
+}
+
+create_country_leader = {
+	name = "Emmanuel Goldstein"
+	desc = "POLITICS_NEVILLE_CHAMBERLAIN_DESC"
+	picture = "gfx/leaders/ENG/Portrait_Emmanuel_Goldstein.dds"
+	expire = "1999.1.1"
+	ideology = freedomfighter
+	traits = {
+		warmonger
+	}
+}
