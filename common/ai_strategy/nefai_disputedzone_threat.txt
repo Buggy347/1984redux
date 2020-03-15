@@ -13,7 +13,7 @@
 
 nefai_res_prenef = {
 	enable = {
-		has_government = neutrality
+		has_government = resistance
 		date < 1984.1.1
 	}
 	abort = {
@@ -124,7 +124,7 @@ nefai_res_prenef = {
 }
 nefai_res_postnef = {
 	enable = {
-		has_government = neutrality
+		has_government = resistance
 		date > 1984.1.1
 	}
 	abort = {

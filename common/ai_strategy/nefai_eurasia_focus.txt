@@ -13,7 +13,7 @@
 
 nefai_oceania_prenef = {
 	enable = {
-		has_government = communism
+		has_government = bolshevism
 		date < 1983.10.1
 	}
 	abort = {
@@ -223,7 +223,7 @@ nefai_oceania_prenef = {
 
 nefai_oceania_postnef = {
 	enable = {
-		has_government = communism
+		has_government = bolshevism
 		date > 1983.10.1
 	}
 	abort = {
