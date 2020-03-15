@@ -52,9 +52,9 @@ set_popularities = {
 		communism = 0
 		neutrality = 0
 		ingsoc = 0
-		bolshevism = 0
+		bolshevism = 100
 		deathworship = 0
-		resistance = 100
+		resistance = 0
 	}
 
 set_politics = {
