@@ -1125,7 +1125,9 @@ ideas = {
 			}
 
 			modifier = {
-				#resistance_damage_to_garrisons = -0.3
+				resistance_damage_to_garrisons = -0.3
+				resistance_target = -0.05
+				production_speed_buildings_factor = 0.01
 			}
 		}
 		nef_thoughtpolice = {

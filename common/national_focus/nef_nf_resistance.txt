@@ -1,9 +1,9 @@
 focus_tree = {
 	id = nef_resistance_focus
-	
+
 	country = {
 		factor = 1
-		
+
 		modifier = {
 			add = 10
 			tag = RAJ
@@ -25,26 +25,26 @@ focus_tree = {
 			tag = SAU
 		}
 	}
-	
+
 	default = no
 	reset_on_civilwar = no
-	
+
 	focus = {
 		id = nef_res_grand_council
 		icon = GFX_focus_generic_diplomatic_treaty
 		x = 11
 		y = 0
 		cost = 20
-		
+
 		available_if_capitulated = no
-	
+
 		ai_will_do = {
 			factor = 100
-		}	
+		}
 		select_effect = {
 			country_event = { id = nef_council.1 days = 5 }
 		}
-		
+
 		completion_reward = {
 			add_political_power = 150
 			hidden_effect = { country_event = { id = nef_council.20 } }
@@ -60,6 +60,7 @@ focus_tree = {
 		icon = GFX_focus_generic_treaty
 		available = { has_country_flag = council_savior }
 		prerequisite = { focus = nef_res_grand_council }
+		mutually_exclusive = { focus = nef_res_the_strong_survive focus = nef_res_the_abyss_stares_back }
 		x = 0
 		y = 1
 		cost = 10
@@ -79,6 +80,7 @@ focus_tree = {
 		icon = GFX_goal_generic_demand_territory
 		available = { has_country_flag = council_strongman }
 		prerequisite = { focus = nef_res_grand_council }
+		mutually_exclusive = { focus = nef_res_beacon_of_hope focus = nef_res_the_abyss_stares_back }
 		x = 2
 		y = 1
 		cost = 10
@@ -98,6 +100,7 @@ focus_tree = {
 		icon = GFX_goal_generic_wolf_pack
 		available = { has_country_flag = council_dictator }
 		prerequisite = { focus = nef_res_grand_council }
+		mutually_exclusive = { focus = nef_res_the_strong_survive focus = nef_res_beacon_of_hope }
 		x = 4
 		y = 1
 		cost = 10
@@ -131,7 +134,7 @@ focus_tree = {
 			custom_effect_tooltip = nef_res_tt_expiration
 		}
 	}
-	
+
 	focus = {
 		id = nef_res_consolidate_power
 		icon = GFX_goal_generic_political_pressure
@@ -238,7 +241,7 @@ focus_tree = {
 			add_ideas = nef_breakchains
 		}
 	}
-	
+
 	focus = {
 		id = nef_res_two_minutes_hate
 		icon = GFX_focus_generic_strike_at_democracy1
@@ -264,7 +267,7 @@ focus_tree = {
 		cost = 1
 
 		available_if_capitulated = no
-		
+
 		ai_will_do = {
 			factor = 0
 			modifier = {
@@ -296,7 +299,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = nef_res_liberate_eurasia
 		icon = GFX_goal_generic_territory_or_war
@@ -308,7 +311,7 @@ focus_tree = {
 		cost = 1
 
 		available_if_capitulated = no
-		
+
 		ai_will_do = {
 			factor = 0
 			modifier = {
@@ -340,7 +343,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = nef_res_liberate_eastasia
 		icon = GFX_goal_generic_territory_or_war
@@ -352,7 +355,7 @@ focus_tree = {
 		cost = 1
 
 		available_if_capitulated = no
-		
+
 		ai_will_do = {
 			factor = 0
 			modifier = {
@@ -398,7 +401,7 @@ focus_tree = {
 			add_ideas = nef_reprogramming
 		}
 	}
-	
+
 ##############################################################################
 ############ ECONOMY TREES ###################################################
 ##############################################################################
@@ -417,7 +420,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+
 			add_tech_bonus = {
 				name = construction_bonus
 				bonus = 0.5
@@ -501,7 +504,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+
 			add_tech_bonus = {
 				name = industrial_bonus
 				bonus = 0.5
@@ -525,7 +528,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+
 			add_tech_bonus = {
 				name = industrial_bonus
 				bonus = 0.5
@@ -736,13 +739,13 @@ focus_tree = {
 		x = 19
 		y = 2
 		cost = 20
-			
+
 		available_if_capitulated = yes
-		
+
 		ai_will_do = {
 			factor = 2
 		}
-		
+
 		completion_reward = {
 			set_technology = {
 				atomic_research = 1
@@ -758,9 +761,9 @@ focus_tree = {
 		y = 2
 		cost = 15
 
-		
+
 		available_if_capitulated = yes
-		
+
 		ai_will_do = {
 			factor = 100
 		}
@@ -777,9 +780,9 @@ focus_tree = {
 		x = 21
 		y = 3
 		cost = 15
-		
+
 		available_if_capitulated = yes
-		
+
 		ai_will_do = {
 			factor = 100
 		}
@@ -796,9 +799,9 @@ focus_tree = {
 		x = 21
 		y = 4
 		cost = 10
-		
+
 		available_if_capitulated = yes
-		
+
 		ai_will_do = {
 			factor = 100
 		}
@@ -814,7 +817,7 @@ focus_tree = {
 
 	focus = {
 		id = nef_res_drums_of_war
-		icon = GFX_goal_generic_major_war 
+		icon = GFX_goal_generic_major_war
 		available = { has_country_flag = council_started }
 		x = 15
 		y = 5
@@ -864,7 +867,7 @@ focus_tree = {
 		id = nef_res_our_countrys_pride
 		icon = GFX_idea_generic_manpower_bonus
 		prerequisite = { focus = nef_res_reform_the_army }
-		
+
 		x = 1
 		y = 7
 		cost = 10
@@ -882,7 +885,7 @@ focus_tree = {
 				add_idea = nef_ocpres
 			}
 		}
-	}	
+	}
 
 
 	focus = {
@@ -890,7 +893,7 @@ focus_tree = {
 		icon = GFX_focus_generic_military_academy
 		prerequisite = { focus = nef_res_our_countrys_pride }
 		mutually_exclusive = { focus = nef_res_sheep_to_slaughter }
-		
+
 		x = 0
 		y = 8
 		cost = 5
@@ -914,7 +917,7 @@ focus_tree = {
 		icon = GFX_focus_generic_little_entente
 		prerequisite = { focus = nef_res_our_countrys_pride }
 		mutually_exclusive = { focus = nef_res_tiny_training_world }
-		
+
 		x = 2
 		y = 8
 		cost = 5
@@ -940,7 +943,7 @@ focus_tree = {
 		x = 1
 		y = 9
 		cost = 5
-			
+
 		available_if_capitulated = yes
 
 		ai_will_do = {
@@ -950,7 +953,7 @@ focus_tree = {
 				has_manpower < 2000000
 			}
 		}
-		
+
 		completion_reward = {
 			add_stability = -0.05
 			if = {
@@ -990,13 +993,13 @@ focus_tree = {
 		prerequisite = { focus = nef_res_desperate_times }
 		available = {
 			surrender_progress > 0.2
-			}		
+			}
 		x = 1
 		y = 10
 		cost = 5
 
 		available_if_capitulated = yes
-		
+
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -1033,10 +1036,10 @@ focus_tree = {
 					add_idea = nef_sheepslaughterdespmeasures
 				}
 			}
-			
+
 			}
-	}	
-	
+	}
+
 ### QUEEN OF BATTLE
 
 
@@ -1062,7 +1065,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = nef_res_sticks_and_stones
 		icon = GFX_goal_generic_allies_build_infantry
@@ -1100,7 +1103,7 @@ focus_tree = {
 			add_ideas = nef_sticksstones
 		}
 	}
-	
+
 	focus = {
 		id = nef_res_old_dogs
 		icon = GFX_focus_generic_military_mission
@@ -1130,11 +1133,11 @@ focus_tree = {
 			add_ideas = nef_olddogs
 		}
 	}
-	
+
 	focus = {
 		id = nef_res_what_makes_grass_grow
 		icon = GFX_goal_generic_small_arms
-		available = { 
+		available = {
 			OR = {
 				has_completed_focus = nef_res_sticks_and_stones
 				has_completed_focus = nef_res_old_dogs
@@ -1155,7 +1158,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = nef_res_supporting_cast
 		icon = GFX_focus_chi_army_reform
@@ -1167,7 +1170,7 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
-		completion_reward = {	
+		completion_reward = {
 			add_tech_bonus = {
 				bonus = 0.5
 				uses = 2
@@ -1176,7 +1179,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = nef_res_high_speed_low_drag
 		icon = GFX_goal_generic_special_forces
@@ -1188,7 +1191,7 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
-		completion_reward = {	
+		completion_reward = {
 			add_tech_bonus = {
 				bonus = 0.5
 				uses = 2
@@ -1221,7 +1224,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = nef_res_no_guns_no_glory
 		icon = GFX_goal_generic_army_artillery2
@@ -1251,7 +1254,7 @@ focus_tree = {
 			add_ideas = nef_nogunsnoglory
 		}
 	}
-	
+
 	focus = {
 		id = nef_res_willy_pete
 		icon = GFX_goal_poland_goal
@@ -1289,11 +1292,11 @@ focus_tree = {
 			add_ideas = nef_willypete
 		}
 	}
-	
+
 	focus = {
 		id = nef_res_smells_like_victory
 		icon = GFX_focus_rocketry
-		available = { 
+		available = {
 			OR = {
 				has_completed_focus = nef_res_no_guns_no_glory
 				has_completed_focus = nef_res_willy_pete
@@ -1314,7 +1317,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = nef_res_jungle_rats
 		icon = GFX_focus_RAJ_indian_gentlemen_offcers
@@ -1343,7 +1346,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = nef_res_mountain_gods
 		icon = GFX_focus_RAJ_indian_gurkhas
@@ -1372,7 +1375,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 
 ### TANKS FOR YOUR SERVICE
 
@@ -1410,7 +1413,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = nef_res_instruments_of_death
 		icon = GFX_focus_generic_tank_production
@@ -1441,7 +1444,7 @@ focus_tree = {
 			add_ideas = nef_instrumentsdeath
 		}
 	}
-	
+
 	focus = {
 		id = nef_res_concentration_of_force
 		icon = GFX_goal_generic_demand_territory
@@ -1476,7 +1479,7 @@ focus_tree = {
 	focus = {
 		id = nef_res_my_tank_is_fight
 		icon = GFX_focus_generic_army_tanks2
-		available = { 
+		available = {
 			OR = {
 				has_completed_focus = nef_res_instruments_of_death
 				has_completed_focus = nef_res_concentration_of_force
@@ -1518,7 +1521,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = nef_res_ironclad_legions
 		icon = GFX_goal_generic_army_motorized
@@ -1570,7 +1573,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = nef_res_maneuver_improver
 		icon = GFX_focus_prc_infiltration
@@ -1578,7 +1581,7 @@ focus_tree = {
 		x = 16
 		y = 8
 		cost = 5
-		
+
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -1626,7 +1629,7 @@ focus_tree = {
 				}
 		}
 	}
-	
+
 	focus = {
 		id = nef_res_ghost_of_clausewitz_past
 		icon = GFX_goal_generic_army_doctrines
@@ -1664,7 +1667,7 @@ focus_tree = {
 				}
 		}
 	}
-	
+
 	focus = {
 		id = nef_res_fire_and_brimstone
 		icon = GFX_goal_generic_army_doctrines
@@ -1703,7 +1706,7 @@ focus_tree = {
 				}
 		}
 	}
-	
+
 	focus = {
 		id = nef_res_unto_the_breach
 		icon = GFX_goal_generic_army_doctrines
@@ -1789,7 +1792,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = nef_res_winning_strategies
 		icon = GFX_goal_generic_army_doctrines
@@ -1831,7 +1834,7 @@ focus_tree = {
 				is_controlled_by = ROOT
 			}
 		}
-		
+
 		ai_will_do = {
 			factor = 2
 			modifier = {
@@ -1983,7 +1986,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = nef_res_surprise_party
 		icon = GFX_goal_generic_amphibious_assault
@@ -2039,7 +2042,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = nef_res_sir_long_lancealot
 		icon = GFX_idea_the_long_lance
@@ -2068,7 +2071,7 @@ focus_tree = {
 			add_ideas = nef_longlance
 		}
 	}
-	
+
 	focus = {
 		id = nef_res_run_them_down
 		icon = GFX_idea_liberty_ships_focus
@@ -2088,7 +2091,7 @@ focus_tree = {
 			add_ideas = nef_runemdown
 		}
 	}
-	
+
 	focus = {
 		id = nef_res_fire_for_effect
 		icon = GFX_idea_generic_artillery_manufacturer_2
@@ -2240,7 +2243,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = nef_res_delete_boats
 		icon = GFX_goal_generic_air_naval_bomber
@@ -2512,6 +2515,6 @@ focus_tree = {
 				category = air_doctrine
 			}
 		}
-	}	
+	}
 ############################# END
 }

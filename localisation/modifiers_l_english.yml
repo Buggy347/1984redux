@@ -1051,3 +1051,5 @@
  MODIFIER_AIRFORCE_INTEL_DECRYPTION_BONUS:0 "Decrypted Airforce Cipher Bonus: $VALUE$"
  country_is_at_war:0 "Country is at war"
  country_is_at_peace:0 "Country is at peace"
+ ##############
+ resistance_drift:0 "Resistance Drift"
