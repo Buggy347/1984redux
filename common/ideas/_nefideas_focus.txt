@@ -143,7 +143,7 @@ ideas = {
 
 		nef_equalthanothers = {
 
-			picture = generic_resistance_drift_bonus
+			picture = generic_oppression
 
 			allowed = {
 				always = no
