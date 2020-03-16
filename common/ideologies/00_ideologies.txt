@@ -302,12 +302,12 @@ ideologies = {
 			can_force_government = no
 			can_puppet = yes
 			can_send_volunteers = no
+			can_guarantee_other_ideologies = no
 		}
 
 		modifiers = {
 			#increased_influence_factor = 0.3 #30% easier to influence
 			generate_wargoal_tension = 0.5
-			join_faction_tension = 0.4
 			lend_lease_tension = 0.4
 			send_volunteers_tension = 0.4
 			guarantee_tension = 0.4
@@ -321,7 +321,7 @@ ideologies = {
 		faction_modifiers = {
 		}
 
-		ai_neutral = yes #
+		ai_communism = yes #
 	}
 
 	bolshevism = {
@@ -352,6 +352,7 @@ ideologies = {
 			can_force_government = no
 			can_puppet = yes
 			can_send_volunteers = no
+			can_guarantee_other_ideologies = no
 		}
 
 		modifiers = {
@@ -371,7 +372,7 @@ ideologies = {
 		faction_modifiers = {
 		}
 
-		ai_neutral = yes #
+		ai_communism = yes #
 	}
 
 	deathworship = {
@@ -394,13 +395,14 @@ ideologies = {
 		color = { 50 0 100 }
 
 
-		war_impact_on_world_tension = 0.25		#no major danger
+		war_impact_on_world_tension = 0.50		#no major danger
 		faction_impact_on_world_tension = 0.1
 
 		rules = {
 			can_force_government = no
 			can_puppet = yes
 			can_send_volunteers = no
+			can_guarantee_other_ideologies = no
 		}
 
 		modifiers = {
@@ -420,7 +422,7 @@ ideologies = {
 		faction_modifiers = {
 		}
 
-		ai_neutral = yes #
+		ai_fascist = yes #
 	}
 #Last Bracket
 }
