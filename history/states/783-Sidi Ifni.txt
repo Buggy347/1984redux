@@ -13,6 +13,7 @@ state={
 
 		owner = ETH
 		add_core_of = MOR
+			add_core_of = ETH
 		buildings = {
 			infrastructure = 1
 			12857 = {

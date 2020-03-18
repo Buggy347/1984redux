@@ -2,11 +2,12 @@ state={
 	id=702
 	name="STATE_702"
 	manpower = 70600
-	
+
 	state_category = tiny_island
 
 	history={
 		owner = ETH
+			add_core_of = ETH
 		buildings = {
 			infrastructure = 3
 			13014 ={
@@ -17,6 +18,6 @@ state={
 	}
 
 	provinces={
-		13014 
+		13014
 	}
 }

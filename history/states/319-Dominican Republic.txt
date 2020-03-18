@@ -3,9 +3,9 @@ state=
 	id=319
 	name="STATE_319"
 	manpower = 750000
-	
+
 	state_category = rural
-	
+
 	history=
 	{
 		owner = USA
@@ -21,12 +21,13 @@ state=
 		1980.6.2 = {
 			owner = ENG
 			controller = ENG
+			add_core_of = ENG
 		}
 		victory_points = {
-			7660 5 
+			7660 5
 		}
 		victory_points = {
-			4598 1 
+			4598 1
 		}
 
 	}

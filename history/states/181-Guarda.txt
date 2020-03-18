@@ -23,6 +23,12 @@ state={
 			industrial_complex = 2
 		}
 		add_core_of = POR
+		1980.6.2 = {
+			owner = SOV
+			controller = SOV
+			add_core_of = SOV
+		}
+
 	}
 
 	provinces={

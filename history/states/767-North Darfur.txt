@@ -6,9 +6,10 @@ state=
 
 	state_category = wasteland
 	impassable = yes
-	
+
 	history= {
 		add_core_of = SUD
+			add_core_of = ETH
 		owner = ETH
 		buildings = {
 			infrastructure = 0

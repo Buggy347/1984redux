@@ -3,13 +3,13 @@ state=
 	id=182
 	name="STATE_182"
 	manpower = 500000
-	
+
 	state_category = pastoral
 	history=
 	{
 		owner = TUR
 		victory_points = {
-			9940 1 
+			9940 1
 		}
 		buildings = {
 			infrastructure = 4
@@ -24,7 +24,7 @@ state=
 		}
 		add_core_of = GRE
 		add_core_of = TUR
-		
+
 		1980.6.2 = {
 			owner = SOV
 			controller = SOV

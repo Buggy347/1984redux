@@ -1052,4 +1052,10 @@
  country_is_at_war:0 "Country is at war"
  country_is_at_peace:0 "Country is at peace"
  ##############
- resistance_drift:0 "Resistance Drift"
+ ##############
+ ##############
+ ##############
+resistance_drift:0 "Resistance Drift"
+deathworship_drift:0 "Deathworship Drift"
+bolshevism_drift:0 "Bolshevism Drift"
+ingsoc_drift:0 "Ingsoc Drift"

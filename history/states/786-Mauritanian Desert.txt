@@ -8,6 +8,7 @@ state={
 
 	history={
 		owner = ETH
+			add_core_of = ETH
 		add_core_of = MRT
 		buildings = {
 			infrastructure = 0
