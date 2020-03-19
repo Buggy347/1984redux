@@ -3,11 +3,11 @@ state={
 	id=439
 	name="STATE_439"
 	manpower = 31136800
-	
+
 	state_category = megalopolis
 	resources={
 		aluminium=29
-	}	
+	}
 	history={
 		owner = RAJ
 		add_core_of = RAJ
@@ -24,6 +24,6 @@ state={
 	}
 
 	provinces={
-		 2032 2086 5002 5157 10021 10729 11955 12708 12868
+		 2032 2086 5002 5157 10021 10729 11955 12708 12868 1129 2076 7106 1898 3989 
 	}
 }

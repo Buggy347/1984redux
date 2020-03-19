@@ -1,16 +1,18 @@
+[h1] Mod Description [/h1]
 Nuclear warfare has ravaged much of the world, and from the ashes came the new world order. The three remaining super-states vie for global domination: Oceania, Eurasia, and Eastasia, and between them lies the Disputed Zone. An armistice has been declared, but on January 1st, 1984, the truce shall expire and the second apocalyptic war will begin.
+This mod utilizes the setting from the George Orwell novel “Nineteen Eighty-Four” to create, first a war to gather as much as the disputed territory as possible, and then an all-out war between Eurasia, Oceania, and Eastasia. 
 
-Game Version:
+[h3] Game Version: [/h3]
 1.9.1 Beta
 
-Mod Version:
+[h3] Mod Version: [/h3]
 1.0 (Open Beta)
 
+[h2] Join the Discord: [/h2]
 https://discord.gg/bprsAym
 
-This mod utilizes the setting from the George Orwell novel “Nineteen Eighty-Four” to create, first a war to gather as much as the disputed territory as possible, and then an all out war between Eurasia, Ocenia, and Eastasia. The fourth faction, the Resistance, exists to serve as a focal point of the war, as most of the world’s resources lie within the borders of the Disputed Zone, creating a high priority target for the other three factions. Playing as a Resistance nation in multiplayer is exceptionally difficult but still a fun experience. They can become very powerful if they survive past 1984 so it is highly encouraged for the 3 totalitarian factions to destroy them prior to this.
-
+[h3] Special Thanks: [/h3]
 This mod is a port of the original mod made by bees. They have given me full permission to port. In the future, I plan to continue development adding more content than the original had.
 
-
-
+[h3] DLC Compatability: [/h3]
+Most DLCs should work, La Resistance's intel features may be bugged, but will be fixed at a later date.
