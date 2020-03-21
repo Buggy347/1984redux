@@ -1,8 +1,0 @@
-spriteTypes = {	
-
-	SpriteType = {
-	name = "GFX_nef_focus_unpersons"
-	texturefile = "gfx/interface/goals/nef_focus_unpersons.dds"			
-	}	
-
-}

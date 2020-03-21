@@ -347,10 +347,11 @@ news_event = {
 		days = 7
 	}
 
+hidden_effect = {
 	immediate = {
 			news_event = { id = nef_news.12 }
 	}
-
+}
 	option = {
 		name = nef_news.11.a
 	}

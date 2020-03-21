@@ -118,7 +118,7 @@
  TASK_FORCE_HAS_FUEL_INEFFICIENT_SHIP_FOR_MISSION:0 "£mapicon_unit_invalid_orders  The following ship classes are not fuel efficient for the mission $MISSION|H$"
  SPECIFIC_NAVY_CONTAINS_PRIDE_OF_FLEET:0 "$NAVY_NAME|H$ contains §HPride of the Fleet§! §H($NAME$)§!"
  DISBAND_PRIDE_OF_THE_FLEET_COST:1 "Disbanding your §HPride of the Fleet§! §H($NAME$)§! will cost $COST|R$ £pol_power "
- 
+
  SET_SHIP_PRIDE_OF_FLEET:0 "§HAssign§! $NAME|H$ as §HPride of the Fleet§!"
  REPLACE_SHIP_PRIDE_OF_FLEET:0 "§RReassign§! $NAME|H$ as current §HPride of the Fleet§!"
  SET_SHIP_PRIDE_OF_FLEET_DESC:0 "You will receive following bonuses:\n$BONUS$\n\n"
@@ -126,20 +126,20 @@
  SET_SHIP_PRIDE_OF_FLEET_DESC_2_WITH_EXISTING:0 "It will cost $COST|R$ £pol_power  replace current §HPride of the Fleet§! §H($OLD_NAME$)§!."
  UNSET_SHIP_PRIDE_OF_FLEET:0 "§RUnassign§! $NAME|H$ as §HPride of the Fleet§!"
  UNSET_SHIP_PRIDE_OF_FLEET_DESC:0 "You will §RLose§! following bonuses:\n$BONUS$\n\nIt will cost $COST|R$ £pol_power  to unassign."
- 
+
  PRIDE_OF_THE_FLEET_COUNTRY_BONUS:0 "\n§HCountry Bonus:§!\n$BONUS$"
  PRIDE_OF_THE_FLEET_SHIP_BONUS:0 "\n§HShip Bonus:§!\n$BONUS$"
  PRIDE_OF_THE_FLEET_TEMP_BONUS:0 "\n§RPenalty when sunk (for $NUM$ days):§!\n$BONUS$"
- 
+
  SET_SHIP_PRIDE_OF_FLEET_POPUP:0 "§HAssign Pride of the Fleet§!"
  SET_SHIP_PRIDE_OF_FLEET_POPUP_DESC:0 "Are you sure you want to §HAssign§! $NAME|H$ as §HPride of the Fleet§!?\n\nOnce assigned, it will cost $COST|R$ £pol_power  to unassign or replace §HPride of the Fleet§!. You will receive following bonuses:\n$BONUS$\n\n"
-  
+
  REPLACE_SHIP_PRIDE_OF_FLEET_POPUP:0 "§HReplace as Pride of the Fleet§!"
  REPLACE_SHIP_PRIDE_OF_FLEET_POPUP_DESC:0 "Are you sure you want to §HAssign§! $NAME|H$ as §HPride of the Fleet§! and §RReplace§! $OLD_NAME|H$?\n\nIt will cost $COST|R$ £pol_power  to replace §HPride of the Fleet§!. You will receive following bonuses:\n$BONUS$\n\n"
 
  UNSET_SHIP_PRIDE_OF_FLEET_POPUP:0 "§HUnassign Pride of the Fleet§!"
  UNSET_SHIP_PRIDE_OF_FLEET_POPUP_DESC:0 "Are you sure you want to §RUnassign§! $NAME|H$ from §HPride of the Fleet§!?\n\nIt will cost $COST|R$ £pol_power  to unassign and you will §RLose§! following bonuses:\n$BONUS$"
- 
+
  NOT_ENOUGH_PP_TO_UNASSIGN:0 "\n\n§RNot enough Political Power§!"
  NOT_ENOUGH_PP_TO_DISBAND_POTF:0 "\n\n§RNot enough Political Power to unassign §!§HPride of the Fleet§!"
  SELECT_HOME_BASE:0 "Select home base for selected fleets"
@@ -520,3 +520,6 @@
  damaged_secondaries:0 "Secondaries Knocked Out"
  CONFIRM_DISBAND_FLEET_TITLE:0 "Disband fleet"
  CONFIRM_DISBAND_FLEET_DESC:0 "Are you sure you want to §YDISBAND§! the fleet $NAME|H$?\n\nAll the task forces will be moved to reserve."
+
+####
+FLEET_NAME_NOT_SET:0 "Unnamed Fleet"
