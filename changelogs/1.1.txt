@@ -1,4 +1,5 @@
 Buxfix Patch:
+-New Ideology Icons
 -Fixed Starting Gui (Now centered)
 -Added small flag for MAN
 -Added medium flag for SPR
