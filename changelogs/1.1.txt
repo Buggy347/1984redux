@@ -1,10 +1,11 @@
-Buxfix Patch:
+1.1 Bugfix Patch:
 -New Ideology Icons
+-New Map Style by M&M
 -Fixed Starting Gui (Now centered)
 -Added small flag for MAN
 -Added medium flag for SPR
 -Added in MTG Style Naval Tech (there may be bugs please report them)
--Fixed Naval Invasion (through addition of naval tech)
+-Fixed Naval Invasion (through the addition of naval tech)
 -Changed "Start the Races" so that it can only be completed after 1983 (used to be 1981)
 -State/Province Fixes
 -Focus Icon Fixes

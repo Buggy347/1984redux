@@ -6,5 +6,5 @@ tags={
 }
 name="1984 Redux"
 picture="thumbnail.png"
-supported_version="1.9.1 beta"
+supported_version="1.9.*"
 path="mod/1984"

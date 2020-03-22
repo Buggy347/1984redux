@@ -6,7 +6,7 @@ This mod utilizes the setting from the George Orwell novel “Nineteen Eighty-Fo
 1.9.1 Beta
 
 [h3] Mod Version: [/h3]
-1.0 (Open Beta)
+1.1 (Open Beta)
 
 [h2] Join the Discord: [/h2]
 https://discord.gg/bprsAym
