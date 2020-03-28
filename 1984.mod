@@ -7,4 +7,4 @@ tags={
 name="1984 Redux"
 picture="thumbnail.png"
 supported_version="1.9.*"
-path="C:/Users/fplhu/Documents/Paradox Interactive/Hearts of Iron IV/mod/1984"
+path="mod/1984"
